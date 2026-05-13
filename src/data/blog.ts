@@ -14,7 +14,7 @@ export type BlogPost = {
   date: BilingualString;
   author: BilingualString;
   category: BilingualString;
-  tags: BilingualString | string[];
+  tags: { en: string[]; ar: string[] } | string[];
   image: string;
 };
 
