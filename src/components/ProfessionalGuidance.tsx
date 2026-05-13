@@ -62,15 +62,15 @@ export default function ProfessionalGuidance() {
           <div className="space-y-4">
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">call</span>
-              <span className="font-body-md">+1 (800) 555-0199</span>
+              <span className="font-body-md" dir="ltr">+90 507 040 8182</span>
             </div>
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">mail</span>
-              <span className="font-body-md">consultations@medlog.org</span>
+              <span className="font-body-md">info@medlogturkey.com</span>
             </div>
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">location_on</span>
-              <span className="font-body-md">100 Medical Plaza, Suite 400, Health City</span>
+              <span className="font-body-md">{t({ en: "Turkey, Ankara", ar: "تركيا، أنقرة" })}</span>
             </div>
           </div>
         </div>

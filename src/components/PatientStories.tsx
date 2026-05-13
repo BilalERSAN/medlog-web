@@ -2,10 +2,10 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
-import { stories } from "../data/stories";
+import { Story } from "../data/stories";
 import { useLanguage } from "@/context/LanguageContext";
 
-export default function PatientStories() {
+export default function PatientStories({ stories }: { stories: Story[] }) {
   const { t, language } = useLanguage();
   const [emblaRef] = useEmblaCarousel({ loop: true, align: "start", direction: language === "ar" ? "rtl" : "ltr" }, [
     Autoplay({ delay: 4000, stopOnInteraction: false })

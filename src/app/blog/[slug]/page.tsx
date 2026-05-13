@@ -1,12 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { blogPosts } from "@/data/blog";
+import { getBlogPosts } from "@/data/blog";
 import { notFound } from "next/navigation";
 import BlogPostClient from "./BlogPostClient";
 
+export const dynamic = "force-dynamic";
+
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
-  const post = blogPosts.find(p => p.slug === slug);
+  const posts = await getBlogPosts();
+  const post = posts.find(p => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -24,7 +27,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 }
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
+  const posts = await getBlogPosts();
+  return posts.map((post) => ({
     slug: post.slug,
   }));
 }

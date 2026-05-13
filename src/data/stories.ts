@@ -1,4 +1,5 @@
 import { BilingualString } from "./blog";
+import { getDbStories } from "@/lib/db";
 
 export type Story = {
   id: string;
@@ -154,4 +155,8 @@ export const stories: Story[] = (globalThis as any).__stories ?? initialStories;
 
 if (!(globalThis as any).__stories) {
   (globalThis as any).__stories = stories;
+}
+
+export async function getStories(): Promise<Story[]> {
+  return await getDbStories(initialStories);
 }

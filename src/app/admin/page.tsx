@@ -2,9 +2,11 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import LogoutButton from "./LogoutButton";
-import { blogPosts } from "@/data/blog";
-import { stories } from "@/data/stories";
+import { getBlogPosts } from "@/data/blog";
+import { getStories } from "@/data/stories";
 import AdminDashboardClient from "./AdminDashboardClient";
+
+export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {
   const session = await getServerSession(authOptions);
@@ -12,6 +14,11 @@ export default async function AdminPage() {
   if (!session) {
     redirect("/admin/login");
   }
+
+  const [blogPostsList, storiesList] = await Promise.all([
+    getBlogPosts(),
+    getStories(),
+  ]);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -24,7 +31,7 @@ export default async function AdminPage() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Medlog İçerik Yönetimi</h1>
-                <p className="text-xs text-gray-500">Veritabanı olmadan anlık içerik kontrolü</p>
+                <p className="text-xs text-gray-500">Vercel Postgres & Blob Depolama</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -39,7 +46,7 @@ export default async function AdminPage() {
       </nav>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <AdminDashboardClient initialBlogPosts={blogPosts} initialStories={stories} />
+        <AdminDashboardClient initialBlogPosts={blogPostsList} initialStories={storiesList} />
       </main>
     </div>
   );

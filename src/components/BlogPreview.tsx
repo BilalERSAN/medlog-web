@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import { blogPosts } from "../data/blog";
+import { BlogPost } from "../data/blog";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useLanguage } from "@/context/LanguageContext";
 
-export default function BlogPreview() {
+export default function BlogPreview({ blogPosts }: { blogPosts: BlogPost[] }) {
   const { t, language } = useLanguage();
   const [emblaRef] = useEmblaCarousel({ loop: true, align: "start", direction: language === "ar" ? "rtl" : "ltr" }, [
     Autoplay({ delay: 4000, stopOnInteraction: false })

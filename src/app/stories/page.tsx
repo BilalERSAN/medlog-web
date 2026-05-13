@@ -1,14 +1,18 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StoriesFilter from "@/components/StoriesFilter";
-import { stories } from "@/data/stories";
+import { getStories } from "@/data/stories";
+
+export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Patient Stories | Medlog",
   description: "Read real stories and experiences from our patients at Medlog.",
 };
 
-export default function StoriesPage() {
+export default async function StoriesPage() {
+  const storiesList = await getStories();
+
   return (
     <>
       <Header />
@@ -28,7 +32,7 @@ export default function StoriesPage() {
 
         {/* Filter & List Section */}
         <section className="max-w-[1280px] mx-auto px-12 py-16">
-          <StoriesFilter stories={stories} />
+          <StoriesFilter stories={storiesList} />
         </section>
       </main>
       <Footer />

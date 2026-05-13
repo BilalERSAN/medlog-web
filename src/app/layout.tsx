@@ -5,6 +5,11 @@ import { LanguageProvider } from "@/context/LanguageContext";
 export const metadata: Metadata = {
   title: "Medlog Institutional Medical Consultancy",
   description: "Comprehensive consultative services designed for absolute precision and premium care.",
+  // Sitenin Google ve diğer arama motorları tarafından taranmasını engeller
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
