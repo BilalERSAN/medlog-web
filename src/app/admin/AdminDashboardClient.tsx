@@ -91,9 +91,10 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
   };
 
   return (
-    <div className="space-y-8 pb-16">
-      {message && (
-        <div
+    <>
+      <div className="space-y-8 pb-16">
+        {message && (
+          <div
           className={`p-4 rounded-xl flex items-center justify-between shadow-sm transition-all ${
             message.type === "success"
               ? "bg-green-50 text-green-800 border border-green-200"
@@ -247,65 +248,66 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
           ))}
         </div>
       )}
-
-      {/* Blog Modal */}
-      <BlogModal
-        isOpen={isBlogModalOpen}
-        onClose={() => setIsBlogModalOpen(false)}
-        onSubmit={async (data) => {
-          setLoading(true);
-          try {
-            const res = await fetch("/api/admin/blog", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(data),
-            });
-            if (res.ok) {
-              setMessage({ type: "success", text: "Blog yazısı başarıyla eklendi." });
-              setIsBlogModalOpen(false);
-              await refreshData();
-            } else {
-              setMessage({ type: "error", text: "Ekleme başarısız oldu." });
-            }
-          } catch (e: any) {
-            setMessage({ type: "error", text: e.message });
-          } finally {
-            setLoading(false);
-          }
-        }}
-        fileToBase64={fileToBase64}
-        loading={loading}
-      />
-
-      {/* Story Modal */}
-      <StoryModal
-        isOpen={isStoryModalOpen}
-        onClose={() => setIsStoryModalOpen(false)}
-        onSubmit={async (data) => {
-          setLoading(true);
-          try {
-            const res = await fetch("/api/admin/stories", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(data),
-            });
-            if (res.ok) {
-              setMessage({ type: "success", text: "Hasta hikayesi başarıyla eklendi." });
-              setIsStoryModalOpen(false);
-              await refreshData();
-            } else {
-              setMessage({ type: "error", text: "Ekleme başarısız oldu." });
-            }
-          } catch (e: any) {
-            setMessage({ type: "error", text: e.message });
-          } finally {
-            setLoading(false);
-          }
-        }}
-        fileToBase64={fileToBase64}
-        loading={loading}
-      />
     </div>
+
+    {/* Blog Modal - space-y-8 dışına çıkarıldı */}
+    <BlogModal
+      isOpen={isBlogModalOpen}
+      onClose={() => setIsBlogModalOpen(false)}
+      onSubmit={async (data) => {
+        setLoading(true);
+        try {
+          const res = await fetch("/api/admin/blog", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          if (res.ok) {
+            setMessage({ type: "success", text: "Blog yazısı başarıyla eklendi." });
+            setIsBlogModalOpen(false);
+            await refreshData();
+          } else {
+            setMessage({ type: "error", text: "Ekleme başarısız oldu." });
+          }
+        } catch (e: any) {
+          setMessage({ type: "error", text: e.message });
+        } finally {
+          setLoading(false);
+        }
+      }}
+      fileToBase64={fileToBase64}
+      loading={loading}
+    />
+
+    {/* Story Modal - space-y-8 dışına çıkarıldı */}
+    <StoryModal
+      isOpen={isStoryModalOpen}
+      onClose={() => setIsStoryModalOpen(false)}
+      onSubmit={async (data) => {
+        setLoading(true);
+        try {
+          const res = await fetch("/api/admin/stories", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          if (res.ok) {
+            setMessage({ type: "success", text: "Hasta hikayesi başarıyla eklendi." });
+            setIsStoryModalOpen(false);
+            await refreshData();
+          } else {
+            setMessage({ type: "error", text: "Ekleme başarısız oldu." });
+          }
+        } catch (e: any) {
+          setMessage({ type: "error", text: e.message });
+        } finally {
+          setLoading(false);
+        }
+      }}
+      fileToBase64={fileToBase64}
+      loading={loading}
+    />
+    </>
   );
 }
 
@@ -591,10 +593,18 @@ function StoryModal({
   const [quoteEn, setQuoteEn] = useState("");
   const [quoteAr, setQuoteAr] = useState("");
   const [image, setImage] = useState("");
-  const [imagePosition, setImagePosition] = useState("center");
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const [imgUploading, setImgUploading] = useState(false);
   const [galleryUploading, setGalleryUploading] = useState(false);
+
+  // Kırpma / Ayarlama stateleri
+  const [rawImage, setRawImage] = useState("");
+  const [isCropping, setIsCropping] = useState(false);
+  const [cropZoom, setCropZoom] = useState(1);
+  const [cropX, setCropX] = useState(0);
+  const [cropY, setCropY] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
 
   const departments = [
     { slug: "hair-transplant", en: "Hair Transplant and Aesthetics", ar: "زراعة الشعر وتجميله" },
@@ -619,50 +629,50 @@ function StoryModal({
       quote: { en: quoteEn, ar: quoteAr || quoteEn },
       image: image || "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
       galleryImages: galleryImages.length > 0 ? galleryImages : undefined,
-      imagePosition,
+      imagePosition: "center",
     };
 
     await onSubmit(storyData);
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-white rounded-3xl max-w-2xl w-full p-8 shadow-2xl my-8 border border-gray-100 max-h-[90vh] overflow-y-auto">
-        <div className="flex justify-between items-center border-b border-gray-100 pb-5 mb-6">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined">person_add</span>
+    <>
+      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
+        <div className="bg-white rounded-3xl max-w-2xl w-full p-8 shadow-2xl my-8 border border-gray-100 max-h-[90vh] overflow-y-auto">
+          <div className="flex justify-between items-center border-b border-gray-100 pb-5 mb-6">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                <span className="material-symbols-outlined">person_add</span>
+              </div>
+              <h2 className="text-xl font-bold text-gray-900">Yeni Hasta Hikayesi Ekle</h2>
             </div>
-            <h2 className="text-xl font-bold text-gray-900">Yeni Hasta Hikayesi Ekle</h2>
+            <button onClick={onClose} className="text-gray-400 hover:text-gray-600 p-2 rounded-xl hover:bg-gray-50">
+              <span className="material-symbols-outlined">close</span>
+            </button>
           </div>
-          <button onClick={onClose} className="text-gray-400 hover:text-gray-600 p-2 rounded-xl hover:bg-gray-50">
-            <span className="material-symbols-outlined">close</span>
-          </button>
-        </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Main Image Upload */}
-          <div>
-            <label className="block font-medium text-sm text-gray-700 mb-2">Hasta Profil Fotoğrafı</label>
-            <div className="flex items-center space-x-6 bg-gray-50 p-4 rounded-2xl border border-dashed border-gray-200">
-              {image ? (
-                <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-sm">
-                  <img src={image} alt="" style={{ objectPosition: imagePosition }} className="w-full h-full object-cover" />
-                  <button
-                    type="button"
-                    onClick={() => setImage("")}
-                    className="absolute top-0 right-0 bg-red-600 text-white p-0.5 rounded-full shadow"
-                  >
-                    <span className="material-symbols-outlined text-[10px]">close</span>
-                  </button>
-                </div>
-              ) : (
-                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 border border-gray-200">
-                  <span className="material-symbols-outlined text-2xl">person</span>
-                </div>
-              )}
-              <div className="flex-grow space-y-3">
-                <div>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Main Image Upload */}
+            <div>
+              <label className="block font-medium text-sm text-gray-700 mb-2">Hasta Profil Fotoğrafı</label>
+              <div className="flex items-center space-x-6 bg-gray-50 p-4 rounded-2xl border border-dashed border-gray-200">
+                {image ? (
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-sm border border-gray-200">
+                    <img src={image} alt="" className="w-full h-full object-cover" />
+                    <button
+                      type="button"
+                      onClick={() => setImage("")}
+                      className="absolute top-0 right-0 bg-red-600 text-white p-0.5 rounded-full shadow"
+                    >
+                      <span className="material-symbols-outlined text-[10px]">close</span>
+                    </button>
+                  </div>
+                ) : (
+                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 border border-gray-200">
+                    <span className="material-symbols-outlined text-2xl">person</span>
+                  </div>
+                )}
+                <div className="flex-grow">
                   <input
                     type="file"
                     accept="image/*"
@@ -674,7 +684,11 @@ function StoryModal({
                         setImgUploading(true);
                         try {
                           const base64 = await fileToBase64(file);
-                          setImage(base64);
+                          setRawImage(base64);
+                          setCropZoom(1);
+                          setCropX(0);
+                          setCropY(0);
+                          setIsCropping(true);
                         } catch (err) {
                           console.error(err);
                         } finally {
@@ -688,159 +702,298 @@ function StoryModal({
                     className="cursor-pointer inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-xl border border-gray-200 text-sm font-medium text-gray-700 hover:bg-gray-50 shadow-sm transition-all"
                   >
                     <span className="material-symbols-outlined text-lg text-gray-500">upload</span>
-                    <span>{imgUploading ? "Yükleniyor..." : "Görsel Seç"}</span>
+                    <span>{imgUploading ? "Yükleniyor..." : "Görsel Seç ve Ayarla"}</span>
                   </label>
+                  <p className="text-xs text-gray-400 mt-2">Görseli seçtikten sonra açılan pencereden yuvarlak çerçeveye oturtun.</p>
                 </div>
-
-                {/* Object Position Selector */}
-                {image && (
-                  <div>
-                    <label className="block text-xs font-medium text-gray-500 mb-1">Görsel Odak Noktası (Hizalama)</label>
-                    <select
-                      className="w-full px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs focus:outline-none focus:border-primary"
-                      value={imagePosition}
-                      onChange={(e) => setImagePosition(e.target.value)}
-                    >
-                      <option value="center">Orta (Varsayılan)</option>
-                      <option value="top">Üst (Yüz / Baş Odaklı)</option>
-                      <option value="bottom">Alt</option>
-                      <option value="left">Sol</option>
-                      <option value="right">Sağ</option>
-                    </select>
-                  </div>
-                )}
               </div>
             </div>
-          </div>
 
-          {/* Gallery Upload */}
-          <div>
-            <label className="block font-medium text-sm text-gray-700 mb-2">Galeri Fotoğrafları (İsteğe Bağlı - Çoklu Seçim Yapabilirsiniz)</label>
-            <div className="bg-gray-50 p-4 rounded-2xl border border-dashed border-gray-200 space-y-4">
-              <div className="flex flex-wrap gap-3">
-                {galleryImages.map((img, idx) => (
-                  <div key={idx} className="relative w-20 h-20 rounded-xl overflow-hidden shadow-sm border border-gray-200">
-                    <img src={img} alt="" className="w-full h-full object-cover" />
-                    <button
-                      type="button"
-                      onClick={() => setGalleryImages(galleryImages.filter((_, i) => i !== idx))}
-                      className="absolute top-1 right-1 bg-red-600 text-white p-0.5 rounded-full shadow"
-                    >
-                      <span className="material-symbols-outlined text-[10px]">close</span>
-                    </button>
-                  </div>
-                ))}
-                <div className="flex items-center justify-center">
-                  <input
-                    type="file"
-                    accept="image/*"
-                    multiple
-                    id="story-gallery"
-                    className="hidden"
-                    onChange={async (e) => {
-                      const files = Array.from(e.target.files || []);
-                      if (files.length > 0) {
-                        setGalleryUploading(true);
-                        try {
-                          const base64List = await Promise.all(files.map(fileToBase64));
-                          setGalleryImages([...galleryImages, ...base64List]);
-                        } catch (err) {
-                          console.error(err);
-                        } finally {
-                          setGalleryUploading(false);
+            {/* Gallery Upload */}
+            <div>
+              <label className="block font-medium text-sm text-gray-700 mb-2">Galeri Fotoğrafları (İsteğe Bağlı - Çoklu Seçim Yapabilirsiniz)</label>
+              <div className="bg-gray-50 p-4 rounded-2xl border border-dashed border-gray-200 space-y-4">
+                <div className="flex flex-wrap gap-3">
+                  {galleryImages.map((img, idx) => (
+                    <div key={idx} className="relative w-20 h-20 rounded-xl overflow-hidden shadow-sm border border-gray-200">
+                      <img src={img} alt="" className="w-full h-full object-cover" />
+                      <button
+                        type="button"
+                        onClick={() => setGalleryImages(galleryImages.filter((_, i) => i !== idx))}
+                        className="absolute top-1 right-1 bg-red-600 text-white p-0.5 rounded-full shadow"
+                      >
+                        <span className="material-symbols-outlined text-[10px]">close</span>
+                      </button>
+                    </div>
+                  ))}
+                  <div className="flex items-center justify-center">
+                    <input
+                      type="file"
+                      accept="image/*"
+                      multiple
+                      id="story-gallery"
+                      className="hidden"
+                      onChange={async (e) => {
+                        const files = Array.from(e.target.files || []);
+                        if (files.length > 0) {
+                          setGalleryUploading(true);
+                          try {
+                            const base64List = await Promise.all(files.map(fileToBase64));
+                            setGalleryImages([...galleryImages, ...base64List]);
+                          } catch (err) {
+                            console.error(err);
+                          } finally {
+                            setGalleryUploading(false);
+                          }
                         }
-                      }
-                    }}
-                  />
-                  <label
-                    htmlFor="story-gallery"
-                    className="cursor-pointer flex flex-col items-center justify-center w-20 h-20 bg-white rounded-xl border border-gray-200 text-gray-400 hover:bg-gray-50 shadow-sm transition-all"
-                  >
-                    <span className="material-symbols-outlined text-2xl">add_photo_alternate</span>
-                    <span className="text-[10px] font-medium mt-1">Galeri Ekle</span>
-                  </label>
+                      }}
+                    />
+                    <label
+                      htmlFor="story-gallery"
+                      className="cursor-pointer flex flex-col items-center justify-center w-20 h-20 bg-white rounded-xl border border-gray-200 text-gray-400 hover:bg-gray-50 shadow-sm transition-all"
+                    >
+                      <span className="material-symbols-outlined text-2xl">add_photo_alternate</span>
+                      <span className="text-[10px] font-medium mt-1">Galeri Ekle</span>
+                    </label>
+                  </div>
                 </div>
+                {galleryUploading && <p className="text-xs text-primary font-medium">Galeri fotoğrafları yükleniyor...</p>}
               </div>
-              {galleryUploading && <p className="text-xs text-primary font-medium">Galeri fotoğrafları yükleniyor...</p>}
             </div>
-          </div>
 
-          <div>
-            <label className="block font-medium text-sm text-gray-700 mb-1">Hasta Adı Soyadı</label>
-            <input
-              type="text"
-              required
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-              value={patientName}
-              onChange={(e) => setPatientName(e.target.value)}
-              placeholder="John Doe"
-            />
-          </div>
+            <div>
+              <label className="block font-medium text-sm text-gray-700 mb-1">Hasta Adı Soyadı</label>
+              <input
+                type="text"
+                required
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
+                value={patientName}
+                onChange={(e) => setPatientName(e.target.value)}
+                placeholder="John Doe"
+              />
+            </div>
 
-          <div>
-            <label className="block font-medium text-sm text-gray-700 mb-1">Tedavi Bölümü</label>
-            <select
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white"
-              value={departmentSlug}
-              onChange={(e) => {
-                const slug = e.target.value;
-                setDepartmentSlug(slug);
-                const dep = departments.find((d) => d.slug === slug);
-                if (dep) {
-                  setDepartmentNameEn(dep.en);
-                  setDepartmentNameAr(dep.ar);
+            <div>
+              <label className="block font-medium text-sm text-gray-700 mb-1">Tedavi Bölümü</label>
+              <select
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white"
+                value={departmentSlug}
+                onChange={(e) => {
+                  const slug = e.target.value;
+                  setDepartmentSlug(slug);
+                  const dep = departments.find((d) => d.slug === slug);
+                  if (dep) {
+                    setDepartmentNameEn(dep.en);
+                    setDepartmentNameAr(dep.ar);
+                  }
+                }}
+              >
+                {departments.map((d) => (
+                  <option key={d.slug} value={d.slug}>
+                    {d.en} / {d.ar}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label className="block font-medium text-sm text-gray-700 mb-1">Hasta Yorumu / Hikayesi (İngilizce)</label>
+              <textarea
+                rows={4}
+                required
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
+                value={quoteEn}
+                onChange={(e) => setQuoteEn(e.target.value)}
+                placeholder="My experience with Medlog was amazing..."
+              />
+            </div>
+
+            <div>
+              <label className="block font-medium text-sm text-gray-700 mb-1">Hasta Yorumu / Hikayesi (Arapça)</label>
+              <textarea
+                rows={4}
+                required
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-right"
+                value={quoteAr}
+                onChange={(e) => setQuoteAr(e.target.value)}
+              />
+            </div>
+
+            <div className="flex justify-end space-x-3 pt-4 border-t border-gray-100">
+              <button
+                type="button"
+                onClick={onClose}
+                className="px-6 py-3 rounded-xl font-medium text-gray-600 hover:bg-gray-50 transition-all"
+              >
+                İptal
+              </button>
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-xl font-medium shadow-md shadow-primary/20 transition-all disabled:opacity-50"
+              >
+                {loading ? "Kaydediliyor..." : "Hikayeyi Kaydet"}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      {/* Kırpma / Ayarlama Modali - TAMAMEN DIŞARIDA VE EN ÜSTTE */}
+      {isCropping && (
+        <div className="fixed inset-0 bg-black/90 backdrop-blur-md z-[100] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 w-[95%] max-w-xl min-w-[320px] sm:min-w-[480px] shadow-2xl flex flex-col items-center space-y-6 border border-gray-100 my-auto mx-auto flex-shrink-0">
+            <div className="text-center w-full border-b border-gray-100 pb-4">
+              <h3 className="font-bold text-xl sm:text-2xl text-gray-900 mb-1">Profil Fotoğrafını Ayarla</h3>
+              <p className="text-xs sm:text-sm text-gray-500">Resmi sürükleyerek veya alt kısımdaki kaydırıcılarla yuvarlak alana tam oturtun</p>
+            </div>
+
+            {/* Yuvarlak Önizleme ve Sürükleme Alanı */}
+            <div
+              className="relative w-64 h-64 sm:w-72 sm:h-72 bg-gray-50 rounded-full overflow-hidden border-4 border-primary shadow-2xl cursor-move select-none flex items-center justify-center flex-shrink-0 mx-auto"
+              onMouseDown={(e) => {
+                setIsDragging(true);
+                setDragStart({ x: e.clientX - cropX, y: e.clientY - cropY });
+              }}
+              onMouseMove={(e) => {
+                if (isDragging) {
+                  setCropX(e.clientX - dragStart.x);
+                  setCropY(e.clientY - dragStart.y);
                 }
               }}
+              onMouseUp={() => setIsDragging(false)}
+              onMouseLeave={() => setIsDragging(false)}
+              onTouchStart={(e) => {
+                if (e.touches.length === 1) {
+                  setIsDragging(true);
+                  setDragStart({ x: e.touches[0].clientX - cropX, y: e.touches[0].clientY - cropY });
+                }
+              }}
+              onTouchMove={(e) => {
+                if (isDragging && e.touches.length === 1) {
+                  setCropX(e.touches[0].clientX - dragStart.x);
+                  setCropY(e.touches[0].clientY - dragStart.y);
+                }
+              }}
+              onTouchEnd={() => setIsDragging(false)}
             >
-              {departments.map((d) => (
-                <option key={d.slug} value={d.slug}>
-                  {d.en} / {d.ar}
-                </option>
-              ))}
-            </select>
-          </div>
+              <img
+                id="crop-source-image"
+                src={rawImage}
+                alt="Crop preview"
+                style={{
+                  transform: `translate(${cropX}px, ${cropY}px) scale(${cropZoom})`,
+                  transformOrigin: "center center",
+                  transition: isDragging ? "none" : "transform 0.1s ease-out",
+                  userSelect: "none",
+                  pointerEvents: "none",
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+              {/* Çerçeve kılavuzu */}
+              <div className="absolute inset-0 border-2 border-white/60 rounded-full pointer-events-none shadow-inner"></div>
+            </div>
 
-          <div>
-            <label className="block font-medium text-sm text-gray-700 mb-1">Hasta Yorumu / Hikayesi (İngilizce)</label>
-            <textarea
-              rows={4}
-              required
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-              value={quoteEn}
-              onChange={(e) => setQuoteEn(e.target.value)}
-              placeholder="My experience with Medlog was amazing..."
-            />
-          </div>
+            {/* Kaydırıcı Kontrolleri */}
+            <div className="w-full space-y-5 bg-gray-50 p-5 rounded-2xl border border-gray-100 flex-shrink-0">
+              <div>
+                <div className="flex justify-between text-xs sm:text-sm font-semibold text-gray-700 mb-2">
+                  <span>🔍 Yakınlaştırma / Büyütme (Zoom)</span>
+                  <span className="bg-white px-2 py-0.5 rounded-md border border-gray-200 text-primary font-bold">{cropZoom.toFixed(1)}x</span>
+                </div>
+                <input
+                  type="range"
+                  min="0.5"
+                  max="3.5"
+                  step="0.05"
+                  value={cropZoom}
+                  onChange={(e) => setCropZoom(parseFloat(e.target.value))}
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                />
+              </div>
 
-          <div>
-            <label className="block font-medium text-sm text-gray-700 mb-1">Hasta Yorumu / Hikayesi (Arapça)</label>
-            <textarea
-              rows={4}
-              required
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-right"
-              value={quoteAr}
-              onChange={(e) => setQuoteAr(e.target.value)}
-            />
-          </div>
+              <div>
+                <div className="flex justify-between text-xs sm:text-sm font-semibold text-gray-700 mb-2">
+                  <span>↔️ Yatay Konum (Sol / Sağ)</span>
+                  <span className="bg-white px-2 py-0.5 rounded-md border border-gray-200 text-primary font-bold">{cropX}px</span>
+                </div>
+                <input
+                  type="range"
+                  min="-250"
+                  max="250"
+                  step="5"
+                  value={cropX}
+                  onChange={(e) => setCropX(parseInt(e.target.value))}
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                />
+              </div>
 
-          <div className="flex justify-end space-x-3 pt-4 border-t border-gray-100">
-            <button
-              type="button"
-              onClick={onClose}
-              className="px-6 py-3 rounded-xl font-medium text-gray-600 hover:bg-gray-50 transition-all"
-            >
-              İptal
-            </button>
-            <button
-              type="submit"
-              disabled={loading}
-              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-xl font-medium shadow-md shadow-primary/20 transition-all disabled:opacity-50"
-            >
-              {loading ? "Kaydediliyor..." : "Hikayeyi Kaydet"}
-            </button>
+              <div>
+                <div className="flex justify-between text-xs sm:text-sm font-semibold text-gray-700 mb-2">
+                  <span>↕️ Dikey Konum (Yukarı / Aşağı)</span>
+                  <span className="bg-white px-2 py-0.5 rounded-md border border-gray-200 text-primary font-bold">{cropY}px</span>
+                </div>
+                <input
+                  type="range"
+                  min="-250"
+                  max="250"
+                  step="5"
+                  value={cropY}
+                  onChange={(e) => setCropY(parseInt(e.target.value))}
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                />
+              </div>
+            </div>
+
+            <div className="flex space-x-4 w-full pt-2 flex-shrink-0">
+              <button
+                type="button"
+                onClick={() => setIsCropping(false)}
+                className="flex-1 py-3 sm:py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold rounded-2xl transition-all text-sm sm:text-base shadow-sm"
+              >
+                İptal
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  const imgElement = document.getElementById("crop-source-image") as HTMLImageElement;
+                  if (imgElement) {
+                    const canvas = document.createElement("canvas");
+                    canvas.width = 400;
+                    canvas.height = 400;
+                    const ctx = canvas.getContext("2d");
+                    if (ctx) {
+                      ctx.beginPath();
+                      ctx.arc(200, 200, 200, 0, Math.PI * 2);
+                      ctx.closePath();
+                      ctx.clip();
+
+                      ctx.fillStyle = "#ffffff";
+                      ctx.fillRect(0, 0, 400, 400);
+
+                      const scale = cropZoom;
+                      const width = 400 * scale;
+                      const height = 400 * scale;
+                      const dx = (400 - width) / 2 + cropX * 1.5;
+                      const dy = (400 - height) / 2 + cropY * 1.5;
+
+                      ctx.drawImage(imgElement, dx, dy, width, height);
+                      const dataUrl = canvas.toDataURL("image/png", 0.95);
+                      setImage(dataUrl);
+                      setIsCropping(false);
+                    }
+                  }
+                }}
+                className="flex-1 py-3 sm:py-4 bg-primary hover:bg-primary/90 text-white font-bold rounded-2xl shadow-lg shadow-primary/30 transition-all text-sm sm:text-base hover:scale-[1.02]"
+              >
+                Kırp ve Onayla
+              </button>
+            </div>
           </div>
-        </form>
-      </div>
-    </div>
+        </div>
+      )}
+    </>
   );
 }
