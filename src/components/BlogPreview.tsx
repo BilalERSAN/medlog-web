@@ -14,11 +14,11 @@ export default function BlogPreview({ blogPosts }: { blogPosts: BlogPost[] }) {
   return (
     <section className="w-full max-w-[1280px] mx-auto px-12 py-24 scroll-mt-24" id="blog-preview">
       <div className="mb-lg text-center max-w-2xl mx-auto flex flex-col items-center">
-        <h2 className="font-h2 text-on-background mb-4">{t({ en: "Medical Insights & Guides", ar: "رؤى وأدلة طبية" })}</h2>
+        <h2 className="font-h2 text-on-background mb-4">{t({ en: "Medlog Health Blog", ar: "مدونة ميدلوج الصحية" })}</h2>
         <p className="font-body-lg text-secondary mb-6">
           {t({ 
-            en: "Expertly curated articles on medical procedures, travel tips, and safety standards for international patients in Turkey.", 
-            ar: "مقالات منتقاة بعناية من قبل خبراء حول الإجراءات الطبية ونصائح السفر ومعايير السلامة للمرضى الدوليين في تركيا." 
+            en: "Explore our latest blog articles on advanced medical treatments, healthy living, and expert advice for international patients.", 
+            ar: "استكشف أحدث مقالات مدونتنا حول العلاجات الطبية المتقدمة والحياة الصحية ونصائح الخبراء للمرضى الدوليين." 
           })}
         </p>
         <Link
