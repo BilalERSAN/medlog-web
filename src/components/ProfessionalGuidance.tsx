@@ -62,7 +62,9 @@ export default function ProfessionalGuidance() {
           <div className="space-y-4">
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">call</span>
-              <span className="font-body-md" dir="ltr">+90 507 040 8182</span>
+              <span className="font-body-md">
+                {t({ en: "We will contact you shortly", ar: "سنتواصل معك في أقرب وقت" })}
+              </span>
             </div>
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">mail</span>
