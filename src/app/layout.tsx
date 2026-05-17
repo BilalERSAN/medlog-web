@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "Curelog Turkey",
     images: [
       {
-        url: "/globe.svg",
+        url: "/curelog-og-image.png",
         width: 1200,
         height: 630,
         alt: "Curelog Turkey Medical Services - Rhinoplasty, Dental, IVF, Hair Transplant",
@@ -69,6 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Premium Health Tourism in Turkey | Curelog",
     description: "Start your healing journey in Turkey. Top-tier clinics for Rhinoplasty, Dental, Hair Transplant, IVF, and advanced medical treatments.",
+    images: ["/curelog-og-image.png"],
   },
   robots: {
     index: true,
