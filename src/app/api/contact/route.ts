@@ -38,7 +38,7 @@ export async function POST(request: Request) {
         <div style="margin-top: 20px; padding: 15px; background-color: #f9f9f9; border-left: 4px solid #004a99;">
           <strong>Hasta Mesajı:</strong><br>${message}
         </div>
-        <p style="font-size: 12px; color: #888; margin-top: 20px;">Bu mail Medlog Turkey Otomasyon Sistemi tarafından gönderilmiştir.</p>
+        <p style="font-size: 12px; color: #888; margin-top: 20px;">Bu mail Curelog Turkey Otomasyon Sistemi tarafından gönderilmiştir.</p>
       </div>
     `;
 
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     const patientEmailHtml = `
       <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
         <div style="background-color: #004a99; padding: 20px; text-align: center;">
-          <h1 style="color: #ffffff; margin: 0; font-size: 24px;">MEDLOG TURKEY</h1>
+          <h1 style="color: #ffffff; margin: 0; font-size: 24px;">CURELOG TURKEY</h1>
           <p style="color: #e0e0e0; margin: 5px 0 0 0;">Global Health Solutions</p>
         </div>
         <div style="padding: 30px; line-height: 1.6; color: #333333;">
@@ -66,10 +66,10 @@ export async function POST(request: Request) {
           </div>
           <p>We are dedicated to providing you with the best medical guidance in Turkey.</p>
           <hr style="border: 0; border-top: 1px solid #eeeeee; margin: 30px 0;">
-          <p style="font-size: 14px;">Best Regards,<br><strong>Medlog Turkey Team</strong></p>
+          <p style="font-size: 14px;">Best Regards,<br><strong>Curelog Turkey Team</strong></p>
         </div>
         <div style="background-color: #f9f9f9; padding: 15px; text-align: center; font-size: 12px; color: #777777;">
-          <p style="margin: 0;">&copy; ${new Date().getFullYear()} Medlog Turkey. All rights reserved.</p>
+          <p style="margin: 0;">&copy; ${new Date().getFullYear()} Curelog Turkey. All rights reserved.</p>
           <p style="margin: 5px 0 0 0;">This is an automated confirmation of your inquiry.</p>
         </div>
       </div>
@@ -94,16 +94,16 @@ _${message}_
     await Promise.all([
       // 1. Patient Confirmation Email
       transporter.sendMail({
-        from: `"Medlog Turkey" <${process.env.MAIL_USER}>`,
+        from: `"Curelog Turkey" <${process.env.MAIL_USER}>`,
         to: email,
-        subject: "We have received your medical inquiry - Medlog Turkey",
+        subject: "We have received your medical inquiry - Curelog Turkey",
         html: patientEmailHtml, // Düz yazı yerine hazırladığımız HTML şablonu
       }).catch(err => console.error("Error sending patient email:", err)),
 
       // 2. Admin Info Email
       transporter.sendMail({
-        from: `"System | Medlog Turkey" <${process.env.MAIL_USER}>`,
-        to: "info@medlogturkey.com",
+        from: `"System | Curelog Turkey" <${process.env.MAIL_USER}>`,
+        to: process.env.MAIL_USER || "info@curelogturkey.com",
         subject: `🚨 New Contact: ${name} (${inquiry})`,
         html: adminEmailHtml,
       }).catch(err => console.error("Error sending admin email:", err)),

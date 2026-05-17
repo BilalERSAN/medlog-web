@@ -13,7 +13,7 @@ export default function AboutPage() {
         <section className="bg-surface-container-low py-20 px-12">
           <div className="max-w-[1280px] mx-auto text-center">
             <h1 className="font-h1 text-on-background mb-6">
-              {t({ en: "About Medlog", ar: "نبذة عن ميدلوج" })}
+              {t({ en: "About Curelog", ar: "نبذة عن كيورلوج" })}
             </h1>
             <p className="font-body-lg text-secondary max-w-3xl mx-auto">
               {t({ 
@@ -33,8 +33,8 @@ export default function AboutPage() {
                 </h2>
                 <p className="font-body-md text-secondary leading-relaxed">
                   {t({
-                    en: "Medlog is not a commercial health service provider. We are a platform where we share our own experiences and observations with people coming from abroad. We tell the stories of people we know—how they found cures for their illnesses and their journey through the medical system.",
-                    ar: "ميدلوج ليست مزود خدمات صحية تجارية. نحن منصة حيث نشارك تجاربنا وملاحظاتنا الخاصة مع الأشخاص القادمين من الخارج. نروي قصص أشخاص نعرفهم - كيف وجدوا علاجات لأمراضهم ورحلتهم عبر النظام الطبي."
+                    en: "Curelog is not a commercial health service provider. We are a platform where we share our own experiences and observations with people coming from abroad. We tell the stories of people we know—how they found cures for their illnesses and their journey through the medical system.",
+                    ar: "كيورلوج ليست مزود خدمات صحية تجارية. نحن منصة حيث نشارك تجاربنا وملاحظاتنا الخاصة مع الأشخاص القادمين من الخارج. نروي قصص أشخاص نعرفهم - كيف وجدوا علاجات لأمراضهم ورحلتهم عبر النظام الطبي."
                   })}
                 </p>
               </div>

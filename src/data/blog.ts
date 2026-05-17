@@ -95,8 +95,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "١٥ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "Hair Transplant",
@@ -174,8 +174,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "١٠ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "Dentistry",
@@ -263,8 +263,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "١٤ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "IVF & Fertility",
@@ -342,8 +342,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "١٣ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "IVF & Fertility",
@@ -431,8 +431,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "١٢ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "IVF & Fertility",
@@ -516,8 +516,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "١١ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "IVF & Fertility",
@@ -595,8 +595,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "٩ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "Plastic Surgery",
@@ -672,8 +672,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "٨ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "Ophthalmology",
@@ -751,8 +751,8 @@ const initialBlogPosts: BlogPost[] = [
       ar: "٧ مايو ٢٠٢٦",
     },
     author: {
-      en: "Medlog Editorial Team",
-      ar: "فريق تحرير ميدلوج",
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
     },
     category: {
       en: "Bariatric Surgery",

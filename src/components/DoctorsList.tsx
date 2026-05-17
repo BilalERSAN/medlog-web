@@ -12,7 +12,7 @@ export default function DoctorsList() {
           {t({ en: "Our Distinguished Specialists", ar: "أخصائيونا المتميزون" })}
         </h2>
         <p className="font-body-md text-secondary mt-sm">
-          {t({ en: "Meet the medical experts and institutions partnered with Medlog to deliver world-class care.", ar: "تعرف على الخبراء الطبيين والمؤسسات الشريكة مع ميدلوج لتقديم رعاية ذات مستوى عالمي." })}
+          {t({ en: "Meet the medical experts and institutions partnered with Curelog to deliver world-class care.", ar: "تعرف على الخبراء الطبيين والمؤسسات الشريكة مع كيورلوج لتقديم رعاية ذات مستوى عالمي." })}
         </p>
       </div>
 

@@ -19,7 +19,7 @@ export default function TermsPage() {
             <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p>
 
             <h2 className="font-h3 text-on-background mt-8">Non-Medical Service</h2>
-            <p>Medlog is an informational platform based on personal experiences. We do not provide medical services, diagnoses, or treatments. All information should be verified by a medical professional. Please see our <Link href="/legal" className="text-primary hover:underline">Legal Warning</Link> for detailed disclaimers.</p>
+            <p>Curelog is an informational platform based on personal experiences. We do not provide medical services, diagnoses, or treatments. All information should be verified by a medical professional. Please see our <Link href="/legal" className="text-primary hover:underline">Legal Warning</Link> for detailed disclaimers.</p>
 
             <h2 className="font-h3 text-on-background mt-8">No Commercial Intent</h2>
             <p>We are a free platform. We do not charge patients for our information or guidance. We do not engage in the advertising or promotion of medical products or institutions for commercial gain.</p>

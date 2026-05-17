@@ -40,7 +40,7 @@ export default function BlogListClient({ blogPosts }: { blogPosts: BlogPost[] })
             <span className="material-symbols-outlined text-on-primary text-5xl">menu_book</span>
           </div>
           <h1 className="font-h1 text-on-background mb-4">
-            {t({ en: "Medlog Health & Medical Blog", ar: "مدونة ميدلوج الصحية والطبية" })}
+            {t({ en: "Curelog Health & Medical Blog", ar: "مدونة كيورلوج الصحية والطبية" })}
           </h1>
           <p className="font-body-lg text-secondary max-w-2xl mx-auto">
             {t({ en: "Dive into expertly written articles covering medical innovations, healthcare procedures, and guidance for your medical journey in Turkey.", ar: "تعمق في مقالات مكتوبة بخبرة تغطي الابتكارات الطبية وإجراءات الرعاية الصحية والتوجيهات لرحلتك العلاجية في تركيا." })}

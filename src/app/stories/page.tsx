@@ -6,8 +6,8 @@ import { getStories } from "@/data/stories";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Patient Stories | Medlog",
-  description: "Read real stories and experiences from our patients at Medlog.",
+  title: "Patient Stories | Curelog",
+  description: "Read real stories and experiences from our patients at Curelog.",
 };
 
 export default async function StoriesPage() {

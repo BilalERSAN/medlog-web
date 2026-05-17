@@ -17,7 +17,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Check local storage for saved language preference on mount
-    const savedLang = localStorage.getItem("medlog-language") as Language;
+    const savedLang = localStorage.getItem("curelog-language") as Language;
     if (savedLang === "en" || savedLang === "ar") {
       setLanguage(savedLang);
     }
@@ -25,7 +25,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem("medlog-language", lang);
+    localStorage.setItem("curelog-language", lang);
     if (lang === "ar") {
       document.documentElement.dir = "rtl";
       document.documentElement.lang = "ar";

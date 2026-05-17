@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         '/api/admin/*',
       ],
     },
-    sitemap: 'https://medlogturkey.com/sitemap.xml',
+    sitemap: 'https://curelogturkey.com/sitemap.xml',
   };
 }

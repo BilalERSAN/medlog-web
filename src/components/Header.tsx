@@ -63,7 +63,7 @@ export default function Header() {
   return (
     <header className="bg-white w-full top-0 sticky border-b border-surface-variant z-50">
       <div className="flex justify-between items-center h-20 px-4 md:px-12 max-w-[1280px] mx-auto">
-        <Link href="/" className="text-2xl font-bold tracking-tighter text-primary">Medlog</Link>
+        <Link href="/" className="text-2xl font-bold tracking-tighter text-primary">Curelog</Link>
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link

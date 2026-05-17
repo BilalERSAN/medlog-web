@@ -335,8 +335,8 @@ function BlogModal({
   const [contentAr, setContentAr] = useState("");
   const [categoryEn, setCategoryEn] = useState("");
   const [categoryAr, setCategoryAr] = useState("");
-  const [authorEn, setAuthorEn] = useState("Medlog Editorial Team");
-  const [authorAr, setAuthorAr] = useState("فريق تحرير ميدلوج");
+  const [authorEn, setAuthorEn] = useState("Curelog Editorial Team");
+  const [authorAr, setAuthorAr] = useState("فريق تحرير كيورلوج");
   const [tagsEn, setTagsEn] = useState("");
   const [tagsAr, setTagsAr] = useState("");
   const [image, setImage] = useState("");

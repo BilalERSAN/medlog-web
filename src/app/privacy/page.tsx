@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         <section className="max-w-[1280px] mx-auto px-12 py-16">
           <div className="prose max-w-none text-on-surface-variant font-body-md space-y-6">
             <p>
-              {t({ en: "At Medlog, we are committed to protecting your privacy. This policy explains how we handle any information when you visit our website.", ar: "في ميدلوج، نحن ملتزمون بحماية خصوصيتك. توضح هذه السياسة كيف نتعامل مع أي معلومات عند زيارتك لموقعنا." })}
+              {t({ en: "At Curelog, we are committed to protecting your privacy. This policy explains how we handle any information when you visit our website.", ar: "في كيورلوج، نحن ملتزمون بحماية خصوصيتك. توضح هذه السياسة كيف نتعامل مع أي معلومات عند زيارتك لموقعنا." })}
             </p>
 
             <h2 className="font-h3 text-on-background mt-8">

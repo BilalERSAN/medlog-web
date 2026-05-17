@@ -68,7 +68,7 @@ export default function ProfessionalGuidance() {
             </div>
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">mail</span>
-              <span className="font-body-md">info@medlogturkey.com</span>
+              <span className="font-body-md">info@curelogturkey.com</span>
             </div>
             <div className="flex items-center space-x-4 text-on-primary-fixed-variant">
               <span className="material-symbols-outlined mx-2">location_on</span>

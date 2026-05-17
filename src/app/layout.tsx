@@ -3,10 +3,10 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://medlogturkey.com"),
+  metadataBase: new URL("https://curelogturkey.com"),
   title: {
-    default: "Top Medical Treatments & Health Tourism in Turkey | Medlog",
-    template: "%s | Medlog Turkey",
+    default: "Top Medical Treatments & Health Tourism in Turkey | Curelog",
+    template: "%s | Curelog Turkey",
   },
   description: "Premium medical tourism in Turkey. Expert medical consultancy for Rhinoplasty, Dental Treatments, Hair Transplant, IVF, Bariatric Surgery, Cardiology, Orthopedics, and Neurology. Get your free consultation today.",
   keywords: [
@@ -46,28 +46,28 @@ export const metadata: Metadata = {
     "جراحة العظام في تركيا", // Ortopedi cerrahisi
     "علاج الأعصاب في تركيا" // Nöroloji tedavisi
   ],
-  authors: [{ name: "Medlog Turkey" }],
-  creator: "Medlog Turkey",
+  authors: [{ name: "Curelog Turkey" }],
+  creator: "Curelog Turkey",
   openGraph: {
     type: "website",
     locale: "en_US",
     alternateLocale: ["ar_AE"],
-    url: "https://medlogturkey.com",
-    title: "Premium Health Tourism in Turkey | Medlog",
+    url: "https://curelogturkey.com",
+    title: "Premium Health Tourism in Turkey | Curelog",
     description: "Start your healing journey in Turkey. Top-tier clinics for Rhinoplasty, Dental, Hair Transplant, IVF, and advanced medical treatments.",
-    siteName: "Medlog Turkey",
+    siteName: "Curelog Turkey",
     images: [
       {
         url: "/globe.svg",
         width: 1200,
         height: 630,
-        alt: "Medlog Turkey Medical Services - Rhinoplasty, Dental, IVF, Hair Transplant",
+        alt: "Curelog Turkey Medical Services - Rhinoplasty, Dental, IVF, Hair Transplant",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Health Tourism in Turkey | Medlog",
+    title: "Premium Health Tourism in Turkey | Curelog",
     description: "Start your healing journey in Turkey. Top-tier clinics for Rhinoplasty, Dental, Hair Transplant, IVF, and advanced medical treatments.",
   },
   robots: {

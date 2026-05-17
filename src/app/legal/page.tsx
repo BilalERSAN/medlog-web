@@ -60,8 +60,8 @@ export default function LegalPage() {
               </h2>
               <p className="font-body-sm text-secondary">
                 {t({
-                  en: "Medlog is an experience-sharing platform. We share the medical journeys of people we know to provide guidance to international patients. We are not a medical facility, nor do we perform medical operations. Our consultancy is based on shared experiential knowledge and is provided free of charge to help you navigate your own health journey in Turkey.",
-                  ar: "ميدلوج هي منصة لتبادل الخبرات. نحن نشارك الرحلات الطبية للأشخاص الذين نعرفهم لتوفير التوجيه للمرضى الدوليين. نحن لسنا منشأة طبية، ولا نجري عمليات طبية. تعتمد استشاراتنا على المعرفة التجريبية المشتركة ويتم تقديمها مجاناً لمساعدتك في التنقل في رحلتك الصحية الخاصة في تركيا."
+                  en: "Curelog is an experience-sharing platform. We share the medical journeys of people we know to provide guidance to international patients. We are not a medical facility, nor do we perform medical operations. Our consultancy is based on shared experiential knowledge and is provided free of charge to help you navigate your own health journey in Turkey.",
+                  ar: "كيورلوج هي منصة لتبادل الخبرات. نحن نشارك الرحلات الطبية للأشخاص الذين نعرفهم لتوفير التوجيه للمرضى الدوليين. نحن لسنا منشأة طبية، ولا نجري عمليات طبية. تعتمد استشاراتنا على المعرفة التجريبية المشتركة ويتم تقديمها مجاناً لمساعدتك في التنقل في رحلتك الصحية الخاصة في تركيا."
                 })}
               </p>
             </div>

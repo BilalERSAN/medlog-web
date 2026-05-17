@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-surface-container-lowest w-full mt-auto border-t border-outline-variant">
       <div className="flex flex-col md:flex-row justify-between items-center py-12 px-12 max-w-[1280px] mx-auto gap-8">
-        <div className="text-xl font-bold tracking-tight text-primary">Medlog</div>
+        <div className="text-xl font-bold tracking-tight text-primary">Curelog</div>
         <div className="flex flex-wrap justify-center gap-8">
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/about">{t({ en: "About Us", ar: "معلومات عنا" })}</a>
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/blog">{t({ en: "Blog", ar: "المدونة" })}</a>
@@ -17,7 +17,7 @@ export default function Footer() {
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/legal">{t({ en: "Legal Warning", ar: "تحذير قانوني" })}</a>
         </div>
         <div className="font-body-md text-sm text-secondary text-center md:text-right" dir="ltr">
-          © {new Date().getFullYear()} Medlog | {t({ en: "Medical Guidance & Experience Sharing. All rights reserved.", ar: "التوجيه الطبي وتبادل الخبرات. كل الحقوق محفوظة." })}
+          © {new Date().getFullYear()} Curelog | {t({ en: "Medical Guidance & Experience Sharing. All rights reserved.", ar: "التوجيه الطبي وتبادل الخبرات. كل الحقوق محفوظة." })}
         </div>
       </div>
     </footer>

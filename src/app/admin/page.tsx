@@ -30,7 +30,7 @@ export default async function AdminPage() {
                 <span className="material-symbols-outlined text-white">admin_panel_settings</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Medlog İçerik Yönetimi</h1>
+                <h1 className="text-xl font-bold text-gray-900">Curelog İçerik Yönetimi</h1>
                 <p className="text-xs text-gray-500">Vercel Postgres & Blob Depolama</p>
               </div>
             </div>
