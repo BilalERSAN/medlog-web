@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { useState, useEffect } from "react";
 import { BlogPost, BilingualString } from "@/data/blog";
@@ -12,15 +13,17 @@ interface Props {
 
 export default function AdminDashboardClient({ initialBlogPosts, initialStories }: Props) {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState<"blogs" | "stories">("blogs");
+  const [activeTab, setActiveTab] = useState<"blogs" | "stories" | "pending">("blogs");
   const [blogs, setBlogs] = useState<BlogPost[]>(initialBlogPosts);
   const [stories, setStories] = useState<Story[]>(initialStories);
   
   // Modal states
   const [isBlogModalOpen, setIsBlogModalOpen] = useState(false);
   const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
+  const [editingStory, setEditingStory] = useState<Story | null>(null);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [deleteConfirmation, setDeleteConfirmation] = useState<{ isOpen: boolean; type: 'blog' | 'story'; id: string } | null>(null);
 
   // Helper to read BilingualString
   const getString = (val: BilingualString) => {
@@ -61,7 +64,6 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
 
   // Delete Handlers
   const handleDeleteBlog = async (id: string) => {
-    if (!confirm("Bu blog yazısını silmek istediğinize emin misiniz?")) return;
     try {
       const res = await fetch(`/api/admin/blog?id=${id}`, { method: "DELETE" });
       if (res.ok) {
@@ -76,7 +78,6 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
   };
 
   const handleDeleteStory = async (id: string) => {
-    if (!confirm("Bu hasta hikayesini silmek istediğinize emin misiniz?")) return;
     try {
       const res = await fetch(`/api/admin/stories?id=${id}`, { method: "DELETE" });
       if (res.ok) {
@@ -135,12 +136,30 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
             }`}
           >
             <span className="material-symbols-outlined text-lg">forum</span>
-            <span>Hasta Hikayeleri ({stories.length})</span>
+            <span>Hasta Hikayeleri ({stories.filter(s => s.status !== 'pending').length})</span>
+          </button>
+          <button
+            onClick={() => setActiveTab("pending")}
+            className={`flex items-center space-x-2 py-2.5 px-6 rounded-lg font-medium text-sm transition-all ${
+              activeTab === "pending"
+                ? "bg-white text-primary shadow-sm"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
+          >
+            <span className="material-symbols-outlined text-lg">pending_actions</span>
+            <span>Onay Bekleyenler ({stories.filter(s => s.status === 'pending').length})</span>
           </button>
         </div>
 
         <button
-          onClick={() => (activeTab === "blogs" ? setIsBlogModalOpen(true) : setIsStoryModalOpen(true))}
+          onClick={() => {
+            if (activeTab === "blogs") {
+              setIsBlogModalOpen(true);
+            } else {
+              setEditingStory(null);
+              setIsStoryModalOpen(true);
+            }
+          }}
           className="flex items-center space-x-2 bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl font-medium shadow-md shadow-primary/20 transition-all hover:scale-[1.02]"
         >
           <span className="material-symbols-outlined text-xl">add</span>
@@ -169,7 +188,7 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
                 )}
                 <div className="absolute top-3 right-3">
                   <button
-                    onClick={() => handleDeleteBlog(post.id)}
+                    onClick={() => setDeleteConfirmation({ isOpen: true, type: 'blog', id: post.id })}
                     className="bg-white/90 backdrop-blur-sm text-red-600 p-2 rounded-xl shadow-md hover:bg-red-600 hover:text-white transition-all flex items-center justify-center"
                     title="Sil"
                   >
@@ -199,7 +218,7 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {stories.map((story) => (
+          {(activeTab === 'pending' ? stories.filter(s => s.status === 'pending') : stories.filter(s => s.status !== 'pending')).map((story) => (
             <div
               key={story.id}
               className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-all flex flex-col group p-6"
@@ -222,18 +241,35 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">{story.patientName}</h3>
-                    <span className="text-xs text-primary font-medium px-2.5 py-0.5 bg-primary/10 rounded-full inline-block mt-0.5">
+                    <span className="text-xs text-primary font-medium px-2.5 py-0.5 bg-primary/10 rounded-full inline-block mt-0.5 mr-2">
                       {getString(story.departmentName)}
                     </span>
+                    {story.status === 'pending' && (
+                      <span className="text-xs text-orange-600 font-medium px-2.5 py-0.5 bg-orange-100 rounded-full inline-block mt-0.5">
+                        Onay Bekliyor
+                      </span>
+                    )}
                   </div>
                 </div>
-                <button
-                  onClick={() => handleDeleteStory(story.id)}
-                  className="text-gray-400 hover:text-red-600 p-2 rounded-xl hover:bg-red-50 transition-all flex items-center justify-center"
-                  title="Sil"
-                >
-                  <span className="material-symbols-outlined text-lg">delete</span>
-                </button>
+                <div className="flex space-x-1">
+                  <button
+                    onClick={() => {
+                      setEditingStory(story);
+                      setIsStoryModalOpen(true);
+                    }}
+                    className="text-gray-400 hover:text-blue-600 p-2 rounded-xl hover:bg-blue-50 transition-all flex items-center justify-center"
+                    title={story.status === 'pending' ? 'Onayla / Düzenle' : 'Düzenle'}
+                  >
+                    <span className="material-symbols-outlined text-lg">edit</span>
+                  </button>
+                  <button
+                    onClick={() => setDeleteConfirmation({ isOpen: true, type: 'story', id: story.id })}
+                    className="text-gray-400 hover:text-red-600 p-2 rounded-xl hover:bg-red-50 transition-all flex items-center justify-center"
+                    title="Sil"
+                  >
+                    <span className="material-symbols-outlined text-lg">delete</span>
+                  </button>
+                </div>
               </div>
               <p className="text-gray-600 text-sm italic line-clamp-4 flex-grow bg-gray-50/50 p-4 rounded-xl border border-gray-100/50 mb-4">
                 &quot;{getString(story.quote)}&quot;
@@ -249,6 +285,44 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
         </div>
       )}
     </div>
+
+    {/* Custom Delete Confirmation Modal */}
+    {deleteConfirmation?.isOpen && (
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+        <div className="bg-white rounded-3xl w-full max-w-[400px] min-w-[320px] p-8 shadow-2xl relative border border-gray-100 flex flex-col items-center">
+          <div className="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-6 shadow-inner">
+            <span className="material-symbols-outlined text-3xl">delete_forever</span>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-3">Emin misiniz?</h3>
+          <p className="text-gray-500 text-center mb-8 leading-relaxed">
+            {deleteConfirmation.type === 'blog' 
+              ? "Bu blog yazısını kalıcı olarak silmek istediğinize emin misiniz? Bu işlem geri alınamaz."
+              : "Bu hasta hikayesini kalıcı olarak silmek istediğinize emin misiniz? Bu işlem geri alınamaz."}
+          </p>
+          <div className="flex w-full space-x-4">
+            <button
+              onClick={() => setDeleteConfirmation(null)}
+              className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3.5 rounded-xl transition-all"
+            >
+              İptal
+            </button>
+            <button
+              onClick={() => {
+                if (deleteConfirmation.type === 'blog') {
+                  handleDeleteBlog(deleteConfirmation.id);
+                } else {
+                  handleDeleteStory(deleteConfirmation.id);
+                }
+                setDeleteConfirmation(null);
+              }}
+              className="flex-1 bg-red-600 hover:bg-red-700 text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-red-600/30"
+            >
+              Evet, Sil
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
 
     {/* Blog Modal - space-y-8 dışına çıkarıldı */}
     <BlogModal
@@ -282,17 +356,20 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
     {/* Story Modal - space-y-8 dışına çıkarıldı */}
     <StoryModal
       isOpen={isStoryModalOpen}
+      editingStory={editingStory}
       onClose={() => setIsStoryModalOpen(false)}
       onSubmit={async (data) => {
         setLoading(true);
         try {
+          // If editing, use POST to update (which will conflict and update in db)
+          // If we want it to be approved, we set status to 'approved' inside the modal.
           const res = await fetch("/api/admin/stories", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
           });
           if (res.ok) {
-            setMessage({ type: "success", text: "Hasta hikayesi başarıyla eklendi." });
+            setMessage({ type: "success", text: "Hasta hikayesi başarıyla kaydedildi." });
             setIsStoryModalOpen(false);
             await refreshData();
           } else {
@@ -579,12 +656,14 @@ function StoryModal({
   onSubmit,
   fileToBase64,
   loading,
+  editingStory,
 }: {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (data: Story) => Promise<void>;
   fileToBase64: (file: File) => Promise<string>;
   loading: boolean;
+  editingStory?: Story | null;
 }) {
   const [patientName, setPatientName] = useState("");
   const [departmentSlug, setDepartmentSlug] = useState("hair-transplant");
@@ -615,11 +694,33 @@ function StoryModal({
     { slug: "neurosurgery", en: "Neurosurgery (Brain & Nerve)", ar: "جراحة المخ والأعصاب" },
   ];
 
+  useEffect(() => {
+    if (editingStory) {
+      setPatientName(editingStory.patientName);
+      setDepartmentSlug(editingStory.departmentSlug);
+      setDepartmentNameEn(typeof editingStory.departmentName === 'string' ? editingStory.departmentName : editingStory.departmentName.en || "");
+      setDepartmentNameAr(typeof editingStory.departmentName === 'string' ? "" : editingStory.departmentName.ar || "");
+      setQuoteEn(typeof editingStory.quote === 'string' ? editingStory.quote : editingStory.quote.en || "");
+      setQuoteAr(typeof editingStory.quote === 'string' ? "" : editingStory.quote.ar || "");
+      setImage(editingStory.image || "");
+      setGalleryImages(editingStory.galleryImages || []);
+    } else {
+      setPatientName("");
+      setDepartmentSlug("hair-transplant");
+      setDepartmentNameEn("Hair Transplant and Aesthetics");
+      setDepartmentNameAr("زراعة الشعر وتجميله");
+      setQuoteEn("");
+      setQuoteAr("");
+      setImage("");
+      setGalleryImages([]);
+    }
+  }, [editingStory, isOpen]);
+
   if (!isOpen) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const id = "story-" + Date.now();
+    const id = editingStory ? editingStory.id : "story-" + Date.now();
     
     const storyData: Story = {
       id,
@@ -630,6 +731,7 @@ function StoryModal({
       image: image || "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
       galleryImages: galleryImages.length > 0 ? galleryImages : undefined,
       imagePosition: "center",
+      status: "approved", // When admin saves, it becomes approved
     };
 
     await onSubmit(storyData);
@@ -642,9 +744,11 @@ function StoryModal({
           <div className="flex justify-between items-center border-b border-gray-100 pb-5 mb-6">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
-                <span className="material-symbols-outlined">person_add</span>
+                <span className="material-symbols-outlined">{editingStory ? 'edit' : 'person_add'}</span>
               </div>
-              <h2 className="text-xl font-bold text-gray-900">Yeni Hasta Hikayesi Ekle</h2>
+              <h2 className="text-xl font-bold text-gray-900">
+                {editingStory ? "Hasta Hikayesini Düzenle / Onayla" : "Yeni Hasta Hikayesi Ekle"}
+              </h2>
             </div>
             <button onClick={onClose} className="text-gray-400 hover:text-gray-600 p-2 rounded-xl hover:bg-gray-50">
               <span className="material-symbols-outlined">close</span>
@@ -832,7 +936,7 @@ function StoryModal({
                 disabled={loading}
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-xl font-medium shadow-md shadow-primary/20 transition-all disabled:opacity-50"
               >
-                {loading ? "Kaydediliyor..." : "Hikayeyi Kaydet"}
+                {loading ? "Kaydediliyor..." : (editingStory ? "Kaydet ve Onayla" : "Hikayeyi Kaydet")}
               </button>
             </div>
           </form>

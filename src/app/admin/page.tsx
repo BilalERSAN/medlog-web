@@ -3,7 +3,7 @@ import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import LogoutButton from "./LogoutButton";
 import { getBlogPosts } from "@/data/blog";
-import { getStories } from "@/data/stories";
+import { getAllStories } from "@/data/stories";
 import AdminDashboardClient from "./AdminDashboardClient";
 
 export const dynamic = "force-dynamic";
@@ -17,7 +17,7 @@ export default async function AdminPage() {
 
   const [blogPostsList, storiesList] = await Promise.all([
     getBlogPosts(),
-    getStories(),
+    getAllStories(),
   ]);
 
   return (

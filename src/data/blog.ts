@@ -764,6 +764,243 @@ const initialBlogPosts: BlogPost[] = [
     },
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200",
   },
+  {
+    id: "10",
+    slug: "medical-tourism-turkey-safety-accreditation",
+    title: {
+      en: "Medical Tourism in Turkey: Safety, JCI Accreditation & Quality Standards",
+      ar: "السياحة الطبية في تركيا: السلامة، اعتماد JCI ومعايير الجودة",
+    },
+    excerpt: {
+      en: "Is it safe to travel to Turkey for medical procedures? Learn about JCI accreditations, strict healthcare regulations, and why Turkey is a global medical hub.",
+      ar: "هل من الآمن السفر إلى تركيا لإجراءات طبية؟ تعرف على اعتمادات JCI واللوائح الصحية الصارمة ولماذا تعتبر تركيا مركزاً طبياً عالمياً.",
+    },
+    content: {
+      en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Why Turkey is the Safest Choice for Medical Tourism</h1>
+  <p className="text-base sm:text-lg text-gray-600">When considering healthcare abroad, safety and quality are the primary concerns. Turkey has rapidly become a global powerhouse in <strong>medical tourism</strong>, not just because of affordable prices, but due to its uncompromising adherence to international medical standards.</p>
+
+  <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-sky-950">1. JCI Accredited Hospitals</h2>
+    <p className="text-sky-900">Turkey ranks among the top countries worldwide for the highest number of Joint Commission International (JCI) accredited healthcare facilities. This accreditation means:</p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
+      <li><strong>Strict Hygiene Protocols:</strong> Infection rates are kept incredibly low.</li>
+      <li><strong>Patient Safety First:</strong> Rigorous checks at every step of your medical journey.</li>
+      <li><strong>World-Class Infrastructure:</strong> Operating rooms equipped with the latest technology.</li>
+    </ul>
+  </div>
+
+  <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-emerald-950">2. Highly Trained Medical Professionals</h2>
+    <p className="text-emerald-900">Turkish physicians and surgeons undergo some of the most rigorous medical training in the world. Many have completed fellowships in the United States or Europe, ensuring they are well-versed in the latest global medical advancements and fluent in English, bridging any communication gaps.</p>
+  </div>
+
+  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
+    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
+    Choosing Turkey for your medical needs means choosing a destination where your health, safety, and comfort are fiercely protected by international standards.
+  </div>
+</div>`,
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">لماذا تعتبر تركيا الخيار الأكثر أماناً للسياحة الطبية</h1>
+  <p className="text-base sm:text-lg text-gray-600">عند التفكير في الرعاية الصحية بالخارج، تكون السلامة والجودة هي المخاوف الرئيسية. أصبحت تركيا قوة عالمية في <strong>السياحة الطبية</strong> ليس فقط بسبب الأسعار المعقولة، ولكن لالتزامها الصارم بالمعايير الطبية الدولية.</p>
+
+  <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-sky-950">1. مستشفيات معتمدة من JCI</h2>
+    <p className="text-sky-900">تحتل تركيا مرتبة متقدمة عالمياً في عدد منشآت الرعاية الصحية المعتمدة من اللجنة الدولية المشتركة (JCI). هذا الاعتماد يعني:</p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
+      <li><strong>بروتوكولات نظافة صارمة:</strong> الحفاظ على معدلات انتقال العدوى منخفضة جداً.</li>
+      <li><strong>سلامة المريض أولاً:</strong> فحوصات دقيقة في كل خطوة من رحلتك الطبية.</li>
+      <li><strong>بنية تحتية عالمية:</strong> غرف عمليات مجهزة بأحدث التقنيات.</li>
+    </ul>
+  </div>
+
+  <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-emerald-950">2. مهنيون طبيون مدربون تدريباً عالياً</h2>
+    <p className="text-emerald-900">يخضع الأطباء والجراحون الأتراك لأكثر التدريبات الطبية صرامة في العالم. وقد أكمل العديد منهم زمالات في الولايات المتحدة أو أوروبا، مما يضمن إلمامهم بأحدث التطورات الطبية العالمية وإجادتهم للغة الإنجليزية لسد أي فجوات في التواصل.</p>
+  </div>
+
+  <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
+    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
+    إن اختيار تركيا لتلبية احتياجاتك الطبية يعني اختيار وجهة تتم فيها حماية صحتك وسلامتك وراحتك بشدة وفقاً للمعايير الدولية.
+  </div>
+</div>`,
+    },
+    date: {
+      en: "May 20, 2026",
+      ar: "٢٠ مايو ٢٠٢٦",
+    },
+    author: {
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
+    },
+    category: {
+      en: "Medical Tourism",
+      ar: "السياحة الطبية",
+    },
+    tags: {
+      en: ["Medical Tourism Turkey", "JCI Hospitals Istanbul", "Safe Surgery Abroad", "Health Tourism Guide", "Turkey Healthcare"],
+      ar: ["السياحة الطبية تركيا", "مستشفيات JCI إسطنبول", "جراحة آمنة في الخارج", "دليل السياحة الصحية", "الرعاية الصحية في تركيا"],
+    },
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    id: "11",
+    slug: "orthopedic-surgery-turkey-joint-replacement",
+    title: {
+      en: "Advanced Orthopedic Surgery in Turkey: Knee and Hip Replacements",
+      ar: "جراحة العظام المتقدمة في تركيا: استبدال مفصل الركبة والورك",
+    },
+    excerpt: {
+      en: "Regain your mobility with robotic-assisted orthopedic surgeries in Turkey. Discover the benefits of advanced joint replacements and rapid recovery protocols.",
+      ar: "استعد قدرتك على الحركة من خلال جراحات العظام بمساعدة الروبوت في تركيا. اكتشف فوائد استبدال المفاصل المتقدمة وبروتوكولات التعافي السريع.",
+    },
+    content: {
+      en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Regaining Mobility with Precision Orthopedics</h1>
+  <p className="text-base sm:text-lg text-gray-600">Chronic joint pain can severely limit your quality of life. Fortunately, <strong>orthopedic surgery in Turkey</strong> has embraced robotic technology and minimally invasive techniques, making joint replacements safer and more precise than ever.</p>
+
+  <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-sky-950">1. Robotic-Assisted Joint Replacements</h2>
+    <p className="text-sky-900">For knee and hip arthroplasties, many top Turkish hospitals utilize systems like MAKOplasty. This robotic arm technology provides surgeons with a 3D model of your joint, ensuring the implant is positioned with sub-millimeter accuracy.</p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
+      <li><strong>Custom Fit:</strong> Implants perfectly match your unique anatomy.</li>
+      <li><strong>Less Pain:</strong> Minimal tissue disruption means reduced post-operative pain.</li>
+      <li><strong>Longevity:</strong> Precise alignment increases the lifespan of the implant.</li>
+    </ul>
+  </div>
+
+  <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-emerald-950">2. Rapid Recovery and Rehabilitation</h2>
+    <p className="text-emerald-900">A successful surgery is only half the journey. The post-operative care in Turkey includes specialized physiotherapy programs tailored to get you back on your feet quickly. Patients often start walking with assistance just hours after surgery.</p>
+  </div>
+
+  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
+    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
+    With top-tier technology and comprehensive rehab, Turkey offers a complete, affordable pathway to a pain-free, active life.
+  </div>
+</div>`,
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">استعادة القدرة على الحركة بجراحة العظام الدقيقة</h1>
+  <p className="text-base sm:text-lg text-gray-600">يمكن أن يحد ألم المفاصل المزمن بشدة من جودة حياتك. لحسن الحظ، اعتمدت <strong>جراحة العظام في تركيا</strong> التكنولوجيا الروبوتية والتقنيات طفيفة التوغل، مما جعل استبدال المفاصل أكثر أماناً ودقة من أي وقت مضى.</p>
+
+  <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-sky-950">1. استبدال المفاصل بمساعدة الروبوت</h2>
+    <p className="text-sky-900">بالنسبة لعمليات تقويم مفصل الركبة والورك، تستخدم العديد من أفضل المستشفيات التركية أنظمة مثل MAKOplasty. توفر تقنية الذراع الروبوتية هذه للجراحين نموذجاً ثلاثي الأبعاد لمفصلك، مما يضمن وضع الغرسة بدقة متناهية.</p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
+      <li><strong>ملاءمة مخصصة:</strong> الغرسات تتطابق تماماً مع تشريحك الفريد.</li>
+      <li><strong>ألم أقل:</strong> الحد الأدنى من اضطراب الأنسجة يعني تقليل الألم بعد الجراحة.</li>
+      <li><strong>طول العمر:</strong> المحاذاة الدقيقة تزيد من عمر الغرسة.</li>
+    </ul>
+  </div>
+
+  <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-emerald-950">2. التعافي السريع وإعادة التأهيل</h2>
+    <p className="text-emerald-900">الجراحة الناجحة هي نصف الرحلة فقط. تشمل رعاية ما بعد الجراحة في تركيا برامج علاج طبيعي متخصصة مصممة لإعادتك إلى الوقوف على قدميك بسرعة. غالباً ما يبدأ المرضى في المشي بمساعدة بعد ساعات قليلة من الجراحة.</p>
+  </div>
+
+  <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
+    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
+    من خلال التكنولوجيا المتطورة وإعادة التأهيل الشاملة، تقدم تركيا مساراً كاملاً وبأسعار معقولة لحياة نشطة خالية من الألم.
+  </div>
+</div>`,
+    },
+    date: {
+      en: "May 22, 2026",
+      ar: "٢٢ مايو ٢٠٢٦",
+    },
+    author: {
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
+    },
+    category: {
+      en: "Orthopedics",
+      ar: "جراحة العظام",
+    },
+    tags: {
+      en: ["Orthopedic Surgery Turkey", "Knee Replacement", "Hip Replacement", "Robotic Surgery", "Joint Pain Relief"],
+      ar: ["جراحة العظام تركيا", "استبدال الركبة", "استبدال الورك", "الجراحة الروبوتية", "تخفيف آلام المفاصل"],
+    },
+    image: "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&q=80&w=1200",
+  },
+  {
+    id: "12",
+    slug: "cardiology-hospitals-turkey-heart-surgery",
+    title: {
+      en: "World-Class Cardiology in Turkey: Bypass Surgeries and Heart Care",
+      ar: "أمراض القلب ذات المستوى العالمي في تركيا: جراحات تحويل المسار والعناية بالقلب",
+    },
+    excerpt: {
+      en: "Turkey's cardiology centers are renowned for complex heart surgeries, minimally invasive bypasses, and pediatric cardiology with outstanding success rates.",
+      ar: "تشتهر مراكز أمراض القلب في تركيا بجراحات القلب المعقدة، وتحويل المسار طفيف التوغل، وأمراض قلب الأطفال مع معدلات نجاح باهرة.",
+    },
+    content: {
+      en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Healing the Heart: Advanced Cardiology Operations</h1>
+  <p className="text-base sm:text-lg text-gray-600">When dealing with cardiovascular health, there is no room for compromise. <strong>Cardiology hospitals in Turkey</strong> are equipped with state-of-the-art hybrid operating rooms and are staffed by world-renowned cardiovascular surgeons.</p>
+
+  <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-sky-950">1. Minimally Invasive Heart Surgery</h2>
+    <p className="text-sky-900">Traditional open-heart surgery requires splitting the breastbone, leading to long recovery times. Modern Turkish clinics excel in minimally invasive procedures, accessing the heart through small incisions between the ribs.</p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
+      <li><strong>Coronary Artery Bypass Grafting (CABG):</strong> Performed with extreme precision.</li>
+      <li><strong>Valve Repair & Replacement:</strong> Including TAVI procedures which don't require open surgery.</li>
+      <li><strong>Faster Recovery:</strong> Patients leave the hospital sooner and experience less scarring.</li>
+    </ul>
+  </div>
+
+  <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-emerald-950">2. Comprehensive Cardiac Care</h2>
+    <p className="text-emerald-900">Beyond surgery, these medical centers offer complete diagnostic services (like advanced echocardiograms and cardiac MRIs) and specialized post-operative intensive care units dedicated solely to cardiovascular patients.</p>
+  </div>
+
+  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
+    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
+    For life-saving cardiac procedures, Turkey combines elite medical talent with compassionate care, providing a safe harbor for heart patients globally.
+  </div>
+</div>`,
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
+  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">شفاء القلب: عمليات أمراض القلب المتقدمة</h1>
+  <p className="text-base sm:text-lg text-gray-600">عند التعامل مع صحة القلب والأوعية الدموية، لا يوجد مجال للتسوية. تم تجهيز <strong>مستشفيات أمراض القلب في تركيا</strong> بغرف عمليات هجينة حديثة ويعمل بها جراحو قلب وأوعية دموية مشهورون عالمياً.</p>
+
+  <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-sky-950">1. جراحة القلب طفيفة التوغل</h2>
+    <p className="text-sky-900">تتطلب جراحة القلب المفتوح التقليدية شق عظم القص، مما يؤدي إلى فترات تعافي طويلة. تتفوق العيادات التركية الحديثة في الإجراءات طفيفة التوغل، حيث تصل إلى القلب من خلال شقوق صغيرة بين الضلوع.</p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
+      <li><strong>تحويل مسار الشريان التاجي (CABG):</strong> يتم إجراؤها بدقة متناهية.</li>
+      <li><strong>إصلاح واستبدال الصمامات:</strong> بما في ذلك إجراءات TAVI التي لا تتطلب جراحة مفتوحة.</li>
+      <li><strong>تعافي أسرع:</strong> يغادر المرضى المستشفى في وقت أقرب ويعانون من ندبات أقل.</li>
+    </ul>
+  </div>
+
+  <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
+    <h2 className="text-xl font-bold text-emerald-950">2. رعاية قلبية شاملة</h2>
+    <p className="text-emerald-900">ما وراء الجراحة، تقدم هذه المراكز الطبية خدمات تشخيصية كاملة (مثل مخطط صدى القلب المتقدم وتصوير القلب بالرنين المغناطيسي) ووحدات عناية مركزة متخصصة بعد الجراحة مكرسة حصرياً لمرضى القلب والأوعية الدموية.</p>
+  </div>
+
+  <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
+    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
+    بالنسبة لإجراءات القلب المنقذة للحياة، تجمع تركيا بين المواهب الطبية النخبوية والرعاية العطوفة، وتوفر ملاذاً آمناً لمرضى القلب على مستوى العالم.
+  </div>
+</div>`,
+    },
+    date: {
+      en: "May 25, 2026",
+      ar: "٢٥ مايو ٢٠٢٦",
+    },
+    author: {
+      en: "Curelog Editorial Team",
+      ar: "فريق تحرير كيورلوج",
+    },
+    category: {
+      en: "Cardiology",
+      ar: "أمراض القلب",
+    },
+    tags: {
+      en: ["Cardiology Turkey", "Heart Surgery Istanbul", "CABG Surgery", "Heart Valve Replacement", "Medical Tourism Turkey"],
+      ar: ["أمراض القلب تركيا", "جراحة القلب إسطنبول", "جراحة تحويل المسار", "استبدال صمام القلب", "السياحة الطبية تركيا"],
+    },
+    image: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1200",
+  }
 ];
 
 declare global {

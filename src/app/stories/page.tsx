@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StoriesFilter from "@/components/StoriesFilter";
 import { getStories } from "@/data/stories";
+import PatientStoryModalClient from "./PatientStoryModalClient";
 
 export const dynamic = "force-dynamic";
 
@@ -10,6 +11,15 @@ export const metadata = {
   description: "Read real stories and experiences from our patients at Curelog.",
   alternates: { canonical: '/stories' },
 };
+
+const departments = [
+  { slug: "hair-transplant", en: "Hair Transplant and Aesthetics", ar: "زراعة الشعر وتجميله" },
+  { slug: "ivf-fertility", en: "IVF and Infertility", ar: "أطفال الأنابيب والعقم" },
+  { slug: "plastic-surgery", en: "Plastic, Reconstructive and Aesthetic Surgery", ar: "الجراحة التجميلية والترميمية" },
+  { slug: "dentistry", en: "Oral and Dental Health", ar: "صحة الفم والأسنان" },
+  { slug: "ophthalmology", en: "Ophthalmology (Eye Diseases)", ar: "طب العيون" },
+  { slug: "neurosurgery", en: "Neurosurgery (Brain & Nerve)", ar: "جراحة المخ والأعصاب" },
+];
 
 export default async function StoriesPage() {
   const storiesList = await getStories();
@@ -25,9 +35,12 @@ export default async function StoriesPage() {
               <span className="material-symbols-outlined text-on-primary text-5xl">volunteer_activism</span>
             </div>
             <h1 className="font-h1 text-on-background mb-4">Patient Stories</h1>
-            <p className="font-body-lg text-secondary max-w-2xl">
+            <p className="font-body-lg text-secondary max-w-2xl mb-10">
               Discover how our dedicated medical experts and advanced treatments have positively impacted the lives of our patients. Real stories, real healing.
             </p>
+            
+            {/* Hasta Hikayesi Ekleme Modalı */}
+            <PatientStoryModalClient departments={departments} />
           </div>
         </section>
 
