@@ -23,70 +23,155 @@ const initialBlogPosts: BlogPost[] = [
     id: "1",
     slug: "future-of-hair-transplant-dhi-vs-fue",
     title: {
-      en: "The Future of Hair Transplant in Turkey: DHI vs FUE Techniques",
-      ar: "مستقبل زراعة الشعر في تركيا: مقارنة بين تقنيتي DHI و FUE",
+      en: "The Future of Hair Transplant in Turkey: Sapphire FUE vs DHI Techniques",
+      ar: "مستقبل زراعة الشعر في تركيا: دليل شامل للمقارنة بين تقنيتي السفير FUE و DHI",
     },
     excerpt: {
-      en: "Discover why Turkey is the global leader in hair restoration. Learn the differences between Direct Hair Implantation (DHI) and Sapphire FUE techniques.",
-      ar: "اكتشف لماذا تعتبر تركيا الرائدة عالمياً في استعادة الشعر. تعرف على الفروق بين تقنية زراعة الشعر المباشرة (DHI) واقتطاف البصيلات بالياقوت (FUE).",
+      en: "Planning a hair transplant in Turkey? Discover why Istanbul is the global capital for hair restoration. Compare Sapphire FUE vs DHI costs, permanent results, and recovery timelines.",
+      ar: "هل تخطط لإجراء زراعة الشعر في تركيا؟ اكتشف لماذا إسطنبول هي العاصمة العالمية لاستعادة الشعر، وقارن بين تقنيات السفير FUE و DHI من حيث التكلفة والنتائج والتعافي.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Transforming Lives with Advanced Hair Restoration</h1>
-  <p className="text-base sm:text-lg text-gray-600">Turkey has firmly established itself as the world capital for <strong>hair transplantation</strong>, combining elite medical expertise with cutting-edge technology. For patients dealing with alopecia or thinning hair, selecting the right technique is paramount to achieving a dense, natural-looking hairline.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">The Ultimate Guide to Hair Transplant in Turkey: Sapphire FUE vs DHI</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Turkey has firmly established itself as the undisputed global capital for <strong>hair transplant turkey </strong> procedures. Every year, hundreds of thousands of international patients travel to elite clinics in Istanbul to restore their thinning hair and receding hairlines. Combining world-class trichological expertise, state-of-the-art medical infrastructure, and remarkably competitive all-inclusive packages, Turkish clinics offer life-changing aesthetic transformations.
+  </p>
+
+  <p className="text-base text-gray-600">
+    When preparing for a clinical procedure, the most critical decision involves choosing the most suitable extraction and implantation methodology. Modern medical tourism primarily revolves around two revolutionary innovations: <strong>Sapphire FUE (Follicular Unit Extraction)</strong> and <strong>DHI (Direct Hair Implantation)</strong>. Both techniques yield exceptional, lifelong density, yet their operational frameworks serve distinct patterns of hair loss.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Direct Hair Implantation (DHI)</h2>
-    <p className="text-sky-900">The DHI method utilizes a patented tool known as the <strong>Choi Implanter Pen</strong>. This advanced instrument allows surgeons to implant hair follicles one by one directly into the recipient area without creating prior incisions.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Maximum Density:</strong> Total control over the depth, angle, and direction of each hair.</li>
-      <li><strong>Faster Recovery:</strong> Minimal tissue trauma leads to rapid healing and zero visible scarring.</li>
-      <li><strong>No Shaving Needed:</strong> Often ideal for patients who prefer not to shave their entire head.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Direct Hair Implantation (DHI) Technique</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      The DHI method represents an evolutionary leap in precision hair restoration. Unlike conventional strategies, the extraction and structural placement of hair grafts happen almost concurrently. Surgeons utilize a specialized medical device known as the <strong>Choi Implanter Pen</strong> to load extracted hair follicles and directly implant them into the recipient thinning zones.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Maximum Structural Density:</strong> Provides the operating surgeon absolute control over the precise depth, angulation, and exact natural direction of each individual hair follicle.</li>
+      <li><strong>No Total Shaving Required:</strong> Highly beneficial for female patients or individuals seeking targeted crown or hairline enhancement without undergoing a full medical shave.</li>
+      <li><strong>Minimized Tissue Trauma:</strong> Bypassing the need for prior micro-channel incisions drastically limits scalp trauma, minimizing bleeding and speeding up healing.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Sapphire FUE (Follicular Unit Extraction)</h2>
-    <p className="text-emerald-900">Sapphire FUE utilizes blades made from precious <strong>sapphire crystals</strong> rather than traditional steel. These ultra-sharp, smooth blades create micro-channels that minimize tissue trauma.</p>
-    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>Extensive Coverage:</strong> Highly recommended for covering extensive baldness in a single session.</li>
-      <li><strong>Smooth Incisions:</strong> Sapphire blades reduce vibration, allowing for closer graft placement.</li>
-      <li><strong>Natural Results:</strong> Blends perfectly with existing hair architecture.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Sapphire FUE (Follicular Unit Extraction)</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Sapphire FUE upgrades traditional FUE by substituting standard surgical steel blades with micro-blades crafted from ultra-pure, precious <strong>sapphire crystals</strong>. This technological refinement allows for microscopic incision planning within the recipient area.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>High Volume Capability:</strong> The absolute gold standard for patients exhibiting extensive androgenetic alopecia, allowing the safe transplantation of up to 5,000+ grafts in a single medical session.</li>
+      <li><strong>Flawless Micro-Channels:</strong> The smooth crystal blades create perfectly clean, V-shaped incisions, allowing hair grafts to be placed tightly together for a fuller look.</li>
+      <li><strong>Antibacterial Properties:</strong> Sapphire gemstones feature incredibly smooth surfaces that reduce skin vibration and prevent bacterial adhesion, protecting the scalp during recovery.</li>
     </ul>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    Whether you opt for DHI or FUE, selecting an accredited clinic in Istanbul with experienced surgeons ensures permanent, life-changing results.
+  <h2 className="text-2xl font-bold text-gray-900 pt-4">Comparative Analysis: Making the Right Clinical Choice</h2>
+  <div className="overflow-x-auto border border-gray-100 rounded-xl shadow-sm">
+    <table className="w-full text-left border-collapse">
+      <thead>
+        <tr className="bg-gray-50 border-b border-gray-100">
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">Feature / Metric</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">Sapphire FUE Technique</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">DHI Choi Pen Method</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-50 text-sm sm:text-base text-gray-600">
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">Ideal Candidates</td>
+          <td className="p-4">Extensive baldness / large open areas</td>
+          <td className="p-4">High-density areas, eyebrow design, unshaven lines</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">Max Grafts per Session</td>
+          <td className="p-4">Up to 5,000 - 5,500 grafts</td>
+          <td className="p-4">Approx. 3,500 - 4,000 grafts max</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">Shaving Requirements</td>
+          <td className="p-4">Full head shaving is mandatory</td>
+          <td className="p-4">Only donor area requires medical trimming</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">Recovery Timeline</td>
+          <td className="p-4">Full scabbing recovery in 10-12 days</td>
+          <td className="p-4">Accelerated healing in 7-9 days</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+
+
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">تحويل الحياة مع استعادة الشعر المتقدمة</h1>
-  <p className="text-base sm:text-lg text-gray-600">لقد رسخت تركيا مكانتها كعاصمة عالمية <strong>لِزراعة الشعر</strong>، حيث تجمع بين الخبرة الطبية النخبوية وأحدث التقنيات. بالنسبة للمرضى الذين يعانون من الثعلبة أو ترقق الشعر، فإن اختيار التقنية الصحيحة أمر بالغ الأهمية لتحقيق خط شعر كثيف وطبيعي المظهر.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">الدليل الشامل لزراعة الشعر في تركيا: مقارنة بين تقنية السفير FUE و DHI</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    لقد نجحت تركيا في ترسيخ مكانتها كعاصمة عالمية أولى لإجراءات <strong>زراعة الشعر في تركيا (saç ekimi turkey)</strong>. وفي كل عام، يتوافد مئات الآلاف من المرضى الدوليين إلى العيادات المرموقة في إسطنبول لاستعادة شعرهم المتساقط وعلاج تراجع خط الشعر الطبيعي، مستفيدين من الباقات الشاملة والمزايا التنافسية الكبرى.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. زراعة الشعر المباشرة (DHI)</h2>
-    <p className="text-sky-900">تستخدم طريقة DHI أداة حاصلة على براءة اختراع تعرف باسم <strong>قلم تشوي</strong>. تسمح هذه الأداة المتقدمة للجراحين بزرع بصيلات الشعر واحدة تلو الأخرى مباشرة في المنطقة المستقبلة دون عمل شقوق مسبقة.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>أقصى كثافة:</strong> التحكم الكامل في عمق وزاوية واتجاه كل شعرة.</li>
-      <li><strong>تعافي أسرع:</strong> الحد الأدنى من صدمة الأنسجة يؤدي إلى الشفاء السريع وعدم وجود ندبات مرئية.</li>
-      <li><strong>بدون حلاقة:</strong> مثالي للمرضى الذين يفضلون عدم حلاقة الرأس بالكامل.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. تقنية زراعة الشعر المباشرة (DHI) عبر أقلام تشوي</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تمثل طريقة DHI طفرة نوعية في دقة عمليات ترميم الشعر وتكثيفه، حيث يتم دمج مرحلتي فتح القنوات وزراعة البصيلات في خطوة واحدة متزامنة باستخدام أداة طبية متطورة تُعرف باسم <strong>قلم تشوي (Choi Implanter Pen)</strong>.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>كثافة طبيعية فائقة:</strong> تمنح الطبيب الجراح تحكماً مطلقاً في زاوية وعمق واتجاه نمو كل بصيلة بشكل دقيق للغاية.</li>
+      <li><strong>إمكانية الزراعة بدون حلاقة:</strong> الخيار المثالي للنساء وللأشخاص الذين يرغبون في تكثيف الفراغات دون الحاجة لحلاقة الرأس كاملاً.</li>
+      <li><strong>تعافي سريع للأنسجة:</strong> نظراً لعدم وجود شقوق مسبقة، يقل النزيف بشكل ملحوظ وتتسارع وتيرة الشفاء.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. تقنية FUE بالياقوت (اقتطاف البصيلات)</h2>
-    <p className="text-emerald-900">تستخدم تقنية FUE شفرات مصنوعة من <strong>بلورات الياقوت</strong> الكريمة بدلاً من الفولاذ التقليدي. تُنشئ هذه الشفرات فائقة الحدة والنعومة قنوات دقيقة تقلل من صدمة الأنسجة.</p>
-    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>تغطية واسعة:</strong> يُنصح به بشدة لتغطية الصلع الواسع في جلسة واحدة.</li>
-      <li><strong>شقوق دقيقة:</strong> شفرات الياقوت تقلل الاهتزاز، مما يسمح بوضع البصيلات بكثافة أعلى.</li>
-      <li><strong>نتائج طبيعية:</strong> تندمج تماماً مع بنية الشعر الطبيعية.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. تقنية الاقتطاف باستخدام شفرات الياقوت (Sapphire FUE)</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      تعتمد تقنية السفير FUE على استبدال الشفرات المعدنية التقليدية بشفرات دقيقة مصنوعة من <strong>أحجار الياقوت الكريستالية</strong> النظيفة، مما يسمح بفتح قنوات دقيقة للغاية ومتقاربة في فروة الرأس.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>تغطية المساحات الكبيرة:</strong> المعيار الذهبي لعلاج حالات الصلع الوراثي الواسع، حيث تتيح زراعة ما يصل إلى أكثر من 5000 بصيلة في جلسة واحدة.</li>
+      <li><strong>قنوات ميكروسكوبية منتظمة:</strong> تساعد شفرات السفير الناعمة في تقليل التورم وضمان تقارب البصيلات لنتائج ممتلئة.</li>
+      <li><strong>حماية مضادة للبكتيريا:</strong> يتميز حجر الياقوت بسطح أملس يمنع التصاق الميكروبات ويحمي الفروة أثناء فترة النقاهة.</li>
     </ul>
   </div>
 
+  <h2 className="text-2xl font-bold text-gray-900 pt-4">جدول مقارنة تفصيلي لاختيار التقنية الأنسب لحالتك</h2>
+  <div className="overflow-x-auto border border-gray-100 rounded-xl shadow-sm">
+    <table className="w-full text-right border-collapse" dir="rtl">
+      <thead>
+        <tr className="bg-gray-50 border-b border-gray-100">
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">الميزة / المعيار</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">تقنية السفير Sapphire FUE</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">تقنية أقلام تشوي DHI</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-50 text-sm sm:text-base text-gray-600">
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">الحالة المثالية</td>
+          <td className="p-4">الصلع الواسع والمساحات المفتوحة الكبيرة</td>
+          <td className="p-4">تكثيف الفراغات، وتصميم اللحية، والحالات بدون حلاقة</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">أقصى عدد بصيلات بالجلسة</td>
+          <td className="p-4">يصل إلى 5000 - 5500 بصيلة</td>
+          <td className="p-4">حوالي 3500 - 4000 بصيلة كحد أقصى</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">شروط حلاقة الرأس</td>
+          <td className="p-4">حلاقة كاملة للفروة إلزامية</td>
+          <td className="p-4">حلاقة المنطقة المانحة الخلفية فقط</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">مدة التئام القشور</td>
+          <td className="p-4">من 10 إلى 12 يوماً</td>
+          <td className="p-4">من 7 إلى 9 أيام فقط</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    سواء اخترت DHI أو FUE، فإن اختيار عيادة معتمدة في إسطنبول مع جراحين ذوي خبرة يضمن نتائج دائمة ومغيرة للحياة.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">لماذا تختار منصة كيورلوج تركيا؟</strong>
+    نحن في كيورلوج نتعاون حصرياً مع أرقى العيادات المعتمدة دولياً من اللجنة المشتركة الدولية (JCI) وأمهر أطباء زراعة الشعر في إسطنبول، لنوفر لك باقات متكاملة تشمل الإقامة الفاخرة، النقل بـ VIP، والترجمة الطبية الفورية لضمان رحلة علاجية آمنة وناجحة بنسبة 100%.
   </div>
 </div>`,
     },
@@ -112,60 +197,79 @@ const initialBlogPosts: BlogPost[] = [
     id: "2",
     slug: "dental-aesthetics-hollywood-smile-turkey",
     title: {
-      en: "Dental Aesthetics & Hollywood Smile: The Art of Digital Smile Design in Turkey",
-      ar: "تجميل الأسنان وابتسامة هوليوود: فن تصميم الابتسامة الرقمي في تركيا",
+      en: "Dental Aesthetics & Hollywood Smile Turkey: Best Veneers and Digital Smile Design",
+      ar: "تجميل الأسنان وابتسامة هوليوود في تركيا: دليل عدسات الإيماكس وتيجان الزركونيا المتقدمة",
     },
     excerpt: {
-      en: "Explore how affordable E-max veneers, zirconia crowns, and Digital Smile Design CAD/CAM technology in Turkey give international patients flawless smiles.",
-      ar: "استكشف كيف تمنح قشور E-max وتيجان الزركونيا وتكنولوجيا تصميم الابتسامة الرقمية CAD/CAM في تركيا المرضى الدوليين ابتسامات لا تشوبها شائبة بأسعار معقولة.",
+      en: "Looking for a affordable Hollywood Smile in Turkey? Read about E-max veneers, durable zirconia crowns, and advanced CAD/CAM Digital Smile Design technology in Istanbul.",
+      ar: "تبحث عن ابتسامة هوليوود في تركيا؟ تعرف على أسعار وتفاصيل قشور E-max، وتيجان الزركونيا المتينة، وتكنولوجيا تصميم الابتسامة الرقمية ثلاثية الأبعاد في إسطنبول.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">The Ultimate Hollywood Smile Makeover</h1>
-  <p className="text-base sm:text-lg text-gray-600">A beautiful smile transforms facial aesthetics and boosts self-confidence. In Turkey, <strong>cosmetic dentistry</strong> combines superior artistic craftsmanship with digital precision to create the world-renowned <strong>'Hollywood Smile'</strong>.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">The Ultimate Hollywood Smile Makeover: Complete Guide to Dental Aesthetics in Turkey</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    A luminous, symmetrical smile is the cornerstone of facial aesthetics and self-confidence. Over the last decade, <strong>dental aesthetics turkey </strong> has grown into a leading global phenomenon. Thousands of international patients select Istanbul for comprehensive cosmetic dental restorations, attracted by master prosthodontists, advanced clinic software, and highly cost-effective treatment paths.
+  </p>
+
+  <p className="text-base text-gray-600">
+    Modern smile makeovers are no longer based on standardized approximations. By deploying cutting-edge digital dentistry, top-tier aesthetic clinics analyze every detail of an individual's facial framework to construct a tailored, durable, and fully natural smile line.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Digital Smile Design (DSD)</h2>
-    <p className="text-sky-900">Before any physical procedure begins, advanced <strong>3D intraoral scanners</strong> capture exact digital impressions of your teeth. Utilizing CAD/CAM software, aesthetic dentists evaluate your facial symmetry, lip dynamics, and gum proportions to preview the exact final outcome.</p>
+    <h2 className="text-2xl font-bold text-sky-950">1. Digital Smile Design (DSD) & CAD/CAM Systems</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      The transformation starts with high-tech <strong>3D intraoral scanners</strong>, replacing uncomfortable physical molding gels. Advanced CAD/CAM software creates a precise digital double of your oral cavity, allowing cosmetic dentists to carefully analyze your smile dynamics, facial midline, lip mobility, and gum symmetry before any procedure begins.
+    </p>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. E-max Veneers vs. Zirconia Crowns</h2>
-    <p className="text-emerald-900">Understanding the difference between materials ensures you get the exact aesthetic and functional result you desire:</p>
-    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>E-max Veneers:</strong> Glass-ceramic veneers offering superior translucency and a natural sheen. Minimal tooth preparation (0.3mm to 0.5mm). Ideal for front teeth aesthetics.</li>
-      <li><strong>Zirconia Crowns:</strong> Exceptional structural strength and durability. Perfect for restoring damaged or misaligned teeth while maintaining flawless whiteness.</li>
-      <li><strong>Biocompatibility:</strong> Both materials are 100% tissue-friendly, eliminating dark gum lines entirely.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Premium Materials: E-max Veneers vs. Zirconia Crowns</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Achieving a balanced blend of aesthetic natural sheen and long-term durability requires selecting the right dental materials:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Premium E-max Veneers:</strong> Crafted from top-grade lithium disilicate glass-ceramic, E-max veneers deliver exceptional translucency that mimics natural enamel. Requiring minimal enamel preparation (0.3mm to 0.5mm), they are perfect for front teeth enhancements.</li>
+      <li><strong>High-Strength Zirconia Crowns:</strong> Zirconia offers unparalleled structural strength and block resistance, making it perfect for posterior teeth or correcting major structural alignment issues while providing a bright white look.</li>
+      <li><strong>Biological Harmony:</strong> Both premium options are completely biocompatible, meaning they protect gum health and prevent dark margins near the gum line.</li>
     </ul>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    By blending high-tech digital scans with master ceramic work, dental tourism in Turkey guarantees a magnificent, long-lasting smile makeover.
-  </div>
+  <h2 className="text-2xl font-bold text-gray-900 pt-4">Dental Transformation Packages: What to Expect</h2>
+  <p className="text-base text-gray-600">
+    A standard dental aesthetic package in Istanbul generally requires a single 5 to 7-day visit. This covers deep diagnostic digital imaging, full teeth preparation, customized shade matching, temporary teeth placement, and final structural bonding of your permanent veneers or crowns.
+  </p>
+
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">تحول ابتسامة هوليوود المثالي</h1>
-  <p className="text-base sm:text-lg text-gray-600">الابتسامة الجميلة تحول جماليات الوجه وتعزز الثقة بالنفس. في تركيا، يجمع <strong>طب الأسنان التجميلي</strong> بين الحرفية الفنية الفائقة والدقة الرقمية لإنشاء <strong>'ابتسامة هوليوود'</strong> ذات الشهرة العالمية.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">ابتسامة هوليوود وتجميل الأسنان في تركيا: الدليل الشامل لأحدث التقنيات والعدسات</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    تعتبر الابتسامة المشرقة والمتناسقة أساس جمال الوجه ومصدر الثقة بالنفس. وخلال السنوات الأخيرة، تحولت عمليات <strong>تجميل الأسنان في تركيا (hollywood smile turkey)</strong> إلى الخيار الأول عالمياً للمرضى الدوليين بفضل تواجد نخبة من أخصائيي تركيبات الأسنان، والاعتماد على البرمجيات الرقمية المتطورة، والأسعار المناسبة مقارنة بأوروبا وأمريكا.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. تصميم الابتسامة الرقمي (DSD)</h2>
-    <p className="text-sky-900">قبل بدء أي إجراء فعلي، تلتقط <strong>الماسحات الضوئية ثلاثية الأبعاد</strong> المتقدمة طبعات رقمية دقيقة لأسنانك. باستخدام برامج CAD/CAM، يقوم أطباء الأسنان التجميليين بتقييم تناسق وجهك وحركية الشفاه ونسب اللثة لمعاينة النتيجة النهائية الدقيقة.</p>
+    <h2 className="text-2xl font-bold text-sky-950">1. تصميم الابتسامة الرقمي ثلاثي الأبعاد (DSD) وتكنولوجيا CAD/CAM</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تبدأ الرحلة باستخدام <strong>الماسحات الضوئية الفموية ثلاثية الأبعاد</strong> التي تلغي تماماً الحاجة للقوالب التقليدية المزعجة. تقوم برمجيات CAD/CAM المتقدمة برسم نموذج رقمي متكامل للفم، مما يتيح للطبيب وأخصائي المعمل تخطيط أبعاد العدسات وتناسقها مع شكل الشفاه وتعبيرات الوجه قبل البدء في التحضير الفعلي.
+    </p>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. قشور E-max مقابل تيجان الزركونيا</h2>
-    <p className="text-emerald-900">إن فهم الفرق بين المواد يضمن حصولك على النتيجة الجمالية والوظيفية الدقيقة التي ترغب بها:</p>
-    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>قشور E-max:</strong> قشور سيراميك زجاجي توفر شفافية فائقة ولمعاناً طبيعياً. تحضير طفيف للأسنان (0.3 ملم إلى 0.5 ملم). مثالية لجماليات الأسنان الأمامية.</li>
-      <li><strong>تيجان الزركونيا:</strong> قوة هيكلية استثنائية ومتانة. مثالية لترميم الأسنان التالفة أو غير المصطفة مع الحفاظ على بياض لا تشوبه شائبة.</li>
-      <li><strong>التوافق الحيوي:</strong> كلتا المادتين متوافقتان 100% مع الأنسجة، مما يقضي على خطوط اللثة الداكنة تماماً.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. اختيار المواد الفاخرة: فينير إيماكس (E-max) مقابل تيجان الزركونيا</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      يتطلب الحصول على ابتسامة طبيعية وجذابة ومستدامة اختيار المادة الأنسب لبنية أسنانك وحالتها الوظيفية:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>عدسات فينير إيماكس الأصلية:</strong> مصنوعة من زجاج السيراميك (ليثيوم دي سيليكات) فائق النقاء، وتتميز بشفافية مذهلة تحاكي مينا الأسنان الطبيعية تماماً، وتتطلب برداً طفيفاً جداً يتراوح بين 0.3 إلى 0.5 ملم فقط، وهي مثالية للأسنان الأمامية.</li>
+      <li><strong>تيجان وقشور الزركونيا الصلبة:</strong> توفر متانة هيكلية فائقة ومقاومة عالية للضغط والكسر، مما يجعلها الخيار الأمثل للأسنان الخلفية أو لتغطية الأسنان الداكنة والمتضررة مع منحها بياضاً ناصعاً ومستداماً.</li>
+      <li><strong>التوافق الحيوي الكامل:</strong> كلا الخيارين صديق تماماً لأنسجة اللثة، مما يمنع تماماً ظهور أي خطوط داكنة أو التهابات مستقبلية حول الأسنان.</li>
     </ul>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    من خلال دمج عمليات المسح الرقمية عالية التقنية مع عمل الخزف المتقن، تضمن سياحة الأسنان في تركيا تحولاً رائعاً ودائماً للابتسامة.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">لماذا تختار كيورلوج تركيا لتجميل أسنانك؟</strong>
+    تضمن لك منصة كيورلوج رحلة علاجية متكاملة مدتها من 5 إلى 7 أيام فقط في إسطنبول، تشمل الفحوصات الرقمية، تصميم الابتسامة، والتركيب النهائي لعدساتك الفاخرة، بالإضافة إلى إقامة في فنادق 5 نجوم وتوصيل VIP بسيارات خاصة لمتابعة علاجك بكل راحة وأمان.
   </div>
 </div>`,
     },
@@ -191,70 +295,144 @@ const initialBlogPosts: BlogPost[] = [
     id: "3",
     slug: "ivf-treatment-turkey-success-rates-guide",
     title: {
-      en: "IVF Treatment in Turkey: Best Fertility Clinics, Success Rates & All-Inclusive Packages",
-      ar: "علاج أطفال الأنابيب في تركيا: أفضل عيادات الخصوبة، نسب النجاح والباقات الشاملة",
+      en: "IVF Treatment in Turkey: Best Fertility Clinics, Costs, and Success Rates Guide",
+      ar: "علاج أطفال الأنابيب في تركيا: دليل أفضل عيادات الخصوبة ونسب النجاح والباقات الشاملة",
     },
     excerpt: {
-      en: "Planning fertility treatment abroad? Read our comprehensive guide on IVF in Turkey, high clinical success rates, ICSI advancements, and affordable medical tourism.",
-      ar: "هل تخطط لعلاج الخصوبة في الخارج؟ اقرأ دليلنا الشامل حول أطفال الأنابيب في تركيا، ونسب النجاح السريرية العالية، وتطورات الحقن المجهري، والسياحة الطبية الميسرة.",
+      en: "Seeking affordable fertility treatment? Read our in-depth guide on IVF treatment in Turkey, high clinical success rates, PGT-A genetic screens, and all-inclusive packages.",
+      ar: "هل تبحث عن علاج الخصوبة؟ اقرأ دليلنا الشامل حول أطفال الأنابيب في تركيا، ونسب النجاح العالية، وتقنيات الفحص الجيني المتقدمة PGT-A والباقات الشاملة.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Why International Couples Choose Turkey for IVF Treatment</h1>
-  <p className="text-base sm:text-lg text-gray-600">Turkey has risen to prominence as one of the premier global destinations for <strong>In Vitro Fertilization (IVF)</strong> and assisted reproductive technology (ART). Offering success rates that consistently match or exceed leading clinics in the US and Europe at a fraction of the cost, Turkish fertility centers bring renewed hope to couples facing infertility.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">IVF Treatment in Turkey: Best Fertility Clinics, Success Rates, and All-Inclusive Packages</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    For couples dealing with infertility, finding a clear, supportive path to parenthood is a deeply personal journey. Today, <strong>IVF turkey </strong> has evolved into a premier destination for assisted reproductive technology (ART). Offering clinical success rates that consistently match or exceed top European and American facilities, Turkish fertility centers combine high-tech laboratories with highly customized protocols at a fraction of Western costs.
+  </p>
+
+  <p className="text-base text-gray-600">
+    Choosing an international healthcare provider requires understanding the diagnostic tools and scientific advancements used behind the scenes. Leading fertility centers in Istanbul utilize advanced reproductive technologies to maximize implantation success and promote healthy live births.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. State-of-the-Art Embryology Laboratories</h2>
-    <p className="text-sky-900">Success in IVF heavily relies on the quality of the embryology lab. Top clinics in Istanbul and Ankara utilize cutting-edge technological innovations:</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Time-Lapse Incubators (EmbryoScope):</strong> Continuous monitoring of embryonic cell division without altering lab environmental conditions.</li>
-      <li><strong>AI-Assisted Grading:</strong> Algorithms help select blastocysts with the absolute highest potential for implantation.</li>
-      <li><strong>Preimplantation Genetic Testing (PGT-A):</strong> Comprehensive screening for chromosomal abnormalities prior to transfer, drastically reducing miscarriage risks.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. State-of-the-Art Embryology Laboratories</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      The ultimate success of an In Vitro Fertilization cycle depends heavily on embryology lab standards. Certified centers across Turkey deploy advanced medical equipment:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Time-Lapse Incubators (EmbryoScope):</strong> This advanced tech provides continuous 24/7 camera monitoring of embryonic development, allowing embryologists to assess division patterns without exposing embryos to environmental shifts.</li>
+      <li><strong>Preimplantation Genetic Testing (PGT-A / PGT-M):</strong> Thorough genetic testing screens blastocysts for chromosomal defects or specific hereditary disorders prior to transfer. This lowers miscarriage rates and improves successful pregnancy outcomes.</li>
+      <li><strong>AI-Driven Embryo Selection:</strong> Smart algorithms assist lab specialists in evaluating and picking blastocysts with the highest implantation potential.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Comprehensive All-Inclusive Fertility Packages</h2>
-    <p className="text-emerald-900">Medical tourism in Turkey eliminates logistical hurdles and stress for international patients. A standard VIP fertility package includes:</p>
-    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium">
-      <li>Initial specialist consultations and customized ovarian stimulation protocols.</li>
-      <li>Egg retrieval, advanced <strong>ICSI fertilization</strong>, and blastocyst culture.</li>
-      <li>VIP airport transfers and comfortable accommodations near the medical facility.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. All-Inclusive IVF Care Packages</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Traveling abroad for fertility treatment can feel overwhelming. To support patients, medical tourism packages in Turkey are designed to minimize logistical stress. A comprehensive package covers:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li>All initial diagnostic testing, expert consultations, and personalized ovarian stimulation tracking.</li>
+      <li>Surgical egg retrieval, advanced <strong>ICSI (Intracytoplasmic Sperm Injection)</strong> fertilization, and long-term laboratory culture.</li>
+      <li>VIP airport transfers, comfortable hotel stays near the clinic, and dedicated language support throughout your medical appointments.</li>
     </ul>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    With strict JCI accreditation and highly specialized fertility experts, Turkey provides a safe, supportive, and highly successful environment to start your family.
+  <h2 className="text-2xl font-bold text-gray-900 pt-4">Statistical Review: IVF Success Rates in Turkey</h2>
+  <div className="overflow-x-auto border border-gray-100 rounded-xl shadow-sm">
+    <table className="w-full text-left border-collapse">
+      <thead>
+        <tr className="bg-gray-50 border-b border-gray-100">
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">Maternal Age Bracket</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">Average Implantation Success Rate</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">Recommended Lab Adjuncts</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-50 text-sm sm:text-base text-gray-600">
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">Under 35 Years Old</td>
+          <td className="p-4 text-emerald-600 font-semibold">65% - 72%</td>
+          <td className="p-4">Standard Blastocyst Culture / Blastocyst Transfer</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">35 - 39 Years Old</td>
+          <td className="p-4 text-emerald-600 font-semibold">50% - 58%</td>
+          <td className="p-4">EmbryoScope Monitoring / Assisted Hatching</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">40+ Years Old</td>
+          <td className="p-4 text-emerald-600 font-semibold">25% - 35%</td>
+          <td className="p-4">PGT-A Chromosomal Screening Mandatory</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">لماذا يختار الأزواج الدوليون تركيا لعلاج أطفال الأنابيب</h1>
-  <p className="text-base sm:text-lg text-gray-600">برزت تركيا كواحدة من أفضل الوجهات العالمية <strong>للتلقيح الصناعي (أطفال الأنابيب)</strong> وتقنيات الإنجاب المساعدة (ART). من خلال تقديم نسب نجاح تضاهي أو تتجاوز باستمرار العيادات الرائدة في الولايات المتحدة وأوروبا بجزء بسيط من التكلفة، تمنح مراكز الخصوبة التركية أملاً جديداً للأزواج الذين يواجهون العقم.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">علاج أطفال الأنابيب في تركيا: دليل أفضل العيادات، نسب النجاح، والباقات الشاملة</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    تعتبر رحلة البحث عن حلم الأمومة والأبوة من أعمق التجارب الإنسانية للأزواج الذين يواجهون تحديات العقم. واليوم، برزت <strong>أطفال الأنابيب في تركيا (ivf turkey)</strong> كواحدة من أفضل الوجهات العالمية لتقنيات الإنجاب المساعدة (ART)، حيث تقدم نسب نجاح استثنائية تتجاوز المراكز الأوروبية وبأسعار اقتصادية للغاية.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. مختبرات أجنة متطورة للغاية</h2>
-    <p className="text-sky-900">يعتمد النجاح في التلقيح الصناعي بشكل كبير على جودة مختبر الأجنة. تستخدم أفضل العيادات في إسطنبول وأنقرة أحدث الابتكارات التكنولوجية:</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>حاضنات المراقبة المستمرة (EmbryoScope):</strong> مراقبة انقسام الخلايا الجنينية على مدار الساعة دون تغيير الظروف البيئية للمختبر.</li>
-      <li><strong>التقييم بمساعدة الذكاء الاصطناعي:</strong> خوارزميات تساعد في اختيار الكيسات الأريمية ذات الإمكانات القصوى للانغراس.</li>
-      <li><strong>الفحص الجيني للأجنة (PGT-A):</strong> فحص شامل للتشوهات الصبغية قبل النقل، مما يقلل بشكل كبير من مخاطر الإجهاض.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. مختبرات الأجنة المتطورة والمعايير التقنية</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      يعتمد نجاح دورة التلقيح الصناعي بشكل جوهري على كفاءة مختبر الأجنة، وتتميز العيادات الشريكة لنا في إسطنبول بتوفير أحدث التقنيات العالمية:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>حاضنات المراقبة المستمرة (EmbryoScope):</strong> كاميرات ميكروسكوبية تراقب انقسام خلايا الأجنة على مدار الساعة دون إخراجها من البيئة الحاضنة، مما يحافظ على سلامتها الكاملة.</li>
+      <li><strong>الفحص الجيني المبكر للأجنة (PGT-A / PGT-M):</strong> فحص صبغي شامل يستبعد الأجنة التي تحتوي على تشوهات جينية أو أمراض وراثية قبل النقل، مما يرفع نسب الحمل ويقلل مخاطر الإجهاض بشكل كبير.</li>
+      <li><strong>اختيار الأجنة بالذكاء الاصطناعي:</strong> خوارزميات ذكية تساعد علماء الأجنة في اختيار البصيلات والأجنة الأكثر حيوية وقابلية للانغراس في الرحم.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. باقات خصوبة شاملة متكاملة</h2>
-    <p className="text-emerald-900">السياحة الطبية في تركيا تزيل العقبات اللوجستية والتوتر عن المرضى الدوليين. تشمل باقة الخصوبة القياسية لكبار الشخصيات ما يلي:</p>
-    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium">
-      <li>استشارات الطبيب الأولية وبروتوكولات تنشيط المبيض المخصصة.</li>
-      <li>سحب البويضات، والتخصيب المتقدم <strong>بالحقن المجهري (ICSI)</strong>، وزراعة الكيسات الأريمية.</li>
-      <li>تنقلات كبار الشخصيات من المطار وإقامة مريحة بالقرب من المركز الطبي.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. باقات الخصوبة المتكاملة لكبار الشخصيات</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      نحن نعلم أن السفر للعلاج قد يسبب بعض التوتر، لذلك تم تصميم باقات السياحة العلاجية في تركيا لتغطية كافة التفاصيل اللوجستية والطبية:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li>جميع الفحوصات، التحاليل الهرمونية، الاستشارات الأولية، ومتابعة نمو البويضات بدقة.</li>
+      <li>عملية سحب البويضات، والتخصيب المتقدم عبر <strong>الحقن المجهري (ICSI)</strong>، وزراعة الأجنة لليوم الخامس.</li>
+      <li>تنقلات VIP بسيارات خاصة، إقامة فندقية مريحة بالقرب من المركز الطبي، ومترجم طبي يرافقكم في كل خطوة.</li>
     </ul>
   </div>
 
+  <h2 className="text-2xl font-bold text-gray-900 pt-4">نظرة إحصائية: نسب نجاح أطفال الأنابيب في تركيا حسب الفئة العمرية</h2>
+  <div className="overflow-x-auto border border-gray-100 rounded-xl shadow-sm">
+    <table className="w-full text-right border-collapse" dir="rtl">
+      <thead>
+        <tr className="bg-gray-50 border-b border-gray-100">
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">عمر الأم</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">متوسط نسبة نجاح الحمل</th>
+          <th className="p-4 font-bold text-gray-700 text-sm sm:text-base">التقنيات المخبرية الموصى بها</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-gray-50 text-sm sm:text-base text-gray-600">
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">أقل من 35 سنة</td>
+          <td className="p-4 text-emerald-600 font-semibold">65% - 72%</td>
+          <td className="p-4">إرجاع الأجنة في اليوم الخامس (Blastocyst)</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">من 35 إلى 39 سنة</td>
+          <td className="p-4 text-emerald-600 font-semibold">50% - 58%</td>
+          <td className="p-4">تقنية EmbryoScope / ثقب جدار الجنين</td>
+        </tr>
+        <tr>
+          <td className="p-4 font-semibold text-gray-900">أكبر من 40 سنة</td>
+          <td className="p-4 text-emerald-600 font-semibold">25% - 35%</td>
+          <td className="p-4">الفحص الصبغي الجيني للأجنة PGT-A إلزامي</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    بفضل الاعتماد الصارم من JCI وخبراء الخصوبة المتخصصين، توفر تركيا بيئة آمنة وداعمة وناجحة للغاية لبدء عائلتك.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">ابدأ رحلة الأمل مع كيورلوج تركيا</strong>
+    تأسيس عائلتك يتطلب أعلى مستويات الرعاية العلمية والتعاطف الإنساني. نحن في كيورلوج نربطك بأفضل مستشفيات الإخصاب الحاصلة على اعتماد JCI وبأشهر الأطباء الاستشاريين لنضمن لك أعلى فرص النجاح في بيئة آمنة ومريحة تماماً.
   </div>
 </div>`,
     },
@@ -280,60 +458,70 @@ const initialBlogPosts: BlogPost[] = [
     id: "4",
     slug: "azoospermia-treatment-turkey-micro-tese-surgery",
     title: {
-      en: "Azoospermia Treatment in Turkey: Micro-TESE Surgery & Advanced Male Fertility Solutions",
-      ar: "علاج انعدام الحيوانات المنوية (الأزوسبيرميا) في تركيا: جراحة Micro-TESE وحلول الخصوبة المتقدمة للرجال",
+      en: "Azoospermia Treatment in Turkey: Micro-TESE Surgery Guide",
+      ar: "علاج انعدام الحيوانات المنوية (الأزوسبيرميا) في تركيا: دليل جراحة Micro-TESE المتقدمة",
     },
     excerpt: {
-      en: "Struggling with zero sperm count? Learn how Micro-TESE surgical sperm retrieval in Turkey offers up to 60% success rates for non-obstructive azoospermia.",
-      ar: "هل تعاني من انعدام الحيوانات المنوية؟ تعرف على كيف توفر جراحة استخراج الحيوانات المنوية Micro-TESE في تركيا نسب نجاح تصل إلى 60% لحالات الأزوسبيرميا غير الانسدادية.",
+      en: "Struggling with a zero sperm count diagnosis? Learn how advanced Micro-TESE surgical sperm retrieval in Turkey delivers a 60% success rate for severe male infertility.",
+      ar: "هل تم تشخيصك بانعدام الحيوانات المنوية؟ تعرف على جراحة استخراج الحيوانات المنوية المجهرية Micro-TESE في تركيا، والتي توفر نسب نجاح تصل لـ 60% لعقم الرجال.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Overcoming Male Infertility with Surgical Precision</h1>
-  <p className="text-base sm:text-lg text-gray-600"><strong>Azoospermia</strong> (the total absence of sperm in the ejaculate) affects approximately 1% of the male population and accounts for up to 15% of male infertility cases. In the past, this diagnosis meant biological fatherhood was impossible. Today, advanced surgical techniques in Turkey allow men with severe azoospermia to father biological children.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">Azoospermia Treatment in Turkey: Advanced Micro-TESE Surgical Solutions</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Receiving an <strong>azoospermia treatment turkey (micro-tese surgery turkey)</strong> diagnosis—the complete absence of sperm cells in the ejaculate—can feel devastating for men dreaming of biological fatherhood. Azoospermia affects about 1% of the male population and represents up to 15% of all male infertility evaluations. Fortunately, specialized clinical andrology centers in Turkey provide world-class micro-surgical options, helping many achieve successful biological pregnancies.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Microdissection TESE (Micro-TESE): The Gold Standard</h2>
-    <p className="text-sky-900">Micro-TESE is an advanced microsurgical procedure performed by expert uro-andrologists under a highly magnified operating microscope. The surgeon meticulously inspects the seminiferous tubules inside the testes to locate specific areas where isolated sperm production is taking place.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Targeted Extraction:</strong> Preserves testicular tissue and avoids vascular damage.</li>
-      <li><strong>Higher Success:</strong> Increases sperm retrieval success rates to between 50% and 60% in non-obstructive cases.</li>
-      <li><strong>Minimally Invasive:</strong> Quick surgical recovery with minimal post-operative discomfort.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Microdissection TESE (Micro-TESE): The Clinical Standard</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      For non-obstructive azoospermia (where the testes face sperm production issues), standard needle biopsies often fall short. Modern Turkish clinics utilize <strong>Micro-TESE</strong>, an advanced surgical procedure performed under high-magnification operating microscopes.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Targeted Identification:</strong> Operating andrologists meticulously inspect the seminiferous tubules to isolate healthy channels actively producing sperm, preserving surrounding tissue.</li>
+      <li><strong>Improved Retrieval Rates:</strong> This precise micro-surgical mapping boosts sperm extraction success rates up to 55% - 60% in challenging non-obstructive cases.</li>
+      <li><strong>Minimally Invasive Care:</strong> The precise localized approach limits tissue trauma, causing minimal post-operative discomfort and supporting a quick recovery.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Combining Micro-TESE with ICSI</h2>
-    <p className="text-emerald-900">Once viable sperm cells are successfully extracted, they are immediately transferred to the IVF embryology lab. Embryologists utilize <strong>Intracytoplasmic Sperm Injection (ICSI)</strong> to inject a single healthy sperm directly into the mature egg, achieving excellent fertilization rates.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Combining Micro-TESE with ICSI</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Once viable sperm cells are successfully extracted from the testicular channels, they are immediately transferred to the IVF embryology laboratory. Specialized embryologists use <strong>ICSI (Intracytoplasmic Sperm Injection)</strong> to introduce a single healthy sperm directly into a retrieved mature egg, opening the door to excellent fertilization rates.
+    </p>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    Turkey's world-class andrology clinics provide state-of-the-art diagnostic and surgical solutions, turning the dream of biological fatherhood into reality.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">التغلب على العقم عند الرجال بدقة جراحية</h1>
-  <p className="text-base sm:text-lg text-gray-600">يؤثر <strong>انعدام الحيوانات المنوية (الأزوسبيرميا)</strong> على حوالي 1% من الذكور ويمثل ما يصل إلى 15% من حالات العقم عند الرجال. في الماضي، كان هذا التشخيص يعني استحالة الأبوة البيولوجية. اليوم، تتيح التقنيات الجراحية المتقدمة في تركيا للرجال الذين يعانون من الأزوسبيرميا الشديدة إنجاب أطفال أصحاء بيولوجياً.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">علاج انعدام الحيوانات المنوية (الأزوسبيرميا) في تركيا: جراحة الميكرو تيسي (Micro-TESE)</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    يمثل تشخيص <strong>علاج الأزوسبيرميا في تركيا (micro-tese surgery turkey)</strong> - أي الغياب التام للحيوانات المنوية في السائل المنوي - تحدياً كبيراً للرجال الراغبين في الإنجاب. تصيب هذه الحالة حوالي 1% من الرجال وتشكّل 15% من حالات العقم. ولكن بفضل التطور المذهل لجراحات الذكورة المجهرية في تركيا، أصبح تحقيق حلم الأبوة البيولوجية ممكناً بنسب نجاح عالية جداً.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. استخراج الحيوانات المنوية المجهري (Micro-TESE): المعيار الذهبي</h2>
-    <p className="text-sky-900">عملية Micro-TESE هي إجراء جراحي دقيق متقدم يجريه خبراء أمراض الذكورة والمسالك البولية تحت مجهر جراحي عالي التكبير. يفحص الجراح بدقة الأنابيب المنوية داخل الخصيتين لتحديد مناطق معينة يحدث فيها إنتاج معزول للحيوانات المنوية.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>استخراج مستهدف:</strong> يحافظ على أنسجة الخصية ويتجنب تلف الأوعية الدموية.</li>
-      <li><strong>نجاح أعلى:</strong> يزيد من نسب نجاح استخراج الحيوانات المنوية إلى ما بين 50% و 60% في الحالات غير الانسدادية.</li>
-      <li><strong>طفيف التوغل:</strong> تعافي جراحي سريع مع حد أدنى من الانزعاج بعد الجراحة.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. جراحة التفتيش المجهري للخصية (Micro-TESE): المعيار الذهبي</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      في حالات الأزوسبيرميا غير الانسدادية (ضعف الإنتاج من الخصية)، لا تفيد السحبات التقليدية بالإبرة. هنا يأتي دور جراحة <strong>Micro-TESE</strong>، والتي تُجرى تحت مجهر جراحي متطور يكبر الأنسجة حتى 25 مرة.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>استخراج مستهدف ودقيق:</strong> يقوم جراح أمراض الذكورة بفحص الأنابيب المنوية بدقة لاستخلاص الأنابيب الممتلئة التي تحتوي على إنتاج حي، مما يحمي خلايا الخصية الأخرى والأوعية الدموية.</li>
+      <li><strong>نسب عثور مرتفعة:</strong> ترفع هذه الطريقة المجهرية المتقدمة احتمالية العثور على حيوانات منوية صالحة للإخصاب لتصل إلى 55% - 60% حتى في أصعب الحالات.</li>
+      <li><strong>تدخل جراحي طفيف:</strong> يضمن الفحص المجهري تقليل الشقوق الجراحية، مما يضمن تعافياً سريعاً للمريض مع حد أدنى من الألم بعد العملية.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. الجمع بين Micro-TESE والحقن المجهري (ICSI)</h2>
-    <p className="text-emerald-900">بمجرد استخراج خلايا منوية حية بنجاح، يتم نقلها على الفور إلى مختبر أجنة أطفال الأنابيب. يستخدم علماء الأجنة <strong>الحقن المجهري (ICSI)</strong> لحقن حيوان منوي سليم واحد مباشرة في البويضة الناضجة، مما يحقق معدلات تخصيب ممتازة.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. الدمج بين جراحة الخصية المجهرية والحقن المجهري (ICSI)</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      بمجرد نجاح الفريق الطبي في استخراج الحيوانات المنوية، يتم نقلها فوراً إلى مختبر أجنة أطفال الأنابيب. هناك، يقوم علماء الأجنة باستخدام تقنية <strong>الحقن المجهري (ICSI)</strong> لحقن حيوان منوي واحد سليم مباشرة داخل البويضة الناضجة للزوجة، مما يثمر عن معدلات إخصاب ممتازة وتكوين أجنة سليمة.
+    </p>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    توفر عيادات أمراض الذكورة ذات المستوى العالمي في تركيا أحدث الحلول التشخيصية والجراحية، وتحول حلم الأبوة البيولوجية إلى حقيقة.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">لماذا تختار منصة كيورلوج؟</strong>
+    يتطلب علاج عقم الرجال التخصص والخبرة الطبية العالية. تضمن لك كيورلوج تركيا التعاون مع كبار أساتذة جراحة الذكورة وأحدث مراكز أطفال الأنابيب لتقديم رعاية طبية فائقة تمنحك الأمل الحقيقي في تأسيس عائلتك.
   </div>
 </div>`,
     },
@@ -359,70 +547,84 @@ const initialBlogPosts: BlogPost[] = [
     id: "5",
     slug: "icsi-procedure-turkey-male-infertility-ivf",
     title: {
-      en: "ICSI Procedure in Turkey: High Fertilization Success for Severe Male Infertility",
-      ar: "عملية الحقن المجهري (ICSI) في تركيا: نجاح إخصاب مرتفع لحالات العقم الشديدة عند الرجال",
+      en: "ICSI Procedure in Turkey: Advanced Infertility Solutions and Cost",
+      ar: "عملية الحقن المجهري (ICSI) في تركيا: تقنيات معملية متطورة لعلاج العقم الشديد",
     },
     excerpt: {
-      en: "Discover how Intracytoplasmic Sperm Injection (ICSI) in Turkey maximizes fertilization success for low motility, poor morphology, and azoospermia.",
-      ar: "اكتشف كيف يزيد الحقن المجهري (ICSI) في تركيا من نجاح الإخصاب لحالات ضعف الحركة، وسوء الشكل الظاهري، وانعدام الحيوانات المنوية.",
+      en: "Discover how Intracytoplasmic Sperm Injection (ICSI) in Turkey maximizes fertilization success rates for severe male factor infertility, poor morphology, and low motility.",
+      ar: "اكتشف كيف يساهم الحقن المجهري (ICSI) في تركيا في رفع نسب نجاح الإخصاب لحالات ضعف الحركة، تشوهات النطاف، وقلة عدد الحيوانات المنوية.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Maximizing Embryo Fertilization with ICSI</h1>
-  <p className="text-base sm:text-lg text-gray-600"><strong>Intracytoplasmic Sperm Injection (ICSI)</strong> has revolutionized IVF treatment, particularly for couples experiencing male factor infertility. While conventional IVF places sperm near the egg in a petri dish, ICSI guarantees direct cellular penetration by mechanically inserting a single, pre-selected healthy sperm into the oocyte cytoplasm.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">ICSI Procedure in Turkey: Maximizing Embryo Fertilization Rates</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    The introduction of <strong>icsi procedure turkey (male infertility ivf turkey)</strong> technology has fundamentally transformed the field of assisted reproduction. While conventional In Vitro Fertilization relies on placing thousands of sperm cells near an egg in a laboratory dish, ICSI provides direct cell-to-cell assistance. Lab specialists mechanically inject one carefully chosen, healthy sperm directly into the egg's cytoplasm, bypassing natural structural barriers.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Who Benefits Most from ICSI?</h2>
-    <p className="text-sky-900">Turkish fertility clinics routinely utilize ICSI for international patients presenting with various andrological barriers:</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Oligospermia:</strong> Extremely low sperm concentration in the ejaculate.</li>
-      <li><strong>Asthenozoospermia:</strong> Poor motility or sluggish sperm movement.</li>
-      <li><strong>Teratozoospermia:</strong> High percentage of abnormally shaped sperm cells.</li>
-      <li><strong>Surgical Retrieval:</strong> Sperm obtained directly from tissue via TESE or PESA.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Who Benefits Most from ICSI?</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      Experienced fertility programs in Turkey routinely use ICSI for international patients presenting with various male factor fertility barriers:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Severe Oligospermia:</strong> Exceptionally low sperm concentrations within the ejaculate.</li>
+      <li><strong>Asthenozoospermia:</strong> Poor structural motility, where sperm cannot swim effectively to reach the egg.</li>
+      <li><strong>Teratozoospermia:</strong> High percentages of abnormally shaped sperm cells that hinder natural penetration.</li>
+      <li><strong>Surgically Extracted Sperm:</strong> Instances where sperm is retrieved via procedures like Micro-TESE or PESA.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Advanced IMSI & Piezo-ICSI Technologies</h2>
-    <p className="text-emerald-900">Elite embryology centers in Istanbul take ICSI a step further by implementing state-of-the-art laboratory refinements:</p>
-    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>IMSI:</strong> Magnification of sperm over 6,000 times to select structurally pristine cells without vacuoles.</li>
-      <li><strong>Piezo-ICSI:</strong> Ultra-gentle micro-pulses used to penetrate fragile oocyte membranes safely.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Advanced IMSI and Piezo-ICSI Technologies</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Top-tier embryology laboratories in Istanbul deploy advanced technology variants to further improve clinical outcomes:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>IMSI (Intracytoplasmic Morphologically Selected Sperm Injection):</strong> Magnifies sperm samples over 6,000 times using advanced digital optics. This lets embryologists screen out structural defects that regular microscopes miss.</li>
+      <li><strong>Piezo-ICSI:</strong> Uses gentle high-frequency micro-pulses to safely open fragile egg membranes, reducing the risk of cellular damage during injection.</li>
     </ul>
   </div>
 
   <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    By bypassing natural membrane barriers, ICSI achieves remarkable fertilization rates ranging between 75% and 85%.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">Clinical Efficacy:</strong>
+    By directly assisting cellular fertilization, advanced ICSI protocols in Turkey achieve highly reliable fertilization rates, typically ranging between 75% and 85%, creating a strong foundation for your family plans.
   </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">تعظيم تخصيب الأجنة مع الحقن المجهري (ICSI)</h1>
-  <p className="text-base sm:text-lg text-gray-600">لقد أحدث <strong>الحقن المجهري (ICSI)</strong> ثورة في علاج أطفال الأنابيب، لا سيما للأزواج الذين يعانون من العقم عند الذكور. في حين يضع التلقيح الصناعي التقليدي الحيوانات المنوية بالقرب من البويضة في طبق المختبر، يضمن الحقن المجهري الاختراق الخلوي المباشر عن طريق إدخال حيوان منوي سليم تم اختياره مسبقاً ميكانيكياً في سيتوبلازم البويضة.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">عملية الحقن المجهري (ICSI) في تركيا: الخيار الأكثر كفاءة لعلاج عقم الرجال</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    حدثت طفرة هائلة في طب الإنجاب بفضل تقنية <strong>الحقن المجهري في تركيا (icsi procedure turkey)</strong>. على عكس أطفال الأنابيب التقليدي الذي يكتفي بوضع الحيوانات المنوية بجانب البويضة، يعتمد الحقن المجهري على تدخل ميكروسكوبي مباشر، حيث يقوم خبير الأجنة بحقن حيوان منوي واحد سليم وعالي الجودة مباشرة داخل سيتوبلازم البويضة الناضجة لتسهيل التخصيب.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. من يستفيد أكثر من الحقن المجهري؟</h2>
-    <p className="text-sky-900">تستخدم عيادات الخصوبة التركية الحقن المجهري بشكل روتيني للمرضى الدوليين الذين يعانون من مختلف عوائق أمراض الذكورة:</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>قلة الحيوانات المنوية:</strong> تركيز منخفض للغاية للحيوانات المنوية في السائل المنوي.</li>
-      <li><strong>ضعف الحركة:</strong> حركة بطيئة أو ضعيفة للحيوانات المنوية.</li>
-      <li><strong>تشوه الحيوانات المنوية:</strong> نسبة عالية من الخلايا المنوية ذات الشكل غير الطبيعي.</li>
-      <li><strong>الاستخراج الجراحي:</strong> حيوانات منوية تم الحصول عليها مباشرة من الأنسجة عبر TESE أو PESA.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. الحالات المستفيدة بشكل رئيسي من الحقن المجهري (ICSI)</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تعتمد مستشفيات الخصوبة في تركيا الحقن المجهري كإجراء أساسي ورئيسي عند التعامل مع مشاكل الخصوبة المرتبطة بعوامل الذكورة:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>قلة النطاف الشديد (Oligospermia):</strong> انخفاض حاد في عدد الحيوانات المنوية في السائل المنوي.</li>
+      <li><strong>ضعف الحركة (Asthenozoospermia):</strong> حركة بطيئة تمنع الحيوان المنوي من اختراق جدار البويضة طبيعياً.</li>
+      <li><strong>تشوه الحيوانات المنوية (Teratozoospermia):</strong> ارتفاع نسبة الأشكال غير الطبيعية التي تعيق التخصيب التلقائي.</li>
+      <li><strong>العينات المستخرجة جراحياً:</strong> النطاف المستخلصة مباشرة من الخصية عبر جراحات Micro-TESE.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. تقنيات IMSI و Piezo-ICSI المتقدمة</h2>
-    <p className="text-emerald-900">تأخذ مراكز الأجنة النخبوية في إسطنبول الحقن المجهري خطوة إلى الأمام من خلال تطبيق أحدث التحسينات المختبرية:</p>
-    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>تقنية IMSI:</strong> تكبير الحيوانات المنوية أكثر من 6000 مرة لاختيار خلايا سليمة هيكلياً خالية من الفجوات.</li>
-      <li><strong>تقنية Piezo-ICSI:</strong> نبضات دقيقة فائقة اللطف تستخدم لاختراق أغشية البويضات الهشة بأمان.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. تقنيات IMSI و Piezo-ICSI المتقدمة في إسطنبول</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      تتميز مختبرات الأجنة في إسطنبول بتوظيف جيل جديد من التقنيات المكملة لرفع جودة التخصيب:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>تقنية IMSI المتقدمة:</strong> تكبير الحيوانات المنوية لأكثر من 6000 مرة تحت مجاهر رقمية فائقة، مما يتيح استبعاد الحيوانات المنوية التي تحتوي على فجوات أو عيوب هيكلية دقيقة.</li>
+      <li><strong>تقنية Piezo-ICSI اللطيفة:</strong> استخدام نبضات واهتزازات دقيقة جداً لفتح غشاء البويضة دون التسبب في صدمة خلوية، وهي مثالية للبويضات الهشة.</li>
     </ul>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    من خلال تجاوز الحواجز الطبيعية لغشاء البويضة، يحقق الحقن المجهري معدلات إخصاب ملحوظة تتراوح بين 75% و 85%.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">معدلات النجاح السريرية:</strong>
+    بفضل تخطي الحواجز الطبيعية لغشاء البويضة، تحقق عمليات الحقن المجهري في تركيا معدلات إخصاب ممتازة تتراوح بين 75% إلى 85%، مما يمهد الطريق لتكوين أجنة قوية وصالحة للانغراس.
   </div>
 </div>`,
     },
@@ -448,66 +650,76 @@ const initialBlogPosts: BlogPost[] = [
     id: "6",
     slug: "egg-embryo-freezing-turkey-fertility-preservation",
     title: {
-      en: "Egg & Embryo Freezing in Turkey: Vitrification & Fertility Preservation",
-      ar: "تجميد البويضات والأجنة في تركيا: التجميد السريع (Vitrification) والحفاظ على الخصوبة",
+      en: "Egg & Embryo Freezing in Turkey: Vitrification & Fertility Preservation Guide",
+      ar: "تجميد البويضات والأجنة في تركيا: تقنية Vitrification المتطورة للحفاظ على الخصوبة",
     },
     excerpt: {
-      en: "Secure your future family. Discover advanced oocyte vitrification, frozen embryo transfers (FET), and high post-thaw survival rates in Turkish clinics.",
-      ar: "أمن مستقبل عائلتك. اكتشف التجميد السريع للبويضات، ونقل الأجنة المجمدة (FET)، ومعدلات البقاء العالية بعد الذوبان في العيادات التركية.",
+      en: "Secure your future family plans. Learn about advanced oocyte vitrification, long-term embryo freezing, and high frozen embryo transfer (FET) success rates in Turkey.",
+      ar: "أمّن مستقبلك العائلي. تعرف على تقنية التجميد السريع للبويضات (Vitrification)، وتجميد الأجنة طويل الأمد، ونسب نجاح نقل الأجنة المجمدة FET في تركيا.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Securing Your Biological Clock with Vitrification</h1>
-  <p className="text-base sm:text-lg text-gray-600">For women pursuing career goals or individuals undergoing medical treatments like chemotherapy, <strong>fertility preservation</strong> provides immense peace of mind. Turkey's top fertility centers specialize in oocyte and blastocyst <strong>vitrification</strong>—an ultra-rapid freezing process that eliminates destructive ice crystal formation.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">Egg & Embryo Freezing in Turkey: Advanced Vitrification for Reliable Fertility Preservation</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Modern reproductive medicine offers valuable flexibility when planning for the future. Whether managing career goals, addressing age-related fertility shifts, or undergoing medical treatments like chemotherapy, <strong>egg freezing turkey (fertility preservation turkey)</strong> provides peace of mind. Turkey's leading fertility clinics stand out in oocyte and embryo cryopreservation, deploying advanced vitrification technologies to deliver excellent post-thaw survival rates.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. How Vitrification Works</h2>
-    <p className="text-sky-900">Unlike slow freezing methods of the past, vitrification drops the cellular temperature to -196°C in milliseconds inside liquid nitrogen. This transforms the cellular fluid into a glass-like state, preserving structural integrity for decades.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>High Survival Rates:</strong> Post-thaw survival in accredited Turkish clinics reaches an outstanding 95% to 98%.</li>
-      <li><strong>Cellular Safety:</strong> Absolute protection from ice crystal formation that could damage cellular organelles.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Advanced Vitrification vs. Older Freezing Methods</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      In the past, slow-freezing methods carried risks of forming microscopic ice crystals, which could occasionally damage delicate cellular walls. Modern centers in Turkey rely strictly on <strong>vitrification</strong>—an ultra-rapid cooling technique that lowers temperatures to -196°C within milliseconds using liquid nitrogen.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Outstanding Post-Thaw Survival:</strong> Leading cryo-laboratories in Istanbul consistently achieve egg and blastocyst survival rates between 95% and 98%.</li>
+      <li><strong>Cellular Integrity Protection:</strong> The fast process instantly transitions fluids into a smooth, glass-like state, preventing crystal formation and protecting internal structures.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Frozen Embryo Transfer (FET) Advantages</h2>
-    <p className="text-emerald-900">Many IVF doctors in Istanbul now advocate for 'Freeze-All' cycles, where embryos are frozen and transferred in a subsequent non-stimulated natural cycle.</p>
-    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>Natural Endometrium:</strong> Allows the uterine lining to achieve perfect receptivity without high hormone drugs.</li>
-      <li><strong>Higher Implantation:</strong> Dramatically improves successful attachment and live birth outcomes.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Clinical Advantages of Frozen Embryo Transfer (FET)</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Many reproductive specialists in Turkey recommend 'Freeze-All' pathways during standard IVF cycles. Instead of transferring embryos immediately after ovarian stimulation, embryos are frozen and transferred during a subsequent natural cycle.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Natural Endometrial Receptivity:</strong> Allows the uterine lining to recover completely from stimulation medications, mimicking a natural conception environment.</li>
+      <li><strong>Optimized Implantation Rates:</strong> Clinical studies show that transferring embryos into a rested endometrium can noticeably improve successful implantation and live birth rates.</li>
     </ul>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    By utilizing advanced vitrification technology, patients gain complete control over their reproductive timeline with pristine clinical safety.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">تأمين ساعتك البيولوجية مع التجميد السريع</h1>
-  <p className="text-base sm:text-lg text-gray-600">بالنسبة للنساء اللواتي يسعين لتحقيق أهداف مهنية أو الأفراد الذين يخضعون لعلاجات طبية مثل العلاج الكيميائي، فإن <strong>الحفاظ على الخصوبة</strong> يوفر راحة بال هائلة. تتخصص أفضل مراكز الخصوبة في تركيا في <strong>التجميد السريع</strong> للبويضات والكيسات الأريمية (Vitrification) - وهي عملية تجميد فائقة السرعة تقضي على تكون بلورات الثلج المدمرة.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">تجميد البويضات والأجنة في تركيا: دليلك الشامل للحفاظ على الخصوبة وتأمين المستقبل</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    منحت حلول طب الإنجاب المعاصر مرونة كبيرة للأفراد لتأمين خططهم العائلية المستقبلية. وسواء كنتِ تركزين على أهدافك المهنية، أو تواجهين مخاوف تراجع مخزون المبيض، أو تخضعين لعلاجات طبية مثل العلاج الكيميائي، فإن <strong>تجميد البويضات في تركيا (egg freezing turkey)</strong> يوفر لكِ الطمأنينة والأمان عبر تكنولوجيا تجميد الأجنة والبويضات الأكثر تطوراً عالمياً.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. كيف يعمل التجميد السريع (Vitrification)</h2>
-    <p className="text-sky-900">على عكس طرق التجميد البطيئة في الماضي، يخفض التجميد السريع درجة الحرارة الخلوية إلى -196 درجة مئوية في غضون أجزاء من الثانية داخل النيتروجين السائل. هذا يحول السائل الخلوي إلى حالة تشبه الزجاج، مما يحافظ على السلامة الهيكلية لعقود.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>معدلات بقاء عالية:</strong> يصل البقاء على قيد الحياة بعد الذوبان في العيادات التركية المعتمدة إلى 95% - 98%.</li>
-      <li><strong>سلامة خلوية:</strong> حماية مطلقة من تكون بلورات الثلج التي قد تتلف العضيات الخلوية.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. تقنية التجميد السريع (Vitrification) وحماية الخلايا</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تخلت العيادات التركية تماماً عن طرق التجميد البطيء القديمة التي كانت تسبب تكون بلورات ثلجية قد تضر بالجدار الخلوي للبويضة. وتعتمد المختبرات اليوم على تقنية <strong>Vitrification (التجميد الزجاجي السريع)</strong>، والتي تهبط ببطانة الحرارة إلى -196 درجة مئوية في أجزاء من الثانية.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>نسب بقاء ممتازة بعد الإذابة:</strong> تحقق العيادات المعتمدة في إسطنبول نسب بقاء مذهلة للبويضات والأجنة تتراوح بين 95% إلى 98% عند الحاجة لاستخدامها مستقبلاً.</li>
+      <li><strong>سلامة الهيكل الخلوي:</strong> تحول هذه الطريقة السائل الخلوي فوراً إلى حالة زجاجية ناعمة، مانعة تماماً تكون أي بلورات حادة قد تؤثر على سلامة الجينات.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. مزايا نقل الأجنة المجمدة (FET)</h2>
-    <p className="text-emerald-900">يدعو العديد من أطباء أطفال الأنابيب في إسطنبول الآن إلى دورات 'تجميد الكل'، حيث يتم تجميد الأجنة ونقلها في دورة طبيعية لاحقة غير منشطة.</p>
-    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium">
-      <li><strong>بطانة رحم طبيعية:</strong> يتيح لبطانة الرحم تحقيق تقبل مثالي دون أدوية هرمونية عالية.</li>
-      <li><strong>انغراس أعلى:</strong> يحسن بشكل كبير من التعلق الناجح ونتائج الولادة الحية.</li>
+    <h2 className="text-2xl font-bold text-emerald-950">2. فوائد نقل الأجنة المجمدة (FET) في دورات الحقن المجهري</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      ينصح كبار أطباء العقم في تركيا بتطبيق بروتوكول "تجميد الكل" (Freeze-All) في دورات الإخصاب. حيث يتم تجميد الأجنة المتكونة، وتأجيل نقلها للدورة التالية الطبيعية بدلاً من نقلها الفوري.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li><strong>جاهزية طبيعية لبطانة الرحم:</strong> يتيح لرحم المرأة التعافي التام من تأثير منشطات الإباضة القوية، مما يزيد من تقبله للجنين بشكل طبيعي.</li>
+      <li><strong>رفع احتمالية الانغراس:</strong> تثبت الدراسات الإكلينيكية أن نقل الأجنة المجمدة (FET) يعزز بشكل واضح فرص ثبات الحمل والولادات الناجحة.</li>
     </ul>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    من خلال استخدام تكنولوجيا التجميد المتقدمة، يكتسب المرضى تحكماً كاملاً في جدولهم الإنجابي مع سلامة سريرية لا تشوبها شائبة.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">تحكمي في ساعتك البيولوجية مع كيورلوج</strong>
+    الحفاظ على قدرتك الإنجابية خطوة شجاعة ومدروسة للمستقبل. منصة كيورلوج تركيا تصلك بأعرق المختبرات الحاضنة وأمهر أطباء الغدد الصماء التناسلية لضمان حفظ خلاياك الحيوية بأعلى درجات الأمان والسرية الطبية.
   </div>
 </div>`,
     },
@@ -533,60 +745,84 @@ const initialBlogPosts: BlogPost[] = [
     id: "7",
     slug: "rhinoplasty-turkey-nose-job-recovery-cost",
     title: {
-      en: "Rhinoplasty in Turkey: Ultrasonic Nose Job, Top Surgeons & Recovery Guide",
-      ar: "عملية تجميل الأنف في تركيا: الجراحة بالموجات فوق الصوتية، أشهر الجراحين ودليل التعافي",
+      en: "Rhinoplasty in Turkey: Ultrasonic Piezo Nose Job and Top Surgeons",
+      ar: "عملية تجميل الأنف في تركيا: تقنية البيزو (Piezo) والموجات فوق الصوتية لأجمل تناسق للوجه",
     },
     excerpt: {
-      en: "Looking for the perfect nose job? Learn about Piezo ultrasonic rhinoplasty in Istanbul, natural facial harmony, swelling reduction, and VIP packages.",
-      ar: "هل تبحث عن تجميل الأنف المثالي؟ تعرف على جراحة الأنف بالموجات فوق الصوتية (Piezo) في إسطنبول، وتناسق الوجه الطبيعي، وتقليل التورم، وباقات كبار الشخصيات.",
+      en: "Planning a nose job abroad? Explore Ultrasonic Piezo rhinoplasty in Turkey, natural facial harmony results, swelling recovery timelines, and VIP cost packages in Istanbul.",
+      ar: "هل تبحث عن تجميل الأنف؟ تعرف على جراحة الأنف بالموجات فوق الصوتية (Piezo) في تركيا، وخطوات تصميم تناسق الوجه، وفترة التعافي، وتكلفة باقات VIP في إسطنبول.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Achieving Perfect Facial Harmony with Ultrasonic Rhinoplasty</h1>
-  <p className="text-base sm:text-lg text-gray-600">Turkey is internationally recognized for setting the global standard in <strong>rhinoplasty</strong>. Patients travel from across the globe to Istanbul for nose surgery that delivers refined, elegant, and completely natural results that complement individual facial architecture.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">Rhinoplasty in Turkey: Achieve Flawless Results with Ultrasonic Piezo Technology</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Turkey is globally recognized for defining excellence in cosmetic and functional <strong>rhinoplasty turkey (piezo nose job istanbul)</strong> surgeries. Every year, thousands of international patients visit Istanbul's elite plastic surgery facilities to refine their nasal contours, correct structural breathing issues, and achieve balanced facial aesthetics. By working with highly experienced surgeons and adopting advanced surgical technologies, Turkey delivers premium cosmetic outcomes with structured recovery paths.
+  </p>
+
+  <p className="text-base text-gray-600">
+    Modern cosmetic nose surgeries focus heavily on preserving tissue integrity. Traditional bone-shaping tools have been replaced by advanced structural solutions, allowing rhinoplasty specialists to sculpt elegant profiles with excellent accuracy.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Piezo Ultrasonic Technology</h2>
-    <p className="text-sky-900">Traditional rhinoplasty involved chisels and rasps that often caused significant bruising. Today, elite plastic surgeons in Turkey utilize <strong>Piezo ultrasonic instrumentation</strong>.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Gentle Reshaping:</strong> High-frequency sound waves precisely sculpt nasal bones without harming soft tissue or blood vessels.</li>
-      <li><strong>Minimal Bruising:</strong> Zero to minimal post-operative bruising and significantly reduced swelling.</li>
-      <li><strong>Predictable Outcomes:</strong> Exceptional symmetry and natural aesthetic contours.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Revolutionary Ultrasonic Piezo Technology</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      The adoption of <strong>Piezo Ultrasonic Rhinoplasty</strong> represents a major milestone in modern facial surgery. Rather than relying on traditional mechanical chisels, surgeons use precise high-frequency sound waves to reshape nasal structures.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Selective Tissue Sculpting:</strong> The ultrasonic waves act exclusively on hard bone structures, leaving sensitive nasal blood vessels, cartilage, and soft mucosal tissues completely untouched.</li>
+      <li><strong>Significantly Less Bruising:</strong> Minimizing vascular trauma dramatically reduces post-operative swelling and bruising around the eyes.</li>
+      <li><strong>Exceptional Structural Precision:</strong> Allows plastic surgeons to smooth away dorsal humps and adjust nasal bridges with sub-millimeter precision, supporting highly predictable, elegant profiles.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Comprehensive VIP Patient Care</h2>
-    <p className="text-emerald-900">From 3D digital simulation before surgery to dedicated nursing follow-ups in luxury partner hotels, rhinoplasty packages in Turkey provide elite comfort. Most patients are cleared to return home just 7 days post-procedure with an aesthetically flawless, functional nose.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Complete VIP Patient Experience & Recovery</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Choosing medical travel for facial surgery involves comprehensive care. Top-tier rhinoplasty packages in Istanbul are structured to provide premium comfort and support throughout your stay:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li>Detailed pre-operative 3D digital simulations to visualize and plan your ideal aesthetic profile.</li>
+      <li>Perform surgery in modern, accredited hospital facilities using advanced anesthesia techniques.</li>
+      <li>A comfortable 6 to 7-day stay covering initial checks, custom thermoplastic splint removal, and post-op nursing care in premium hotels.</li>
+    </ul>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    Experience flawless facial harmony and improved breathing dynamics under the care of Istanbul's master rhinoplasty surgeons.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">تحقيق تناغم الوجه المثالي مع تجميل الأنف بالموجات فوق الصوتية</h1>
-  <p className="text-base sm:text-lg text-gray-600">تحظى تركيا باعتراف دولي لترسيخها المعيار العالمي في <strong>جراحة تجميل الأنف</strong>. يسافر المرضى من جميع أنحاء العالم إلى إسطنبول لإجراء جراحة الأنف التي تقدم نتائج راقية وأنيقة وطبيعية تماماً تكمل بنية الوجه الفردية.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">تجميل الأنف في تركيا: دليل جراحة الأنف بالموجات فوق الصوتية (Piezo) وأشهر الأطباء</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    تحظى تركيا باعتراف وتقدير عالمي رائد بصفتها الدولة الأولى في إجراء عمليات <strong>تجميل الأنف في تركيا (rhinoplasty turkey)</strong> التجميلية والوظيفية. ويسافر آلاف المرضى شهرياً إلى عيادات إسطنبول الفاخرة لتصحيح انحراف الحاجز الأنفي، وتصغير الأنف، ورسم ملامح متناسقة مع أبعاد الوجه، اعتماداً على جراحين يمتلكون مهارات فنية وخبرات طبية طويلة.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. تقنية Piezo بالموجات فوق الصوتية</h2>
-    <p className="text-sky-900">تضمنت عملية تجميل الأنف التقليدية الأزاميل والمبارد التي غالباً ما تسببت في كدمات كبيرة. اليوم، يستخدم جراحو التجميل النخبة في تركيا <strong>أجهزة Piezo بالموجات فوق الصوتية</strong>.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>إعادة تشكيل لطيفة:</strong> موجات صوتية عالية التردد تنحت عظام الأنف بدقة دون الإضرار بالأنسجة الرخوة أو الأوعية الدموية.</li>
-      <li><strong>كدمات أقل:</strong> كدمات معدومة أو قليلة بعد الجراحة وتورم أقل بكثير.</li>
-      <li><strong>نتائج متوقعة:</strong> تناسق استثنائي وخطوط جمالية طبيعية.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. تقنية البيزو (Piezo) والموجات فوق الصوتية الحديثة</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      شهدت جراحات الأنف ثورة حقيقية بعد إدخال جهاز <strong>Piezo Ultrasonic</strong> ونبذ الأدوات الميكانيكية القديمة (الأزاميل والمبارد) التي كانت تسبب تهشم العظام وتلف الأنسجة المحيطة.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>نحت انتقائي للعظام:</strong> تعمل الموجات فوق الصوتية على إعادة تشكيل وسمكرة عظام الأنف الصلبة فقط، دون إلحاق أي ضرر بالأوعية الدموية أو الأنسجة الرخوة أو الغضاريف الحساسة.</li>
+      <li><strong>تلاشي الكدمات والتورم:</strong> بفضل حماية الأوعية الدموية، يقل التورم والزرقة حول العينين بنسبة تصل إلى 90% مقارنة بالجراحة القديمة.</li>
+      <li><strong>دقة متناهية في النتائج:</strong> تتيح للجراح برد سنام الأنف وتعديل الجسر بدقة ميكروسكوبية، مما يضمن الحصول على خط أنف ناعم وطبيعي متوافق مع رغبة المريض.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. رعاية شاملة لكبار الشخصيات</h2>
-    <p className="text-emerald-900">بدءاً من المحاكاة الرقمية ثلاثية الأبعاد قبل الجراحة وحتى متابعة التمريض المخصصة في الفنادق الشريكة الفاخرة، توفر باقات تجميل الأنف في تركيا راحة فائقة. يُسمح لمعظم المرضى بالعودة إلى ديارهم بعد 7 أيام فقط من الإجراء بأنف وظيفي وخالي من العيوب الجمالية.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. رحلة العلاج والرعاية لكبار الشخصيات في إسطنبول</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      عند اختيارك إجراء جراحة الوجه عبر منصة كيورلوج، نوفر لك برنامجاً علاجياً متكاملاً يمتد من 6 إلى 7 أيام يضمن لك الراحة والرفاهية:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li>جلسة محاكاة رقمية ثلاثية الأبعاد (3D Simulation) قبل العملية لمعاينة شكل الأنف المتوقع والاتفاق عليه مع طبيبك.</li>
+      <li>إجراء الجراحة في مستشفيات مجهزة بالكامل مع تخدير آمن ومتابعة طبية مستمرة.</li>
+      <li>إزالة الجبيرة الحرارية الخفيفة والدعامات السيليكونية الداخلية (التي تتيح التنفس الفوري) في اليوم السادس، والعودة إلى وطنك بأمان وبمظهر رائع.</li>
+    </ul>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    اختبر تناغم الوجه الخالي من العيوب وديناميكيات التنفس المحسنة تحت رعاية أمهر جراحي تجميل الأنف في إسطنبول.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">لماذا تختار كيورلوج تركيا؟</strong>
+    ملامح وجهك تستحق رعاية تجمع بين العلم والفن. نحن في كيورلوج نربطك بأبرز جراحي التجميل الحاصلين على البورد الأوروبي والتركي، ونقدم لك باقات شاملة تغطي الإقامة الفاخرة والنقل بسيارات VIP لتعيش تجربة علاجية لا تشوبها شائبة.
   </div>
 </div>`,
     },
@@ -612,58 +848,70 @@ const initialBlogPosts: BlogPost[] = [
     id: "8",
     slug: "lasik-eye-surgery-turkey-vision-correction",
     title: {
-      en: "LASIK Eye Surgery in Turkey: Clear Vision with Femtosecond & SMILE Laser",
-      ar: "جراحة العيون بالليزك في تركيا: رؤية واضحة مع الفيمتو ليزك وتقنية سمايل (SMILE)",
+      en: "LASIK Eye Surgery in Turkey: Clear Vision with Femtosecond & SMILE Laser Platforms",
+      ar: "جراحة العيون بالليزك في تركيا: تخلص من النظارات مع تقنيات الفيمتو ليزك وسمايل (SMILE) المتقدمة",
     },
     excerpt: {
-      en: "Eliminate glasses and contacts forever. Discover advanced Femtosecond LASIK, ReLEx SMILE, and No-Touch laser eye treatments in JCI-accredited Turkish clinics.",
-      ar: "تخلص من النظارات والعدسات اللاصقة إلى الأبد. اكتشف الفيمتو ليزك المتقدم، وتقنية ReLEx SMILE، وعلاجات الليزر بدون لمس في العيادات التركية المعتمدة من JCI.",
+      en: "Say goodbye to glasses and contact lenses. Read about Femtosecond LASIK, ReLEx SMILE, and No-Touch laser eye surgery costs and benefits in Turkey.",
+      ar: "تخلص من النظارات والعدسات اللاصقة للأبد. تعرف على ميزات الفيمتو ليزك، وتقنية سمايل (ReLEx SMILE)، والليزك السطحي بدون لمس في تركيا.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Freedom from Glasses with Advanced Laser Eye Surgery</h1>
-  <p className="text-base sm:text-lg text-gray-600">Turkey is home to world-renowned ophthalmic centers equipped with the most advanced laser platforms available globally. For international patients suffering from myopia, hyperopia, or astigmatism, <strong>refractive eye surgery</strong> in Istanbul offers 20/20 vision and permanent freedom from corrective eyewear.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">LASIK Eye Surgery in Turkey: Reclaim Your Vision with Elite Laser Innovations</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Living with myopia, hyperopia, or astigmatism often means relying heavily on glasses or contact lenses. Today, <strong>lasik eye surgery turkey (laser eye surgery istanbul)</strong> has become an incredibly popular choice for international patients seeking a permanent fix. Equipped with advanced technological laser platforms, JCI-accredited eye centers in Turkey deliver pristine visual correction outcomes managed by highly experienced refractive surgeons.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Femtosecond LASIK vs. ReLEx SMILE</h2>
-    <p className="text-sky-900">Modern laser eye correction is painless and completed in under 15 minutes. Understanding the platforms helps determine your ideal procedure:</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Femtosecond LASIK:</strong> Bladeless procedure utilizing an ultra-precise laser to create a corneal flap, followed by an excimer laser reshaping the cornea. Fast visual recovery.</li>
-      <li><strong>ReLEx SMILE:</strong> Advanced keyhole technique requiring a tiny 2mm incision without creating a flap. Exceptional corneal stability, ideal for dry eyes or athletes.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Advanced Laser Platforms: Femtosecond LASIK vs. ReLEx SMILE</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      Modern laser eye correction is quick, painless, and completed in under 15 minutes for both eyes. Understanding the available platforms helps highlight the advantages of modern eye care:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Femtosecond LASIK (iLASIK):</strong> This completely bladeless approach uses a highly accurate femtosecond laser to create a thin corneal flap, followed by custom wavefront excimer laser shaping to correct vision errors. It features a rapid recovery timeline, with many noticing sharp vision within 24 hours.</li>
+      <li><strong>ReLEx SMILE (Small Incision Lenticule Extraction):</strong> Representing the latest shift in laser surgery, SMILE is a minimally invasive keyhole technique. Surgeons correct vision through a tiny 2mm micro-incision without creating a corneal flap. This preserves maximum corneal stability and lowers dry-eye risks, making it ideal for athletes.</li>
+      <li><strong>TransPRK (No-Touch Laser):</strong> An alternative surface procedure where no physical instrument touches the eye. The laser reshapes the cornea directly through the epithelium, making it perfect for patients with thin corneas.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Thorough Pre-Operative Diagnostic Screening</h2>
-    <p className="text-emerald-900">Safety is the primary focus of Turkish eye clinics. Detailed corneal topography, pachymetry, and wavefront analysis are conducted to ensure you are a perfect candidate, guaranteeing exceptional visual outcomes.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Thorough Pre-Operative Diagnostic Screening</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Patient safety is the top priority in Turkish ophthalmic centers. Prior to planning any procedure, clinics perform deep diagnostic tests, including high-definition corneal topography, pachymetry (thickness analysis), and wavefront aberration mapping to confirm your eligibility and safeguard your visual health.
+    </p>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    Reclaim sharp, crystal-clear vision with elite ophthalmic technology and experienced surgeons in Istanbul.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">التحرر من النظارات مع جراحة العيون بالليزر المتقدمة</h1>
-  <p className="text-base sm:text-lg text-gray-600">تضم تركيا مراكز طب عيون ذات شهرة عالمية ومجهزة بأحدث منصات الليزر المتاحة عالمياً. بالنسبة للمرضى الدوليين الذين يعانون من قصر النظر أو طول النظر أو اللابؤرية، توفر <strong>جراحة العيون الانكسارية</strong> في إسطنبول رؤية 20/20 وتحرراً دائماً من النظارات التصحيحية.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">تصحيح النظر وجراحة الليزك في تركيا: رؤية 20/20 بأحدث تقنيات الفيمتو ليزك وسمايل</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    يعد العيش مع مشاكل قصر النظر، طول النظر، أو الاستجماتيزم أمراً مزعجاً بسبب الاعتماد الدائم على النظارات والعدسات. واليوم، تُصنف عمليات <strong>الليزك في تركيا (lasik eye surgery turkey)</strong> كواحدة من أكثر الجراحات طلباً، حيث تحتضن إسطنبول كبرى مستشفيات طب العيون المجهزة بأحدث منصات الليزر في العالم، وبإشراف جراحين أجروا آلاف العمليات الناجحة.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. الفيمتو ليزك مقابل ReLEx SMILE</h2>
-    <p className="text-sky-900">تصحيح العيون بالليزر الحديث غير مؤلم ويكتمل في أقل من 15 دقيقة. فهم المنصات يساعد في تحديد الإجراء المثالي لك:</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>الفيمتو ليزك:</strong> إجراء بدون شفرات يستخدم ليزراً فائق الدقة لإنشاء سديلة قرنية، يليه ليزر إكزايمر يعيد تشكيل القرنية. تعافي بصري سريع.</li>
-      <li><strong>تقنية ReLEx SMILE:</strong> تقنية ثقب المفتاح المتقدمة تتطلب شقاً صغيراً بحجم 2 ملم دون إنشاء سديلة. استقرار فائق للقرنية، مثالي لجفاف العيون أو الرياضيين.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. منصات الليزر الحديثة: الفيمتو ليزك مقابل تقنية SMILE</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تستغرق عمليات تصحيح النظر الحديثة أقل من 15 دقيقة لكلا العينين، وهي غير مؤلمة تماماً بفضل قطرات التخدير الموضعي. وتتنوع الخيارات لتناسب تضاريس قرنيتك:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>الفيمتو ليزك (Femtosecond LASIK):</strong> إجراء بدون شفرات ميكانيكية، حيث يقوم ليزر الفيمتو ثانية بفتح سديلة رقيقة في القرنية، ثم يقوم الإكزايمر ليزر بتعديل الانحناء بدقة متناهية، وتتميز بسرعة استعادة الرؤية الحادة خلال 24 ساعة.</li>
+      <li><strong>تقنية سمايل (ReLEx SMILE):</strong> الثورة الأحدث في طب العيون، وهي جراحة طفيفة التوغل تتم عبر شق ميكروسكوبي بحجم 2 ملم فقط دون رفع أي سديلة من القرنية. تحافظ هذه التقنية على صلابة العين وهي الخيار الأمثل للرياضيين وللذين يعانون من جفاف العين.</li>
+      <li><strong>الليزك السطحي بدون لمس (PRK / No-Touch):</strong> تقنية ممتازة يتم فيها تسليط الليزر مباشرة على سطح العين دون أي كشط أو تلامس من أدوات جراحية، وهي مخصصة لأصحاب القرنيات الرقيقة.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. فحص تشخيصي دقيق وشامل قبل الجراحة</h2>
-    <p className="text-emerald-900">السلامة هي التركيز الرئيسي لعيادات العيون التركية. يتم إجراء طوبوغرافيا القرنية التفصيلية، وقياس سمك القرنية، وتحليل واجهة الموجة للتأكد من أنك مرشح مثالي، مما يضمن نتائج بصرية استثنائية.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. الفحوصات التشخيصية الشاملة لضمان الأمان</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      سلامة عينيك هي الأولوية القصوى. قبل اتخاذ قرار العملية، يخضع المريض لفحص شامل يتضمن تصوير طوبوغرافيا القرنية عالي الدقة، قياس سمك القرنية (Pachymetry)، وفحص قاع العين للتأكد من ملاءمتك التامة للتقنية المختار، وضمان أفضل جودة رؤية ممكنة.
+    </p>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    استعد رؤية حادة وفائقة الوضوح مع تكنولوجيا طب العيون النخبوية والجراحين المتمرسين في إسطنبول.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">استعد وضوح الرؤية مع كيورلوج تركيا</strong>
+    التحرر من النظارات يمنحك نمط حياة نشطاً وجديداً. نحن في كيورلوج نصلك بأفضل مستشفيات العيون التخصصية المعتمدة من JCI لضمان حصولك على علاج عيون آمن، وبباقات تشمل النقل الفوري والإقامة المريحة في إسطنبول.
   </div>
 </div>`,
     },
@@ -689,60 +937,84 @@ const initialBlogPosts: BlogPost[] = [
     id: "9",
     slug: "gastric-sleeve-turkey-bariatric-surgery-guide",
     title: {
-      en: "Obesity & Bariatric Surgery in Turkey: Gastric Sleeve, Bypass & Weight Loss Guide",
-      ar: "جراحة السمنة وإنقاص الوزن في تركيا: تكميم المعدة، تحويل المسار ودليل الرشاقة",
+      en: "Obesity & Bariatric Surgery in Turkey: Gastric Sleeve and Weight Loss Guide",
+      ar: "جراحة السمنة وإنقاص الوزن في تركيا: دليل تكميم المعدة بالمنظار وباقات الرشاقة",
     },
     excerpt: {
-      en: "Regain your health and vitality. Learn about laparoscopic gastric sleeve surgery in Turkey, expert multidisciplinary care, dietary support, and long-term success.",
-      ar: "استعد صحتك وحيويتك. تعرف على جراحة تكميم المعدة بالمنظار في تركيا، والرعاية متعددة التخصصات، والدعم الغذائي، والنجاح طويل الأمد.",
+      en: "Ready to transform your health? Discover laparoscopic gastric sleeve surgery in Turkey, expert bariatric surgeons, comprehensive dietary tracking, and all-inclusive packages.",
+      ar: "مستعد لتغيير حياتك الصحية؟ تعرف على عمليات تكميم المعدة بالمنظار في تركيا، وأفضل جراحي السمنة، والمتابعة الغذائية الشاملة في إسطنبول.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">A New Beginning: Bariatric Surgery for Lasting Weight Loss</h1>
-  <p className="text-base sm:text-lg text-gray-600">Obesity is a complex medical condition associated with type 2 diabetes, hypertension, and sleep apnea. <strong>Bariatric surgery</strong> in Turkey offers a life-saving solution, combining laparoscopic surgical precision with structured, long-term lifestyle support to help patients achieve and maintain their target weight.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">Obesity & Bariatric Surgery in Turkey: Your Complete Guide to Gastric Sleeve and Gastric Bypass Solutions</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Severe obesity is a complex, chronic medical condition linked with serious health conditions, including type 2 diabetes, high blood pressure, obstructive sleep apnea, and joint issues. When conventional diet and exercise options fall short, <strong>gastric sleeve turkey (weight loss surgery turkey)</strong> provides a highly reliable metabolic solution. Turkey's world-class medical facilities combine advanced laparoscopic techniques with comprehensive lifestyle support to help patients achieve sustainable weight loss goals.
+  </p>
+
+  <p className="text-base text-gray-600">
+    Modern bariatric tourism centers focus heavily on patient safety. By utilizing advanced clinical technologies and expert surgical teams, specialized centers in Istanbul deliver long-term metabolic health benefits.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Laparoscopic Gastric Sleeve Surgery</h2>
-    <p className="text-sky-900">Gastric sleeve (sleeve gastrectomy) is the most frequently performed weight loss procedure in Turkey. Using minimally invasive laparoscopic cameras, surgeons remove approximately 80% of the stomach, leaving a narrow tube.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Appetite Control:</strong> Restricts food intake and significantly reduces the production of ghrelin (the hunger hormone).</li>
-      <li><strong>Sustainable Weight Loss:</strong> Patients experience rapid, natural weight reduction within the first year.</li>
-      <li><strong>Health Improvement:</strong> Resolves or significantly improves metabolic conditions like diabetes.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Laparoscopic Gastric Sleeve Surgery (Sleeve Gastrectomy)</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      The laparoscopic gastric sleeve stands out as the most widely requested weight loss procedure globally. Using precise keyhole surgical cameras, experienced metabolic surgeons carefully remove roughly 75% to 80% of the stomach's outer curvature, leaving a slender, vertical sleeve structure.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Hormonal Appetite Management:</strong> Removing the stomach's gastric fundus significantly minimizes the production of Ghrelin, the primary hormone responsible for triggering hunger signals.</li>
+      <li><strong>Reliable Metabolic Weight Reduction:</strong> Patients can naturally and safely shed up to 60% - 70% of their excess body weight within the first 12 to 18 months following surgery.</li>
+      <li><strong>Minimally Invasive Execution:</strong> Laparoscopic entry options preserve underlying abdominal wall structures, speeding up post-op healing and reducing scarring.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Complete Multidisciplinary Care</h2>
-    <p className="text-emerald-900">Successful bariatric tourism involves more than just surgery. Leading Turkish hospitals provide pre-operative cardiology and endocrinology evaluations, followed by post-operative nutritional guidance by expert dietitians for up to a year, ensuring safe and dramatic body transformations.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Multidisciplinary Bariatric Patient Management</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Successful weight loss surgery requires careful, continuous medical oversight. Top hospitals in Turkey provide structured, comprehensive care systems:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li>Detailed pre-operative diagnostic tracking, including multi-specialist clearance from cardiology, pulmonology, and endocrinology experts.</li>
+      <li>Modern leak-testing protocols during surgery using premium surgical stapling systems to ensure structural safety.</li>
+      <li>Up to 12 months of structured nutritional guidance and customized dietary support managed by expert clinical dietitians.</li>
+    </ul>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    Embrace a healthier, more vibrant life with comprehensive bariatric surgery packages and expert clinical teams in Istanbul.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">بداية جديدة: جراحة السمنة لإنقاص الوزن الدائم</h1>
-  <p className="text-base sm:text-lg text-gray-600">السمنة حالة طبية معقدة ترتبط بمرض السكري من النوع 2 وارتفاع ضغط الدم وانقطاع النفس التنفسي أثناء النوم. توفر <strong>جراحة السمنة</strong> في تركيا حلاً منقذاً للحياة، حيث تجمع بين الدقة الجراحية بالمنظار ودعم نمط الحياة المنظم طويل الأمد لمساعدة المرضى على تحقيق وزنهم المستهدف والحفاظ عليه.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">جراحات السمنة وإنقاص الوزن في تركيا: دليل تكميم المعدة وتحويل المسار الشامل</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    تُعد السمنة المفرطة مرضاً مزمناً ومعقداً يرتبط بشكل وثيق بأمراض خطيرة مثل السكري من النوع الثاني، ارتفاع ضغط الدم، وانقطاع النفس أثناء النوم. وعندما تفشل الحلول التقليدية، تمثل عملية <strong>تكميم المعدة في تركيا (gastric sleeve turkey)</strong> الحل الأيضي الأكثر أماناً واستدامة، حيث تجمع مستشفيات إسطنبول بين الدقة الجراحية بالمنظار والمتابعة الغذائية الممتدة.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. جراحة تكميم المعدة بالمنظار</h2>
-    <p className="text-sky-900">تكميم المعدة هو إجراء إنقاص الوزن الأكثر شيوعاً في تركيا. باستخدام كاميرات تنظير البطن طفيفة التوغل، يزيل الجراحون حوالي 80% من المعدة، تاركين أنبوباً ضيقاً.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>التحكم في الشهية:</strong> يحد من تناول الطعام ويقلل بشكل كبير من إنتاج هرمون الجريلين (هرمون الجوع).</li>
-      <li><strong>إنقاص وزن مستدام:</strong> يختبر المرضى انخفاضاً سريعاً وطبيعياً في الوزن خلال العام الأول.</li>
-      <li><strong>تحسين الصحة:</strong> يعالج أو يحسن بشكل كبير الحالات الأيضية مثل مرض السكري.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. عملية تكميم المعدة بالمنظار (Sleeve Gastrectomy)</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تعتبر جراحة تكميم المعدة بالمنظار الإجراء الأكثر شيوعاً ونجاحاً لتقليص حجم المعدة. حيث يقوم جراح السمنة عبر شقوق صغيرة جداً بقص حوالي 75% إلى 80% من الحجم الإجمالي للمعدة، تاركاً أنبوباً عمودياً يشبه الكم.
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>التحكم الهرموني في الجوع:</strong> إزالة قبة المعدة يستأصل معه الخلايا المسؤولة عن إفراز هرمون الغريلين (Ghrelin) المعروف بهرمون الجوع، مما يقلل الشهية بشكل كبير.</li>
+      <li><strong>خسارة وزن مذهلة ومستدامة:</strong> يساعد هذا الإجراء المرضى على خسارة ما بين 60% إلى 70% من فائض وزنهم الزائد خلال أول 12 إلى 18 شهراً بعد العملية.</li>
+      <li><strong>تقنيات المناظير طفيفة التوغل:</strong> تضمن حماية عضلات الجدار البطني، مما يسرع مغادرة المستشفى ويقلل من ظهور الندبات الجراحية.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. رعاية شاملة متعددة التخصصات</h2>
-    <p className="text-emerald-900">تتضمن سياحة السمنة الناجحة ما هو أكثر من مجرد الجراحة. توفر المستشفيات التركية الرائدة تقييمات لأمراض القلب والغدد الصماء قبل الجراحة، تليها إرشادات غذائية بعد الجراحة من قبل أخصائيي تغذية خبراء لمدة تصل إلى عام، مما يضمن تحولات جسدية آمنة ومذهلة.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. الرعاية الطبية متعددة التخصصات والمتابعة المستمرة</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      النجاح الحقيقي لجراحات السمنة يعتمد على التخطيط الطبي الصارم، وهو ما تحرص عليه مستشفيات تركيا:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-emerald-950/80 font-medium text-sm sm:text-base">
+      <li>فحوصات مكثفة قبل العملية تشمل تقييم أطباء القلب، الغدد الصماء، والجهاز الهضمي لضمان الأمان التام.</li>
+      <li>استخدام دبابيس طبية أمريكية فاخرة ثلاثية الأبعاد وإجراء اختبارات التسريب داخل غرفة العمليات لضمان سلامة الأنسجة.</li>
+      <li>برنامج متابعة غذائية ممتد يصل إلى عام كامل بإشراف أخصائيي تغذية علاجية لتوجيه المريض نحو نمط حياة صحي.</li>
+    </ul>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    انطلق نحو حياة أكثر صحة وحيوية مع باقات جراحة السمنة الشاملة والفرق السريرية الخبيرة في إسطنبول.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">ابدأ حياة جديدة وأكثر نشاطاً مع كيورلوج</strong>
+    استعادة عافيتك ورشاقتك تتطلب اختيار الفريق الطبي الأنسب والموثوق. في كيورلوج تركيا، نربطك بأرقى المستشفيات المعتمدة من JCI وبكبار جراحي السمنة الأعضاء في الفيدرالية الدولية لجراحة السمنة (IFSO)، لنوفر لك باقات علاجية شاملة تضمن سلامتك ووصولك لوزنك المثالي.
   </div>
 </div>`,
     },
@@ -768,60 +1040,70 @@ const initialBlogPosts: BlogPost[] = [
     id: "10",
     slug: "medical-tourism-turkey-safety-accreditation",
     title: {
-      en: "Medical Tourism in Turkey: Safety, JCI Accreditation & Quality Standards",
-      ar: "السياحة الطبية في تركيا: السلامة، اعتماد JCI ومعايير الجودة",
+      en: "Medical Tourism in Turkey: Quality Standards and JCI Accreditation Hub",
+      ar: "السياحة الطبية في تركيا: دليل معايير السلامة العالمية واعتمادات JCI للمستشفيات",
     },
     excerpt: {
-      en: "Is it safe to travel to Turkey for medical procedures? Learn about JCI accreditations, strict healthcare regulations, and why Turkey is a global medical hub.",
-      ar: "هل من الآمن السفر إلى تركيا لإجراءات طبية؟ تعرف على اعتمادات JCI واللوائح الصحية الصارمة ولماذا تعتبر تركيا مركزاً طبياً عالمياً.",
+      en: "Is it safe to travel to Turkey for surgery? Learn about strict Ministry of Health oversight, high JCI clinical accreditations, and premium hospital care standards.",
+      ar: "هل السفر إلى تركيا للعلاج آمن؟ تعرف على الرقابة الصارمة لوزارة الصحة التركية، واعتمادات JCI الدولية، وجودة المستشفيات في إسطنبول.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Why Turkey is the Safest Choice for Medical Tourism</h1>
-  <p className="text-base sm:text-lg text-gray-600">When considering healthcare abroad, safety and quality are the primary concerns. Turkey has rapidly become a global powerhouse in <strong>medical tourism</strong>, not just because of affordable prices, but due to its uncompromising adherence to international medical standards.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">Medical Tourism in Turkey: Safety, Quality Standards, and JCI Accreditations</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    When looking into clinical procedures abroad, patient safety and high quality standards are always the primary concerns. Turkey has developed into a top-tier global center for <strong>medical tourism turkey (jci accreditation turkey)</strong>. This growth is driven by competitive pricing and an absolute commitment to international safety protocols and modern healthcare infrastructure.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. JCI Accredited Hospitals</h2>
-    <p className="text-sky-900">Turkey ranks among the top countries worldwide for the highest number of Joint Commission International (JCI) accredited healthcare facilities. This accreditation means:</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Strict Hygiene Protocols:</strong> Infection rates are kept incredibly low.</li>
-      <li><strong>Patient Safety First:</strong> Rigorous checks at every step of your medical journey.</li>
-      <li><strong>World-Class Infrastructure:</strong> Operating rooms equipped with the latest technology.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Joint Commission International (JCI) Leadership</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      Turkey ranks among the top countries globally for hosting the highest number of JCI-accredited healthcare facilities. This accreditation means:
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Strict Infection Controls:</strong> Operating rooms use advanced laminar airflow systems to keep infection rates remarkably low.</li>
+      <li><strong>Rigorous Clinical Checks:</strong> From initial medication tracking to surgical site checks, every phase follows strict international safety standards.</li>
+      <li><strong>Advanced Diagnostic Tools:</strong> Facilities feature modern medical equipment, including high-definition MRIs and smart laboratory setups.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Highly Trained Medical Professionals</h2>
-    <p className="text-emerald-900">Turkish physicians and surgeons undergo some of the most rigorous medical training in the world. Many have completed fellowships in the United States or Europe, ensuring they are well-versed in the latest global medical advancements and fluent in English, bridging any communication gaps.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. High Ministry of Health Oversight</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Every medical travel agency and clinical facility in Turkey must secure official health tourism certification from the Turkish Ministry of Health. This legal framework requires regular audits, standardized pricing protections, and mandates clear English and Arabic language fluency for all medical staff, ensuring smooth communication throughout your journey.
+    </p>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    Choosing Turkey for your medical needs means choosing a destination where your health, safety, and comfort are fiercely protected by international standards.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">لماذا تعتبر تركيا الخيار الأكثر أماناً للسياحة الطبية</h1>
-  <p className="text-base sm:text-lg text-gray-600">عند التفكير في الرعاية الصحية بالخارج، تكون السلامة والجودة هي المخاوف الرئيسية. أصبحت تركيا قوة عالمية في <strong>السياحة الطبية</strong> ليس فقط بسبب الأسعار المعقولة، ولكن لالتزامها الصارم بالمعايير الطبية الدولية.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">السياحة الطبية في تركيا: الأمان الجراحي، واعتمادات اللجنة الدولية المشتركة JCI</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    يمثل الأمان الطبي ومعايير الجودة حجر الأساس عند اتخاذ قرار العلاج في الخارج. ولم تتبوأ تركيا مكانتها كقوة عظمى في مجال <strong>السياحة الطبية في تركيا (medical tourism turkey)</strong> بسبب التكاليف المناسبة فحسب، بل لالتزامها الصارم بالبروتوكولات العلاجية العالمية وتشييد بنية تحتية استشفائية فائقة التطور.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. مستشفيات معتمدة من JCI</h2>
-    <p className="text-sky-900">تحتل تركيا مرتبة متقدمة عالمياً في عدد منشآت الرعاية الصحية المعتمدة من اللجنة الدولية المشتركة (JCI). هذا الاعتماد يعني:</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>بروتوكولات نظافة صارمة:</strong> الحفاظ على معدلات انتقال العدوى منخفضة جداً.</li>
-      <li><strong>سلامة المريض أولاً:</strong> فحوصات دقيقة في كل خطوة من رحلتك الطبية.</li>
-      <li><strong>بنية تحتية عالمية:</strong> غرف عمليات مجهزة بأحدث التقنيات.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. الصدارة العالمية في عدد المستشفيات المعتمدة من JCI</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تُصنف تركيا باستمرار ضمن الدول الأولى عالمياً في عدد المنشآت الحاصلة على شهادة الاعتماد من اللجنة الدولية المشتركة (JCI)، وهو ما يضمن للمريض الدولي:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>بروتوكولات تعقيم صارمة:</strong> تجهيز غرف العمليات بأنظمة فلترة الهواء بضغط إيجابي (Laminar Flow) لتقليص نسب انتقال العدوى إلى الصفر تقريباً.</li>
+      <li><strong>إدارة صارمة لسلامة المرضى:</strong> تطبيق فحص الهوية والتحقق المزدوج في كل مرحلة من مراحل تقديم الدواء والعمليات الجراحية.</li>
+      <li><strong>بنية تحتية متكاملة:</strong> توافر أحدث أجهزة التصوير والروبوتات الجراحية والمختبرات الحيوية المتطورة.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. مهنيون طبيون مدربون تدريباً عالياً</h2>
-    <p className="text-emerald-900">يخضع الأطباء والجراحون الأتراك لأكثر التدريبات الطبية صرامة في العالم. وقد أكمل العديد منهم زمالات في الولايات المتحدة أو أوروبا، مما يضمن إلمامهم بأحدث التطورات الطبية العالمية وإجادتهم للغة الإنجليزية لسد أي فجوات في التواصل.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. الرقابة القانونية الصارمة لوزارة الصحة التركية</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      لا يُسمح لأي مستشفى أو وكالة سياحة علاجية بالعمل دون الحصول على ترخيص رسمي للسياحة الصحية من وزارة الصحة التركية. تفرض هذه القوانين جولات تفتيشية مفاجئة، وتأميناً طبياً شاملاً للمرضى الأجانب، وتلزم الطواقم الطبية بإتقان اللغتين الإنجليزية والعربية لمنع أي فجوات في التواصل.
+    </p>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    إن اختيار تركيا لتلبية احتياجاتك الطبية يعني اختيار وجهة تتم فيها حماية صحتك وسلامتك وراحتك بشدة وفقاً للمعايير الدولية.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">سافر للعلاج بأمان مع كيورلوج تركيا</strong>
+    صحتك هي أغلى ما تملك. نحن في منصة كيورلوج نضمن لك الغربلة الطبية الدقيقة والاختيار الحصري للمستشفيات الحاصلة على أعلى التقييمات الدولية لتعيش تجربة استشفاء آمنة، مريحة، وناجحة بكل المقاييس.
   </div>
 </div>`,
     },
@@ -847,60 +1129,70 @@ const initialBlogPosts: BlogPost[] = [
     id: "11",
     slug: "orthopedic-surgery-turkey-joint-replacement",
     title: {
-      en: "Advanced Orthopedic Surgery in Turkey: Knee and Hip Replacements",
-      ar: "جراحة العظام المتقدمة في تركيا: استبدال مفصل الركبة والورك",
+      en: "Advanced Orthopedic Surgery in Turkey: Robotic Knee and Hip Replacement",
+      ar: "جراحة العظام المتقدمة في تركيا: عمليات استبدال مفصل الركبة والورك بمساعدة الروبوت",
     },
     excerpt: {
-      en: "Regain your mobility with robotic-assisted orthopedic surgeries in Turkey. Discover the benefits of advanced joint replacements and rapid recovery protocols.",
-      ar: "استعد قدرتك على الحركة من خلال جراحات العظام بمساعدة الروبوت في تركيا. اكتشف فوائد استبدال المفاصل المتقدمة وبروتوكولات التعافي السريع.",
+      en: "Regain physical mobility. Learn about advanced robotic-assisted joint replacement surgery in Turkey, premium biocompatible implants, and rapid physical recovery.",
+      ar: "استعد حريتك في الحركة. تعرف على جراحات استبدال المفاصل بمساعدة الروبوت في تركيا، وأحدث الغرسات الحيوية، وبروتوكولات التأهيل السريع.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Regaining Mobility with Precision Orthopedics</h1>
-  <p className="text-base sm:text-lg text-gray-600">Chronic joint pain can severely limit your quality of life. Fortunately, <strong>orthopedic surgery in Turkey</strong> has embraced robotic technology and minimally invasive techniques, making joint replacements safer and more precise than ever.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">Advanced Orthopedic Surgery in Turkey: Precision Robotic Joint Replacement Solutions</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Chronic joint degradation and severe osteoarthritis can greatly limit your daily physical freedom. Fortunately, <strong>orthopedic surgery turkey (knee replacement turkey)</strong> has incorporated robotic surgery systems to improve precision. Leading medical centers in Ankara and Istanbul combine advanced clinical systems with highly experienced orthopedic surgeons, making joint reconstruction safer and more reliable.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Robotic-Assisted Joint Replacements</h2>
-    <p className="text-sky-900">For knee and hip arthroplasties, many top Turkish hospitals utilize systems like MAKOplasty. This robotic arm technology provides surgeons with a 3D model of your joint, ensuring the implant is positioned with sub-millimeter accuracy.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Custom Fit:</strong> Implants perfectly match your unique anatomy.</li>
-      <li><strong>Less Pain:</strong> Minimal tissue disruption means reduced post-operative pain.</li>
-      <li><strong>Longevity:</strong> Precise alignment increases the lifespan of the implant.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Robotic-Assisted Joint Replacement Systems</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      For total knee and hip arthroplasties, modern Turkish hospitals utilize advanced robotic software like MAKOplasty. This system creates a detailed 3D model of your joint anatomy prior to surgery, allowing surgeons to execute plans with sub-millimeter precision.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Anatomical Realignment:</strong> Premium biocompatible implants are positioned to align perfectly with your unique skeletal structure.</li>
+      <li><strong>Preserving Healthy Tissue:</strong> The robotic arm assists the surgeon within predefined boundaries, protecting surrounding healthy soft tissues and ligaments.</li>
+      <li><strong>Long-Lasting Performance:</strong> Accurate placement improves structural balance and extends the functional lifespan of your implant.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Rapid Recovery and Rehabilitation</h2>
-    <p className="text-emerald-900">A successful surgery is only half the journey. The post-operative care in Turkey includes specialized physiotherapy programs tailored to get you back on your feet quickly. Patients often start walking with assistance just hours after surgery.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Structured Physical Rehabilitation</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Achieving full physical mobility relies on proper post-operative care. Specialized clinics in Turkey provide integrated, intensive physiotherapy programs. Patients are safely supported to take their first steps with assistance within hours of surgery, helping to reduce recovery times.
+    </p>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    With top-tier technology and comprehensive rehab, Turkey offers a complete, affordable pathway to a pain-free, active life.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">استعادة القدرة على الحركة بجراحة العظام الدقيقة</h1>
-  <p className="text-base sm:text-lg text-gray-600">يمكن أن يحد ألم المفاصل المزمن بشدة من جودة حياتك. لحسن الحظ، اعتمدت <strong>جراحة العظام في تركيا</strong> التكنولوجيا الروبوتية والتقنيات طفيفة التوغل، مما جعل استبدال المفاصل أكثر أماناً ودقة من أي وقت مضى.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">جراحة العظام المتقدمة في تركيا: عمليات استبدال المفاصل بتقنيات الروبوت الدقيقة</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    تسبب آلام المفاصل المزمنة وتآكل الغضاريف تراجعاً حاداً في جودة الحياة والقدرة على المشي بحرية. ولحسن الحظ، شهدت <strong>جراحة العظام في تركيا (orthopedic surgery turkey)</strong> قفزة هائلة بفضل دمج الأنظمة الروبوتية المتقدمة، مما جعل عمليات استبدال مفصل الورك والركبة أكثر أماناً ودقة وطولاً في العمر الافتراضي للمفصل.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. استبدال المفاصل بمساعدة الروبوت</h2>
-    <p className="text-sky-900">بالنسبة لعمليات تقويم مفصل الركبة والورك، تستخدم العديد من أفضل المستشفيات التركية أنظمة مثل MAKOplasty. توفر تقنية الذراع الروبوتية هذه للجراحين نموذجاً ثلاثي الأبعاد لمفصلك، مما يضمن وضع الغرسة بدقة متناهية.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>ملاءمة مخصصة:</strong> الغرسات تتطابق تماماً مع تشريحك الفريد.</li>
-      <li><strong>ألم أقل:</strong> الحد الأدنى من اضطراب الأنسجة يعني تقليل الألم بعد الجراحة.</li>
-      <li><strong>طول العمر:</strong> المحاذاة الدقيقة تزيد من عمر الغرسة.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. استبدال المفاصل بمساعدة الروبوت الجراحي (MAKOplasty)</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      تعتمد كبرى مستشفيات تقويم العظام في تركيا على الذراع الروبوتية الذكية لرسم خريطة ثلاثية الأبعاد دقيقة لمفصل المريض قبل غرس المفاصل الاصطناعية:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>تطابق تشريحي مثالي:</strong> يتم تركيب الغرسات المصنوعة من التيتانيوم عالي الجودة ليتطابق مع قياسات عظامك الفريدة بدقة تقل عن المليمتر.</li>
+      <li><strong>حماية الأنسجة والأربطة:</strong> يمنع الروبوت أي انحراف جراحي خارج النطاق المحدد، مما يحمي الأوتار والأوعية الدموية المحيطة بالمفصل من التلف.</li>
+      <li><strong>إطالة عمر المفصل:</strong> التوازن الحركي الدقيق يحمي المفصل من الاحتكاك غير المتساوي، مما يضمن بقاءه لعدة عقود.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. التعافي السريع وإعادة التأهيل</h2>
-    <p className="text-emerald-900">الجراحة الناجحة هي نصف الرحلة فقط. تشمل رعاية ما بعد الجراحة في تركيا برامج علاج طبيعي متخصصة مصممة لإعادتك إلى الوقوف على قدميك بسرعة. غالباً ما يبدأ المرضى في المشي بمساعدة بعد ساعات قليلة من الجراحة.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. بروتوكولات التأهيل الطبي والتعافي السريع</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      لا تنتهي الرحلة داخل غرفة العمليات، بل تكتمل عبر برامج العلاج الطبيعي المكثف والمصمم بعناية في عياداتنا. وبفضل التقنيات طفيفة التوغل، يتم توجيه المريض للمشي والوقوف بمساعدة المعالج بعد ساعات قليلة من العملية لمنع تجلط الدم وتسريع الشفاء.
+    </p>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    من خلال التكنولوجيا المتطورة وإعادة التأهيل الشاملة، تقدم تركيا مساراً كاملاً وبأسعار معقولة لحياة نشطة خالية من الألم.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">استعد نشاطك وحريتك مع كيورلوج</strong>
+    المشي بدون ألم هو حقك الطبيعي. نحن في كيورلوج نربطك بأشهر استشاريي جراحة العظام في تركيا المجهزين بأحدث التكنولوجيات الطبية لضمان عودتك لممارسة حياتك اليومية بكل عافية ونشاط وبباقات أسعار مدروسة.
   </div>
 </div>`,
     },
@@ -926,60 +1218,70 @@ const initialBlogPosts: BlogPost[] = [
     id: "12",
     slug: "cardiology-hospitals-turkey-heart-surgery",
     title: {
-      en: "World-Class Cardiology in Turkey: Bypass Surgeries and Heart Care",
-      ar: "أمراض القلب ذات المستوى العالمي في تركيا: جراحات تحويل المسار والعناية بالقلب",
+      en: "World-Class Cardiology in Turkey: Bypass Surgery and Advanced Heart Care",
+      ar: "أمراض وجراحة القلب في تركيا: دليل عمليات قلب الأطفال وتحويل المسار طفيفة التوغل",
     },
     excerpt: {
-      en: "Turkey's cardiology centers are renowned for complex heart surgeries, minimally invasive bypasses, and pediatric cardiology with outstanding success rates.",
-      ar: "تشتهر مراكز أمراض القلب في تركيا بجراحات القلب المعقدة، وتحويل المسار طفيف التوغل، وأمراض قلب الأطفال مع معدلات نجاح باهرة.",
+      en: "Seeking specialized cardiovascular surgery? Read about minimally invasive heart bypass (CABG), TAVI procedures, and elite cardiology care in Turkey.",
+      ar: "تبحث عن جراحة قلب تخصصية؟ تعرف على عمليات تحويل مسار الشريان التاجي طفيفة التوغل، وتقنية TAVI، وأفضل مستشفيات القلب في تركيا.",
     },
     content: {
       en: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">Healing the Heart: Advanced Cardiology Operations</h1>
-  <p className="text-base sm:text-lg text-gray-600">When dealing with cardiovascular health, there is no room for compromise. <strong>Cardiology hospitals in Turkey</strong> are equipped with state-of-the-art hybrid operating rooms and are staffed by world-renowned cardiovascular surgeons.</p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">World-Class Cardiology in Turkey: Advanced Heart Care & Minimally Invasive Bypass Surgeries</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    Managing cardiovascular health requires absolute clinical precision and access to top medical expertise. Today, <strong>cardiology hospitals turkey (heart surgery turkey)</strong> stand out as premier global facilities for managing complex cardiac conditions. Equipped with advanced hybrid operating suites, top hospitals in Istanbul and Ankara bring together highly experienced cardiovascular surgeons to provide reliable adult and pediatric heart care.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-l-4 border-l-sky-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. Minimally Invasive Heart Surgery</h2>
-    <p className="text-sky-900">Traditional open-heart surgery requires splitting the breastbone, leading to long recovery times. Modern Turkish clinics excel in minimally invasive procedures, accessing the heart through small incisions between the ribs.</p>
-    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>Coronary Artery Bypass Grafting (CABG):</strong> Performed with extreme precision.</li>
-      <li><strong>Valve Repair & Replacement:</strong> Including TAVI procedures which don't require open surgery.</li>
-      <li><strong>Faster Recovery:</strong> Patients leave the hospital sooner and experience less scarring.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. Minimally Invasive Cardiovascular Interventions</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      Traditional open-heart surgeries require splitting the breastbone, which typically involves longer recovery periods. Modern Turkish surgical teams specialize in minimally invasive care, accessing cardiac structures through small incisions between the ribs.
+    </p>
+    <ul className="list-disc pl-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>Coronary Artery Bypass Grafting (CABG):</strong> Performed using microscopic visualization to bypass blocked arterial pathways safely.</li>
+      <li><strong>TAVI (Transcatheter Aortic Valve Implantation):</strong> Allows surgeons to replace damaged aortic valves through a catheter wire, avoiding open surgery and benefiting high-risk or elderly patients.</li>
+      <li><strong>Accelerated Recovery Timelines:</strong> Minimizing chest wall disruption leads to less post-op discomfort and supports a faster return to daily activities.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-l-4 border-l-emerald-500 p-6 rounded-r-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. Comprehensive Cardiac Care</h2>
-    <p className="text-emerald-900">Beyond surgery, these medical centers offer complete diagnostic services (like advanced echocardiograms and cardiac MRIs) and specialized post-operative intensive care units dedicated solely to cardiovascular patients.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. Intensive Diagnostic and Multi-Specialist Care</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      Comprehensive heart care relies on deep diagnostic precision. Certified medical facilities in Turkey feature high-definition echocardiograms, multi-slice CT angiography, and dedicated cardiac intensive care units (ICUs) overseen by highly trained cardiologists, ensuring professional, safe, and round-the-clock monitoring.
+    </p>
   </div>
 
-  <div className="p-6 bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-l-primary rounded-r-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">Conclusion:</strong>
-    For life-saving cardiac procedures, Turkey combines elite medical talent with compassionate care, providing a safe harbor for heart patients globally.
-  </div>
 </div>`,
-      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right">
-  <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 border-b border-gray-100 pb-4">شفاء القلب: عمليات أمراض القلب المتقدمة</h1>
-  <p className="text-base sm:text-lg text-gray-600">عند التعامل مع صحة القلب والأوعية الدموية، لا يوجد مجال للتسوية. تم تجهيز <strong>مستشفيات أمراض القلب في تركيا</strong> بغرف عمليات هجينة حديثة ويعمل بها جراحو قلب وأوعية دموية مشهورون عالمياً.</p>
+      ar: `<div className="max-w-[800px] mx-auto font-sans leading-[1.8] text-gray-800 space-y-8 text-right" dir="rtl">
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 border-b border-gray-100 pb-4 tracking-tight">أمراض وجراحة القلب في تركيا: رعاية قلبية نخبوية بأحدث التقنيات الهجينة</h1>
+  
+  <p className="text-base sm:text-lg text-gray-600">
+    تتطلب صحة القلب والأوعية الدموية أعلى درجات الدقة الطبية والخبرة السريرية المتقدمة التي لا تقبل المساومة. وفي هذا الصدد، تقع <strong>مستشفيات القلب في تركيا (cardiology hospitals turkey)</strong> في صدارة الوجهات العلاجية، حيث تضم غرف عمليات هجينة متطورة وأشهر جراحي القلب الحاصلين على اعتمادات دولية لعلاج البالغين والأطفال.
+  </p>
 
   <div className="bg-sky-50/60 border border-sky-100 border-r-4 border-r-sky-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-sky-950">1. جراحة القلب طفيفة التوغل</h2>
-    <p className="text-sky-900">تتطلب جراحة القلب المفتوح التقليدية شق عظم القص، مما يؤدي إلى فترات تعافي طويلة. تتفوق العيادات التركية الحديثة في الإجراءات طفيفة التوغل، حيث تصل إلى القلب من خلال شقوق صغيرة بين الضلوع.</p>
-    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium">
-      <li><strong>تحويل مسار الشريان التاجي (CABG):</strong> يتم إجراؤها بدقة متناهية.</li>
-      <li><strong>إصلاح واستبدال الصمامات:</strong> بما في ذلك إجراءات TAVI التي لا تتطلب جراحة مفتوحة.</li>
-      <li><strong>تعافي أسرع:</strong> يغادر المرضى المستشفى في وقت أقرب ويعانون من ندبات أقل.</li>
+    <h2 className="text-2xl font-bold text-sky-950">1. جراحات القلب طفيفة التوغل (عبر شقوق صغيرة)</h2>
+    <p className="text-sky-900 text-sm sm:text-base">
+      نجح الأطباء الأتراك في استبدال عمليات القلب المفتوح التقليدية (التي تتطلب شق عظمة القص وفترات تعافي طويلة) بتقنيات التدخل الجراحي طفيف التوغل عبر فتحات صغيرة بين الضلوع:
+    </p>
+    <ul className="list-disc pr-5 space-y-2 text-sky-950/80 font-medium text-sm sm:text-base">
+      <li><strong>مجازة الشريان التاجي (CABG):</strong> عملية تحويل مسار الشرايين المغلقة بدقة ميكروسكوبية فائقة لضمان تدفق الدم لعضلة القلب.</li>
+      <li><strong>تقنية TAVI لتبديل الصمام:</strong> تغيير صمام القلب الأبهر التالف بالكامل عبر قسطرة شريانية بسيطة بدون شق الصدر، وهي مثالية لكبار السن.</li>
+      <li><strong>فترة نقاهة قصيرة جداً:</strong> تقليل الشقوق الجراحية يحمي القفص الصدري، مما يحد من الألم ويسرع عودة المريض لحياته الطبيعية.</li>
     </ul>
   </div>
 
   <div className="bg-emerald-50/60 border border-emerald-100 border-r-4 border-r-emerald-500 p-6 rounded-l-2xl space-y-4 shadow-sm">
-    <h2 className="text-xl font-bold text-emerald-950">2. رعاية قلبية شاملة</h2>
-    <p className="text-emerald-900">ما وراء الجراحة، تقدم هذه المراكز الطبية خدمات تشخيصية كاملة (مثل مخطط صدى القلب المتقدم وتصوير القلب بالرنين المغناطيسي) ووحدات عناية مركزة متخصصة بعد الجراحة مكرسة حصرياً لمرضى القلب والأوعية الدموية.</p>
+    <h2 className="text-2xl font-bold text-emerald-950">2. التشخيص المتقدم ووحدات العناية المركزة المتخصصة</h2>
+    <p className="text-emerald-900 text-sm sm:text-base">
+      تبدأ الرعاية الناجحة من التشخيص السليم، وتوفر المراكز الشريكة لنا أحدث أجهزة الرنين المغناطيسي القلبي (Cardiac MRI) والقسطرة الاستكشافية، متبوعة بالإشراف الطبي الدقيق داخل وحدات العناية المركزة القلبية (CCU) المخصصة والمراقبة على مدار الساعة من استشاريين متميزين.
+    </p>
   </div>
 
   <div className="p-6 bg-gradient-to-l from-primary/10 to-transparent border-r-4 border-r-primary rounded-l-2xl shadow-sm italic text-gray-900">
-    <strong className="not-italic text-primary block mb-1 text-lg">الخلاصة:</strong>
-    بالنسبة لإجراءات القلب المنقذة للحياة، تجمع تركيا بين المواهب الطبية النخبوية والرعاية العطوفة، وتوفر ملاذاً آمناً لمرضى القلب على مستوى العالم.
+    <strong className="not-italic text-primary block mb-2 text-xl font-bold">حافظ على سلامة قلبك مع كيورلوج تركيا</strong>
+    إجراءات القلب تتطلب الثقة والخبرة الطبية المطلقة. منصة كيورلوج تصلك بأبرز مستشفيات جراحة القلب المعتمدة من JCI لضمان حصولك على رحلة علاجية آمنة ومريحة متكاملة الخدمات في تركيا.
   </div>
 </div>`,
     },
