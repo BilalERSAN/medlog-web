@@ -3,7 +3,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://curelogturkey.com"),
+  metadataBase: new URL("https://www.curelogturkey.com"),
   title: {
     default: "Top Medical Treatments & Health Tourism in Turkey | Curelog",
     template: "%s | Curelog Turkey",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["ar_AE"],
-    url: "https://curelogturkey.com",
+    url: "https://www.curelogturkey.com",
     title: "Premium Health Tourism in Turkey | Curelog",
     description: "Start your healing journey in Turkey. Top-tier clinics for Rhinoplasty, Dental, Hair Transplant, IVF, and advanced medical treatments.",
     siteName: "Curelog Turkey",

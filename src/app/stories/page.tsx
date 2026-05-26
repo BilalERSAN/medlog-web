@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Patient Stories | Curelog",
   description: "Read real stories and experiences from our patients at Curelog.",
+  alternates: { canonical: '/stories' },
 };
 
 export default async function StoriesPage() {

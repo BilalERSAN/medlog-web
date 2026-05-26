@@ -3,6 +3,16 @@ import Footer from "@/components/Footer";
 import { getBlogPosts } from "@/data/blog";
 import { notFound } from "next/navigation";
 import BlogPostClient from "./BlogPostClient";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const slug = (await params).slug;
+  return {
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+  };
+}
 
 export const dynamic = "force-dynamic";
 

@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Medical Blog Turkey | Hair Transplant, IVF & Medical Tourism Guide",
   description: "Comprehensive guides on medical procedures in Turkey, including hair transplant turkey, IVF turkey, and health tourism safety.",
+  alternates: { canonical: '/blog' },
 };
 
 export default async function BlogPage() {

@@ -3,7 +3,7 @@ import { blogPosts } from '@/data/blog';
 import { departments } from '@/data/doctors';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://curelogturkey.com';
+  const baseUrl = 'https://www.curelogturkey.com';
 
   // Static routes
   const staticRoutes = [

@@ -6,6 +6,7 @@ import DepartmentsClient from "./DepartmentsClient";
 export const metadata = {
   title: "Medical Departments | Curelog Institutional Medical Consultancy",
   description: "Explore our specialized medical departments including hair transplant, IVF, cardiology, and more.",
+  alternates: { canonical: '/departments' },
 };
 
 export default function DepartmentsPage() {
