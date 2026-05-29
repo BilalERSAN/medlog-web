@@ -62,7 +62,7 @@ export default function DepartmentClient({
         )}
 
         <div className="mt-16 text-center">
-          <Link href="/#focus" className="inline-flex items-center gap-2 text-primary hover:text-primary-container font-semibold transition-colors">
+          <Link href="/departments" className="inline-flex items-center gap-2 text-primary hover:text-primary-container font-semibold transition-colors">
             <span className="material-symbols-outlined">arrow_back</span>
             {t({ en: "Back to All Departments", ar: "العودة إلى جميع الأقسام" })}
           </Link>

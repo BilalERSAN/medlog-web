@@ -226,17 +226,17 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-100 flex-shrink-0 relative">
-                    {story.image ? (
+                    {!story.image || story.image.includes("1500648767791") ? (
+                      <div className="flex items-center justify-center h-full text-gray-400 bg-gray-100">
+                        <span className="material-symbols-outlined">person</span>
+                      </div>
+                    ) : (
                       <img
                         src={story.image}
                         alt=""
                         style={{ objectPosition: story.imagePosition || 'center' }}
                         className="w-full h-full object-cover"
                       />
-                    ) : (
-                      <div className="flex items-center justify-center h-full text-gray-400">
-                        <span className="material-symbols-outlined">person</span>
-                      </div>
                     )}
                   </div>
                   <div>
@@ -728,7 +728,7 @@ function StoryModal({
       departmentSlug,
       departmentName: { en: departmentNameEn, ar: departmentNameAr },
       quote: { en: quoteEn, ar: quoteAr || quoteEn },
-      image: image || "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+      image: image || "",
       galleryImages: galleryImages.length > 0 ? galleryImages : undefined,
       imagePosition: "center",
       status: "approved", // When admin saves, it becomes approved

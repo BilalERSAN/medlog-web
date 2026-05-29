@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-8">
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/about">{t({ en: "About Us", ar: "معلومات عنا" })}</a>
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/blog">{t({ en: "Blog", ar: "المدونة" })}</a>
-          <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/#guidance">{t({ en: "Contact", ar: "اتصل بنا" })}</a>
+          <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/consultation">{t({ en: "Contact", ar: "اتصل بنا" })}</a>
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/privacy">{t({ en: "Privacy Policy", ar: "سياسة الخصوصية" })}</a>
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/terms">{t({ en: "Terms of Service", ar: "شروط الخدمة" })}</a>
           <a className="font-label-caps uppercase text-secondary hover:text-primary transition-colors duration-300" href="/legal">{t({ en: "Legal Warning", ar: "تحذير قانوني" })}</a>

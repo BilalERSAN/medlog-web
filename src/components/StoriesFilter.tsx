@@ -31,13 +31,19 @@ function StoryCard({ story, onZoomImage, searchTerm }: { story: Story, onZoomIma
     <div id={story.id} className="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm overflow-hidden hover:border-outline hover:shadow-md transition-all duration-300 flex flex-col h-full scroll-mt-24">
       <div className="p-8 flex flex-col flex-grow">
         <div className="flex items-center gap-4 mb-6">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={story.image}
-            alt={story.patientName}
-            style={{ objectPosition: story.imagePosition || 'center' }}
-            className="w-16 h-16 rounded-full object-cover border-2 border-primary-container shrink-0"
-          />
+          {!story.image || story.image.includes("1500648767791") ? (
+            <div className="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center border-2 border-primary-container shrink-0">
+              <span className="material-symbols-outlined text-secondary text-3xl">person</span>
+            </div>
+          ) : (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={story.image}
+              alt={story.patientName}
+              style={{ objectPosition: story.imagePosition || 'center' }}
+              className="w-16 h-16 rounded-full object-cover border-2 border-primary-container shrink-0"
+            />
+          )}
           <div>
             <h3 className="font-h3 text-on-background mb-1">{highlightText(story.patientName, searchTerm)}</h3>
             <p className="font-body-sm font-semibold text-primary">{t(story.departmentName)}</p>

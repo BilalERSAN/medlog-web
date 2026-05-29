@@ -35,13 +35,19 @@ export default function PatientStories({ stories }: { stories: Story[] }) {
                 className="bg-surface-container-low p-lg rounded-xl shadow-sm border border-outline-variant h-full flex flex-col hover:border-primary/50 hover:shadow-md transition-all duration-300 group block"
               >
                 <div className="flex items-center space-x-4 mb-4">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    alt={story.patientName}
-                    style={{ objectPosition: story.imagePosition || 'center' }}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-primary-container shrink-0"
-                    src={story.image}
-                  />
+                  {!story.image || story.image.includes("1500648767791") ? (
+                    <div className="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center border-2 border-primary-container shrink-0">
+                      <span className="material-symbols-outlined text-secondary text-3xl">person</span>
+                    </div>
+                  ) : (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      alt={story.patientName}
+                      style={{ objectPosition: story.imagePosition || 'center' }}
+                      className="w-16 h-16 rounded-full object-cover border-2 border-primary-container shrink-0"
+                      src={story.image}
+                    />
+                  )}
                   <div>
                     <h4 className="font-h3 text-body-lg font-semibold text-on-background">{story.patientName}</h4>
                     <p className="font-body-md text-sm text-secondary">

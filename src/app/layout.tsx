@@ -90,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light scroll-smooth">
+    <html lang="en" className="light scroll-smooth" data-scroll-behavior="smooth">
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
