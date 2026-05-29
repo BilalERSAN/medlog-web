@@ -41,7 +41,7 @@ export default async function middleware(request: NextRequest) {
 
   // The application handles language via client-side Context and localStorage.
   // We avoid strict path redirects here to prevent loops, cleanly falling back.
-  
+
   // 3. PRESERVE FUNCTIONALITY: NextAuth protection for /admin routes
   if (request.nextUrl.pathname.startsWith("/admin")) {
     // @ts-expect-error - NextAuth middleware typing
@@ -52,8 +52,8 @@ export default async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Match all paths to catch the www redirect, but ignore Next.js internals and static files
+  // Match all paths to catch the www redirect, but ignore Next.js internals, static files, and search engine bots' files
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|sitemap\\.xml|robots\\.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };
