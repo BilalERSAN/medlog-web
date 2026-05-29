@@ -94,10 +94,10 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
             })}
           </p>
           <Link
-            href="/#guidance"
+            href="/consultation"
             className="bg-primary text-on-primary px-10 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all inline-block"
           >
-            {t({ en: "Get Free Guidance", ar: "احصل على إرشاد مجاني" })}
+            {t({ en: "Get Guidance", ar: "احصل على إرشاد" })}
           </Link>
         </div>
       </section>
