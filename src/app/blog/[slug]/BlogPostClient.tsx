@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { BlogPost } from "@/data/blog";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function BlogPostClient({ post }: { post: BlogPost }) {
   const { t, language } = useLanguage();
@@ -48,12 +49,12 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
 
       {/* Hero Image */}
       <section className="max-w-[1280px] mx-auto px-12 mb-16">
-        <div className="aspect-[21/9] w-full rounded-3xl overflow-hidden shadow-2xl">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="relative aspect-[21/9] w-full rounded-3xl overflow-hidden shadow-2xl">
+          <Image
             src={post.image}
             alt={t(post.title)}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
       </section>

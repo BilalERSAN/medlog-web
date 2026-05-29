@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 interface Props {
   departments: { slug: string; en: string; ar: string }[];
@@ -138,7 +139,7 @@ export default function PatientStoryModalClient({ departments }: Props) {
                       {image ? (
                         <div className="relative">
                           <div className="w-20 h-20 rounded-full overflow-hidden shadow-md border border-gray-200">
-                            <img src={image} alt="" className="w-full h-full object-cover" />
+                            <Image src={image} alt="" fill className="object-cover" />
                           </div>
                           <button
                             type="button"
@@ -192,7 +193,7 @@ export default function PatientStoryModalClient({ departments }: Props) {
                       <div className="flex flex-wrap gap-3">
                         {galleryImages.map((img, idx) => (
                           <div key={idx} className="relative w-24 h-24 rounded-xl overflow-hidden shadow-sm border border-gray-200">
-                            <img src={img} alt="" className="w-full h-full object-cover" />
+                            <Image src={img} alt="" fill className="object-cover" />
                             <button
                               type="button"
                               onClick={() => setGalleryImages(galleryImages.filter((_, i) => i !== idx))}

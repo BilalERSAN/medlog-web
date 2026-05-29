@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Doctor } from "../data/doctors";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function DoctorCard({ doctor }: { doctor: Doctor }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,11 +11,11 @@ export default function DoctorCard({ doctor }: { doctor: Doctor }) {
   return (
     <div className="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm overflow-hidden hover:border-outline hover:shadow-md transition-all duration-300 flex flex-col h-full">
       <div className="relative h-72 overflow-hidden bg-surface-container shrink-0">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={doctor.image}
           alt={typeof doctor.name === 'string' ? doctor.name : doctor.name.en}
-          className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+          fill
+          className="object-cover object-top hover:scale-105 transition-transform duration-500"
         />
       </div>
 

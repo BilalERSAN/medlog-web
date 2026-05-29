@@ -5,6 +5,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { Story } from "../data/stories";
 import CustomSelect from "./CustomSelect";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 function StoryCard({ story, onZoomImage, searchTerm }: { story: Story, onZoomImage: (src: string) => void, searchTerm: string }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -36,10 +37,11 @@ function StoryCard({ story, onZoomImage, searchTerm }: { story: Story, onZoomIma
               <span className="material-symbols-outlined text-secondary text-3xl">person</span>
             </div>
           ) : (
-            /* eslint-disable-next-line @next/next/no-img-element */
-            <img
+            <Image
               src={story.image}
               alt={story.patientName}
+              width={64}
+              height={64}
               style={{ objectPosition: story.imagePosition || 'center' }}
               className="w-16 h-16 rounded-full object-cover border-2 border-primary-container shrink-0"
             />
@@ -63,11 +65,11 @@ function StoryCard({ story, onZoomImage, searchTerm }: { story: Story, onZoomIma
                 <div className="flex -ml-4 h-32">
                   {story.galleryImages.map((src, idx) => (
                     <div key={idx} className="flex-[0_0_80%] sm:flex-[0_0_60%] min-w-0 pl-4 h-full relative cursor-zoom-in group" onClick={() => onZoomImage(src)}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         src={src}
                         alt={`${story.patientName} gallery image ${idx + 1}`}
-                        className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                        fill
+                        className="object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors rounded-xl ml-4 pointer-events-none" />
                     </div>
@@ -202,12 +204,12 @@ export default function StoriesFilter({ stories }: { stories: Story[] }) {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 md:p-8 cursor-zoom-out"
           onClick={() => setZoomedImage(null)}
         >
-          <div className="relative max-w-5xl w-full max-h-full flex items-center justify-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          <div className="relative w-full h-[85vh] max-w-5xl flex items-center justify-center">
+            <Image
               src={zoomedImage}
               alt="Zoomed gallery image"
-              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl cursor-default"
+              fill
+              className="object-contain rounded-lg shadow-2xl cursor-default"
               onClick={(e) => e.stopPropagation()}
             />
           </div>

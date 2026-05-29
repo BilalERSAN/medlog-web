@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { BlogPost, BilingualString } from "@/data/blog";
 import { Story } from "@/data/stories";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface Props {
   initialBlogPosts: BlogPost[];
@@ -176,10 +177,11 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
             >
               <div className="relative h-48 w-full bg-gray-100 overflow-hidden">
                 {post.image ? (
-                  <img
+                  <Image
                     src={post.image}
                     alt=""
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
                   <div className="flex items-center justify-center h-full text-gray-400">
@@ -231,11 +233,12 @@ export default function AdminDashboardClient({ initialBlogPosts, initialStories 
                         <span className="material-symbols-outlined">person</span>
                       </div>
                     ) : (
-                      <img
+                      <Image
                         src={story.image}
                         alt=""
+                        fill
                         style={{ objectPosition: story.imagePosition || 'center' }}
-                        className="w-full h-full object-cover"
+                        className="object-cover"
                       />
                     )}
                   </div>
@@ -470,7 +473,7 @@ function BlogModal({
             <div className="flex items-center space-x-6 bg-gray-50 p-4 rounded-2xl border border-dashed border-gray-200">
               {image ? (
                 <div className="relative w-32 h-20 rounded-xl overflow-hidden shadow-sm">
-                  <img src={image} alt="" className="w-full h-full object-cover" />
+                  <Image src={image} alt="" fill className="object-cover" />
                   <button
                     type="button"
                     onClick={() => setImage("")}
@@ -762,7 +765,7 @@ function StoryModal({
               <div className="flex items-center space-x-6 bg-gray-50 p-4 rounded-2xl border border-dashed border-gray-200">
                 {image ? (
                   <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-sm border border-gray-200">
-                    <img src={image} alt="" className="w-full h-full object-cover" />
+                    <Image src={image} alt="" fill className="object-cover" />
                     <button
                       type="button"
                       onClick={() => setImage("")}

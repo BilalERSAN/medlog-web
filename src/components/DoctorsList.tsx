@@ -1,6 +1,7 @@
 "use client";
 import { doctors } from "../data/doctors";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function DoctorsList() {
   const { t, language } = useLanguage();
@@ -20,11 +21,11 @@ export default function DoctorsList() {
         {doctors.map((doctor) => (
           <div key={doctor.id} className="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm overflow-hidden hover:border-outline hover:shadow-md transition-all duration-300 flex flex-col">
             <div className="relative h-64 overflow-hidden bg-surface-container">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={doctor.image}
                 alt={typeof doctor.name === 'string' ? doctor.name : doctor.name.en}
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                fill
+                className="object-cover object-top hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
                 <div className="flex items-center gap-2">

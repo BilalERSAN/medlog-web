@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { BlogPost } from "@/data/blog";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function BlogListClient({ blogPosts }: { blogPosts: BlogPost[] }) {
   const { t } = useLanguage();
@@ -54,11 +55,11 @@ export default function BlogListClient({ blogPosts }: { blogPosts: BlogPost[] })
             <Link key={post.id} href={`/blog/${post.slug}`} className="group">
               <article className="flex flex-col md:flex-row gap-8 bg-surface-container-lowest border border-outline-variant rounded-3xl overflow-hidden hover:border-primary/50 hover:shadow-2xl transition-all duration-500 h-full">
                 <div className="md:w-2/5 relative h-64 md:h-auto shrink-0 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={post.image}
                     alt={t(post.title)}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="md:w-3/5 p-8 flex flex-col">

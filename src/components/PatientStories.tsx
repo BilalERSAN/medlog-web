@@ -4,6 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
 import { Story } from "../data/stories";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function PatientStories({ stories }: { stories: Story[] }) {
   const { t, language } = useLanguage();
@@ -40,9 +41,10 @@ export default function PatientStories({ stories }: { stories: Story[] }) {
                       <span className="material-symbols-outlined text-secondary text-3xl">person</span>
                     </div>
                   ) : (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
+                    <Image
                       alt={story.patientName}
+                      width={64}
+                      height={64}
                       style={{ objectPosition: story.imagePosition || 'center' }}
                       className="w-16 h-16 rounded-full object-cover border-2 border-primary-container shrink-0"
                       src={story.image}

@@ -64,12 +64,12 @@
   --spacing-lg: 48px;
   --spacing-xl: 80px;
 
-  --font-h1: "Public Sans", sans-serif;
-  --font-h2: "Public Sans", sans-serif;
-  --font-h3: "Public Sans", sans-serif;
-  --font-body-md: "Public Sans", sans-serif;
-  --font-body-lg: "Public Sans", sans-serif;
-  --font-label-caps: "Public Sans", sans-serif;
+  --font-h1: var(--font-public-sans), sans-serif;
+  --font-h2: var(--font-public-sans), sans-serif;
+  --font-h3: var(--font-public-sans), sans-serif;
+  --font-body-md: var(--font-public-sans), sans-serif;
+  --font-body-lg: var(--font-public-sans), sans-serif;
+  --font-label-caps: var(--font-public-sans), sans-serif;
 }
 
 @utility font-h1 {

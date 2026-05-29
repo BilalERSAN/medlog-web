@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Public_Sans, Inter } from "next/font/google";
+
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+  variable: "--font-public-sans",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.curelogturkey.com"),
@@ -90,10 +105,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light scroll-smooth" data-scroll-behavior="smooth">
+    <html lang="en" className={`light scroll-smooth ${publicSans.variable} ${inter.variable}`} data-scroll-behavior="smooth">
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-background text-on-background font-body-md min-h-screen flex flex-col">

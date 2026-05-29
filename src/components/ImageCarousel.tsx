@@ -2,6 +2,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 const getHospitalImages = (hospitalName: string): string[] => {
   const name = hospitalName.toLowerCase();
@@ -77,13 +78,15 @@ export default function ImageCarousel({ hospitalName }: { hospitalName: string }
     >
       <div className="flex h-full -ml-4">
         {images.map((src, index) => (
-          <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] min-w-0 h-full relative pl-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={src}
-              alt={`${hospitalName} Image ${index + 1}`}
-              className="w-full h-full object-cover rounded-xl"
-            />
+          <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] min-w-0 h-full pl-4">
+            <div className="relative w-full h-full">
+              <Image
+                src={src}
+                alt={`${hospitalName} Image ${index + 1}`}
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
           </div>
         ))}
       </div>
