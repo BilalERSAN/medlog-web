@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Public_Sans, Inter } from "next/font/google";
 
@@ -115,6 +116,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
         </LanguageProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
